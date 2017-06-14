@@ -1,0 +1,67 @@
+.img-preview {
+  width: 120px;
+  display: inline-block;
+  vertical-align: top;
+}
+.img-preview .thumbnail {
+  width: 100%;
+}
+#result div {
+  width: 25%;
+  display: inline-block;
+}
+#result div .thumbnail {
+  max-width: 100%;
+  max-height: 100px;
+}
+#main-slider .item {
+  height: inherit;
+}
+body {
+  background: url("/css/images/images.jpg") center;
+}
+:focus {
+  outline: 0 !important;
+}
+.bg-color {
+  background: #fff7e1 !important;
+  padding: 25px;
+  border-radius: 10px 10px 0px 0px;
+}
+.product {
+  background: transparent;
+}
+.topbar {
+  background: #fff;
+  color: #000;
+}
+.topbar__logo h1 {
+  color: #fff;
+  font-family: 'Lobster', cursive;
+}
+.topbar__logo a {
+  text-decoration: none;
+}
+.navbar ul.nav > li.active {
+  background: #f44336;
+}
+.navbar ul.nav > li.active a {
+  color: #fff;
+}
+.navbar ul.nav > li a {
+  text-decoration: none;
+}
+.navbar ul.nav > li a:hover {
+  color: #f00;
+  background: #efefef;
+}
+td {
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .product .image img.img-responsive {
+    height: inherit !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

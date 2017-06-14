@@ -1,0 +1,175 @@
+.container {
+  width: 1030px;
+  margin: auto; }
+
+.new-topmenu {
+  text-align: right;
+  margin-bottom: 0; }
+  .new-topmenu li {
+    display: inline-block;
+    padding: 0 3px;
+    position: relative; }
+    .new-topmenu li a {
+      color: #000000;
+      text-decoration: none;
+      line-height: 30px;
+      font-size: 14px; }
+    .new-topmenu li:before {
+      content: '|';
+      position: absolute;
+      right: -5px;
+      top: 5px;
+      color: white; }
+    .new-topmenu li:first-child:before {
+      content: none; }
+    .new-topmenu li:last-child:before {
+      content: none; }
+
+.header .left-banner__text {
+  position: fixed;
+  top: 380px;
+  left: 50%;
+  margin-left: -670px;
+  width: 190px;
+  height: 50px;
+  text-align: left;
+  color: black;
+  font-size: 11px;
+  font-weight: bold; }
+
+.header .left-banner img {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  margin-left: -660PX;
+  height: 338px; }
+
+.header .right-banner img {
+  position: fixed;
+  top: 30px;
+  right: 50%;
+  margin-right: -720px;
+  width: 200px; }
+
+.header .logo {
+  overflow: hidden;
+  position: relative; }
+  .header .logo img {
+    margin-left: -30px; }
+  .header .logo p {
+    position: absolute;
+    top: 68px;
+    left: 310px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #4F1A08; }
+    .header .logo p span {
+      display: block;
+      text-align: center; }
+
+.header .header-slider {
+  height: 405px; }
+  .header .header-slider .tur {
+    width: 695px;
+    height: 405px;
+    background: transparent;
+    position: absolute; }
+
+.header .navbar {
+  margin-bottom: -20px; }
+  .header .navbar .collapse {
+    padding: 0; }
+  .header .navbar .navbar-nav {
+    width: 100%;
+    display: block; }
+    .header .navbar .navbar-nav li {
+      width: 25%;
+      text-align: center; }
+      .header .navbar .navbar-nav li a {
+        background: linear-gradient(to top, #1d100b, #44261c);
+        color: white;
+        font-size: 20px;
+        font-family: 'Cormorant', serif;
+        text-transform: uppercase;
+        font-weight: bold; }
+      .header .navbar .navbar-nav li .dropdown-menu {
+        padding: 0;
+        right: 0; }
+        .header .navbar .navbar-nav li .dropdown-menu li {
+          width: 100%; }
+          .header .navbar .navbar-nav li .dropdown-menu li a {
+            font-size: 16px;
+            padding: 5px; }
+
+.content {
+  background: url("../images/fone.jpg");
+  padding: 30px 15px; }
+  .content a, .content h1 {
+    color: #d73d28; }
+
+.shop-stuff {
+  width: 100% !important; }
+  .shop-stuff .shop-stuff-b a {
+    color: #d73d28; }
+
+.bottom-form {
+  background: linear-gradient(to top, #1d100b, #44261c);
+  margin: 0 -15px;
+  padding: 15px 50px 40px;
+  text-align: center; }
+  .bottom-form .form-group {
+    padding-right: 10px; }
+  .bottom-form label {
+    color: white; }
+    .bottom-form label .mark {
+      background: transparent; }
+
+.bottom-block {
+  padding: 30px; }
+
+.footer {
+  padding: 30px; }
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%; }
+  .new-topmenu {
+    display: none; }
+  .header .navbar .navbar-nav li {
+    width: 100%;
+    padding: 0; }
+  .header {
+    width: 100% !important; }
+    .header .left-banner, .header .right-banner {
+      display: none; }
+    .header .logo img {
+      width: 100%;
+      margin-left: 0; }
+    .header .header-slider {
+      height: inherit; }
+      .header .header-slider .tur, .header .header-slider iframe {
+        display: none;
+        position: relative;
+        width: 100% !important; }
+    .header .navbar {
+      background: linear-gradient(to top, #1d100b, #44261c); }
+      .header .navbar .navbar-brand {
+        color: white; }
+      .header .navbar .collapsing {
+        width: 100% !important;
+        padding: 0; }
+        .header .navbar .collapsing .navbar-nav {
+          margin: 0; }
+      .header .navbar .collapse .navbar-nav {
+        margin: 0; }
+        .header .navbar .collapse .navbar-nav li {
+          width: 100%; }
+  .banners-block {
+    width: 100%;
+    float: none;
+    background: white; }
+    .banners-block a {
+      width: 100%;
+      display: block; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,32 @@
+{
+  "name": "doors.kz",
+  "authors": [
+    "Aidos <aidosgd@gmail.com>"
+  ],
+  "description": "doors",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "AdminLTE": "admin-lte#^2.3.3",
+    "jquery.scrollTo.min": "http://hunter.ondrejsvestka.cz/1-1/js/jquery.scrollTo.min.js",
+    "jquery.cookie": "http://hunter.ondrejsvestka.cz/1-1/js/jquery.cookie.js",
+    "owl.carousel.min": "http://hunter.ondrejsvestka.cz/1-1/js/owl.carousel.min.js",
+    "front": "http://hunter.ondrejsvestka.cz/1-1/js/front.js",
+    "jquery-colorbox": "colorbox#^1.6.4",
+    "font-awesome": "fontawesome#^4.6.3",
+    "owl.carousel": "http://hunter.ondrejsvestka.cz/1-1/css/owl.carousel.css",
+    "owl.theme": "http://hunter.ondrejsvestka.cz/1-1/css/owl.theme.css",
+    "style.default": "http://hunter.ondrejsvestka.cz/1-1/css/style.default.css"
+  }
+}

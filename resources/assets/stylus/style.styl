@@ -1,0 +1,57 @@
+.img-preview
+  width 120px
+  display inline-block
+  vertical-align top
+  .thumbnail
+    width 100%
+#result
+  div
+    width 25%
+    display inline-block
+    .thumbnail
+      max-width 100%
+      max-height 100px
+#main-slider
+  .item
+    height inherit
+body
+  background url('/css/images/images.jpg') center
+
+:focus
+  outline 0 !important
+.bg-color
+  background #FFF7E1 !important
+  padding 25px
+  border-radius 10px 10px 0px 0px
+.product
+  background transparent
+.topbar
+  background #fff
+  color #000
+.topbar__logo
+  h1
+    color #fff
+    font-family 'Lobster', cursive;
+  a
+    text-decoration none
+.navbar
+  ul
+    &.nav >
+      li
+        &.active
+          background #f44336
+          a
+            color #fff
+        a
+          text-decoration none
+          &:hover
+            color red
+            background #efefef
+td
+  padding 10px
+@media (max-width:767px)
+  .product
+    .image
+      img
+        &.img-responsive
+          height inherit !important

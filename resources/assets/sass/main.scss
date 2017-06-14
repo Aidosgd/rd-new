@@ -1,0 +1,232 @@
+.container{
+  width: 1030px;
+  margin: auto;
+}
+
+.new-topmenu{
+  text-align: right;
+  margin-bottom: 0;
+  li{
+    display: inline-block;
+    padding: 0 3px;
+    position: relative;
+    a{
+      color: #000000;
+      text-decoration: none;
+      line-height: 30px;
+      font-size: 14px;
+    }
+    &:before{
+      content: '|';
+      position: absolute;
+      right: -5px;
+      top: 5px;
+      color: white;
+    }
+    &:first-child{
+      &:before{
+        content: none;
+      }
+    }
+    &:last-child{
+      &:before{
+        content: none;
+      }
+    }
+  }
+}
+
+.header{
+  .left-banner{
+    &__text{
+      position: fixed;
+      top: 380px;
+      left: 50%;
+      margin-left: -670px;
+      width: 190px;
+      height: 50px;
+      text-align: left;
+      color: black;
+      font-size: 11px;
+      font-weight: bold;
+    }
+    img{
+      position:fixed;
+      top: 30px;
+      left: 50%;
+      margin-left:-660PX;
+      height: 338px;
+    }
+  }
+  .right-banner{
+    img{
+      position:fixed;
+      top: 30px;
+      right: 50%;
+      margin-right:-720px;
+      width: 200px;
+    }
+  }
+  .logo{
+    overflow:hidden;
+    position:relative;
+    img{
+      margin-left:-30px;
+    }
+    p{
+      position: absolute;
+      top: 68px;
+      left: 310px;
+      font-size: 17px;
+      font-weight: bold;
+      color: #4F1A08;
+      span{
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+  .header-slider{
+    height: 405px;
+    .tur{
+      width: 695px;
+      height: 405px;
+      background: transparent;
+      position: absolute;
+    }
+  }
+  .navbar{
+    margin-bottom: -20px;
+    .collapse{
+      padding: 0;
+    }
+    .navbar-nav{
+      width: 100%;
+      display: block;
+      li{
+        width: 25%;
+        text-align: center;
+        a{
+          background: linear-gradient(to top, #1d100b, #44261c);
+          color: white;
+          font-size: 20px;
+          font-family: 'Cormorant', serif;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+        .dropdown-menu{
+          padding: 0;
+          right: 0;
+          li{
+            width: 100%;
+            a{
+              font-size: 16px;
+              padding: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.content{
+  background: url("../images/fone.jpg");
+  padding: 30px 15px;
+  a, h1{
+    color: #d73d28;
+  }
+}
+.shop-stuff{
+  width: 100% !important;
+  .shop-stuff-b{
+    a{
+      color: #d73d28;
+    }
+  }
+}
+.bottom-form{
+  background: linear-gradient(to top, #1d100b, #44261c);
+  margin: 0 -15px;
+  padding: 15px 50px 40px;
+  text-align: center;
+  .form-group{
+    padding-right: 10px;
+  }
+  label{
+    color: white;
+    .mark{
+      background: transparent;
+    }
+  }
+}
+.bottom-block{
+  padding: 30px;
+}
+
+.footer{
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .container{
+    width: 100%;
+  }
+  .new-topmenu{
+    display: none;
+  }
+  .header .navbar .navbar-nav li{
+    width: 100%;
+    padding: 0;
+  }
+  .header{
+    width: 100% !important;
+    .left-banner, .right-banner{
+      display: none;
+    }
+    .logo{
+      img{
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+    .header-slider{
+      height: inherit;
+      .tur, iframe{
+        display: none;
+        position: relative;
+        width: 100% !important;
+      }
+    }
+    .navbar{
+      background: linear-gradient(to top, #1d100b, #44261c);
+      .navbar-brand{
+        color: white;
+      }
+      .collapsing{
+        width: 100% !important;
+        padding: 0;
+        .navbar-nav{
+          margin: 0;
+        }
+      }
+      .collapse{
+        .navbar-nav{
+          margin: 0;
+          li{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .banners-block{
+    width: 100%;
+    float: none;
+    background: white;
+    a{
+      width: 100%;
+      display: block;
+    }
+  }
+
+}
