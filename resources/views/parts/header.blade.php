@@ -5,22 +5,22 @@
         </a>
     </li>
     <li><a href="index.php">главная</a></li>
-    <li><a href="news.php"> новости</a></li>
-    <li><a href="cooperation.php">сотрудничество</a></li>
+    {{--<li><a href="news.php"> новости</a></li>--}}
+    <li><a href="/pages/sotrudnichestvo">сотрудничество</a></li>
     <li><a href="http://russdoors.kz/articles.php"> полезные советы</a></li>
-    <li><a href="contact-us.php">контакты</a></li>
+    <li><a href="/pages/kontakty">контакты</a></li>
     <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">города</a>
         <ul class="dropdown-menu">
-            <li><a href="aktau.php">Актау</a></li>
-            <li><a href="astana.php">Астана</a></li>
-            <li><a href="balhash.php">Балхаш</a></li>
-            <li><a href="karaganda.php">Караганда</a></li>
-            <li><a href="taldykorgan.php">Талдыкурган</a></li>
-            <li><a href="taraz.php">Тараз</a></li>
-            <li><a href="ust-kamenogorsk.php">Усть-Каменогорск</a></li>
-            <li><a href="shymkent.php">Шымкент</a></li>
-            <li><a href="кызылорда.php">Кызылорда</a></li>
+            <li><a href="/pages/aktau">Актау</a></li>
+            <li><a href="/pages/astana">Астана</a></li>
+            <li><a href="/pages/balkhash">Балхаш</a></li>
+            <li><a href="/pages/karaganda">Караганда</a></li>
+            <li><a href="/pages/taldykurgan">Талдыкурган</a></li>
+            <li><a href="/pages/taraz">Тараз</a></li>
+            <li><a href="/pages/ust_kamenogorsk">Усть-Каменогорск</a></li>
+            <li><a href="/pages/shymkent">Шымкент</a></li>
+            <li><a href="/pages/kyzylorda">Кызылорда</a></li>
         </ul>
     </li>
 </ul>
@@ -42,18 +42,18 @@
         </p>
     </div>
     <div class="header-slider">
-        <a class="tur" href="/3d/index.html" target="_blank">
+        <a class="tur" href="/3d/output" target="_blank">
             <span class="tur"></span>
-            <iframe style="width:695px; height:405px; float:left;" src="/3d/index.html" frameborder="0"></iframe>
+            <iframe style="width:695px; height:405px; float:left;" src="/3d/output" frameborder="0"></iframe>
         </a>
         <div class="banners-block hidden-xs">
-            <a href="http://russdoors.kz/schedule.php">
+            <a href="/pages/grafik_raboty">
                 <img src="http://russdoors.kz/assets/templates/russdoors/img/bnew1.jpg">
             </a>
-            <a href="http://russdoors.kz/guarantee.php">
+            <a href="/pages/garantiya">
                 <img src="http://russdoors.kz/assets/templates/russdoors/img/b21.jpg">
             </a>
-            <a href="http://russdoors.kz/interior_door.php">
+            <a href="/pages/interior_door">
                 <img src="http://russdoors.kz/assets/templates/russdoors/img/b33.png">
             </a>
         </div>
@@ -88,7 +88,7 @@
                     </ul>
                 </li>
                 <li><a href="/%D0%B2%D1%81%D0%B5-%D0%B0%D0%BA%D1%86%D0%B8%D0%B8.php">Новости и акции</a></li>
-                <li><a href="/about.php">О компании</a></li>
+                <li><a href="/pages/o_nas">О компании</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>

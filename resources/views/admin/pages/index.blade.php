@@ -33,13 +33,13 @@
                                 <th>Описание</th>
                                 <th>Действия</th>
                             </tr>
-                            @foreach($page as $item)
+                            @foreach($page->sortByDesc('created_at') as $item)
                                 <tr>
                                     <td>{{ $item->id }}</td>
                                     <td>{{ $item->title }}</td>
                                     <td>{{ $item->slug }}</td>
                                     <td>{{ $item->weight }}</td>
-                                    <td>{!! $item->description !!}</td>
+                                    <td>{{ str_limit($item->description)  }} </td>
                                     <td>
                                         <a href="/cp/pages/{{ $item->id }}/edit" class="btn btn-warning btn-sm">
                                             <i class="fa fa-pencil"></i>

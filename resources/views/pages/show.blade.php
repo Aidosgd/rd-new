@@ -9,7 +9,7 @@
         </div>
     </div>
     <div class="row">
-        <div id="text-page" class="col-md-8 col-md-offset-2">
+        <div id="text-page" class="col-md-12">
             {!! $pageName->description !!}
         </div>
     </div>

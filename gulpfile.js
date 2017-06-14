@@ -43,7 +43,7 @@ elixir(function(mix) {
 
     //admin
     mix.scripts([
-        './bower_components/AdminLTE/plugins/jQuery/jQuery-2.2.0.min.js',
+        './bower_components/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js',
         './bower_components/AdminLTE/bootstrap/js/bootstrap.js',
         './bower_components/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js',
         './bower_components/AdminLTE/plugins/fastclick/fastclick.js',

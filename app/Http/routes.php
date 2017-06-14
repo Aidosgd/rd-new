@@ -30,6 +30,7 @@ Route::get('doors/{doorCategory}/n/{doorSlug}', 'DoorsController@show');
 Route::bind('pageName', function($value){
     return \App\Models\Page::where('slug', '=', $value)->first();
 });
+Route::get('pages/interior_door', 'PagesController@interior');
 Route::get('pages/{pageName}', 'PagesController@show');
 
 View::composer('parts.header', function($view){
@@ -47,7 +48,7 @@ View::composer('parts.main_banner', function($view){
     $view->with(compact('banners'));
 });
 
-Route::get('leras.php', function (){
+Route::get('leras', function (){
    return 'test';
 });
 
