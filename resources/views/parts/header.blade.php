@@ -1,11 +1,11 @@
 <ul class="new-topmenu">
     <li>
         <a href="https://www.facebook.com/russdoors/">
-            <img src="http://russdoors.kz/images/facebook-flat.png" style="width: 25px;margin-right: 20px;">
+            <img src="/images/facebook-flat.png" style="width: 25px;margin-right: 20px;">
         </a>
     </li>
     <li><a href="/">главная</a></li>
-    {{--<li><a href="news.php"> новости</a></li>--}}
+    <li><a href="news.php"> новости</a></li>
     <li><a href="/pages/sotrudnichestvo.php">сотрудничество</a></li>
     <li><a href="/pages/poleznye_stati.php"> полезные советы</a></li>
     <li><a href="/pages/kontakty.php">контакты</a></li>
@@ -26,16 +26,16 @@
 </ul>
 <div class="header" style="position: relative;">
     <a class="left-banner" href="/pages/rasprodazha.php">
-        <img src="http://russdoors.kz/images/alexdoor.jpg">
+        <img src="/images/alexdoor.jpg">
         <div class="left-banner__text">
             Модель Александрия со скидкой 30%!
         </div>
     </a>
     <a class="right-banner" href="/pages/spetspredlozhenie.php">
-        <img src="http://russdoors.kz/assets/templates/russdoors/img/pg1.png" >
+        <img src="/images/pg1.png" >
     </a>
     <div class="logo hidden-xs">
-        <img src="http://russdoors.kz/images/head.jpg">
+        <img src="/images/head.jpg">
         <p>
             г. Алматы, просп.Райымбека 152 уг. Наурызбай батыра<br>
             <span>тел. 8(727)3450101, 8(747) 4882912</span>
@@ -48,13 +48,13 @@
         </a>
         <div class="banners-block hidden-xs">
             <a href="/pages/grafik_raboty.php">
-                <img src="http://russdoors.kz/assets/templates/russdoors/img/bnew1.jpg">
+                <img src="/images/bnew1.jpg">
             </a>
             <a href="/pages/garantiya.php">
-                <img src="http://russdoors.kz/assets/templates/russdoors/img/b21.jpg">
+                <img src="/images/b21.jpg">
             </a>
             <a href="/pages/interior_door.php">
-                <img src="http://russdoors.kz/assets/templates/russdoors/img/b33.png">
+                <img src="/images/b33.png">
             </a>
         </div>
     </div>
@@ -93,14 +93,14 @@
         </div><!-- /.navbar-collapse -->
     </nav>
     <div class="banners-block visible-xs">
-        <a href="http://russdoors.kz/schedule.php">
-            <img src="http://russdoors.kz/assets/templates/russdoors/img/bnew1.jpg">
+        <a href="/pages/grafik_raboty.php">
+            <img src="/images/bnew1.jpg">
         </a>
-        <a href="http://russdoors.kz/guarantee.php">
-            <img src="http://russdoors.kz/assets/templates/russdoors/img/b21.jpg">
+        <a href="/pages/garantiya.php">
+            <img src="/images/b21.jpg">
         </a>
-        <a class="hidden" href="http://russdoors.kz/interior_door.php">
-            <img src="http://russdoors.kz/assets/templates/russdoors/img/b33.png">
+        <a class="hidden" href="/pages/interior_door.php">
+            <img src="/images/b33.png">
         </a>
     </div>
 </div>

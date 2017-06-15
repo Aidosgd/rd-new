@@ -9589,6 +9589,9 @@ div.jMyCarousel ul li a img{display:block;border:0px;}
     text-decoration: none;
     border-bottom: 1px dashed #E6BB7E; }
 
+.doors-template .heading h4 {
+  text-align: center; }
+
 @media (max-width: 768px) {
   .container {
     width: 100%; }
