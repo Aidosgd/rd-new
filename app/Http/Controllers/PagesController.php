@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use App\Models\Door;
+use App\Models\Page;
 
 class PagesController extends Controller
 {
@@ -23,5 +24,13 @@ class PagesController extends Controller
             ->get();
 
         return view('pages.interior', compact('doors'));
+    }
+
+    public function allNews()
+    {
+        $news = Page::where('seo_keywords', 'news')
+            ->get();
+
+        return view('pages.news', compact('news'));
     }
 }

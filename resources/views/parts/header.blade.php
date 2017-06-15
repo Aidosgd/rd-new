@@ -4,34 +4,34 @@
             <img src="http://russdoors.kz/images/facebook-flat.png" style="width: 25px;margin-right: 20px;">
         </a>
     </li>
-    <li><a href="index.php">главная</a></li>
+    <li><a href="/">главная</a></li>
     {{--<li><a href="news.php"> новости</a></li>--}}
-    <li><a href="/pages/sotrudnichestvo">сотрудничество</a></li>
-    <li><a href="http://russdoors.kz/articles.php"> полезные советы</a></li>
-    <li><a href="/pages/kontakty">контакты</a></li>
+    <li><a href="/pages/sotrudnichestvo.php">сотрудничество</a></li>
+    <li><a href="/pages/poleznye_stati.php"> полезные советы</a></li>
+    <li><a href="/pages/kontakty.php">контакты</a></li>
     <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">города</a>
         <ul class="dropdown-menu">
-            <li><a href="/pages/aktau">Актау</a></li>
-            <li><a href="/pages/astana">Астана</a></li>
-            <li><a href="/pages/balkhash">Балхаш</a></li>
-            <li><a href="/pages/karaganda">Караганда</a></li>
-            <li><a href="/pages/taldykurgan">Талдыкурган</a></li>
-            <li><a href="/pages/taraz">Тараз</a></li>
-            <li><a href="/pages/ust_kamenogorsk">Усть-Каменогорск</a></li>
-            <li><a href="/pages/shymkent">Шымкент</a></li>
-            <li><a href="/pages/kyzylorda">Кызылорда</a></li>
+            <li><a href="/pages/aktau.php">Актау</a></li>
+            <li><a href="/pages/astana.php">Астана</a></li>
+            <li><a href="/pages/balkhash.php">Балхаш</a></li>
+            <li><a href="/pages/karaganda.php">Караганда</a></li>
+            <li><a href="/pages/taldykurgan.php">Талдыкурган</a></li>
+            <li><a href="/pages/taraz.php">Тараз</a></li>
+            <li><a href="/pages/ust_kamenogorsk.php">Усть-Каменогорск</a></li>
+            <li><a href="/pages/shymkent.php">Шымкент</a></li>
+            <li><a href="/pages/kyzylorda.php">Кызылорда</a></li>
         </ul>
     </li>
 </ul>
 <div class="header" style="position: relative;">
-    <a class="left-banner" href="http://russdoors.kz/%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B02.php">
+    <a class="left-banner" href="/pages/rasprodazha.php">
         <img src="http://russdoors.kz/images/alexdoor.jpg">
         <div class="left-banner__text">
             Модель Александрия со скидкой 30%!
         </div>
     </a>
-    <a class="right-banner" href="http://russdoors.kz/%D1%81%D0%BF%D0%B5%D1%86%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5.php">
+    <a class="right-banner" href="/pages/spetspredlozhenie.php">
         <img src="http://russdoors.kz/assets/templates/russdoors/img/pg1.png" >
     </a>
     <div class="logo hidden-xs">
@@ -44,16 +44,16 @@
     <div class="header-slider">
         <a class="tur" href="/3d/output" target="_blank">
             <span class="tur"></span>
-            <iframe style="width:695px; height:405px; float:left;" src="/3d/output" frameborder="0"></iframe>
+            {{--<iframe style="width:695px; height:405px; float:left;" src="/3d/output" frameborder="0"></iframe>--}}
         </a>
         <div class="banners-block hidden-xs">
-            <a href="/pages/grafik_raboty">
+            <a href="/pages/grafik_raboty.php">
                 <img src="http://russdoors.kz/assets/templates/russdoors/img/bnew1.jpg">
             </a>
-            <a href="/pages/garantiya">
+            <a href="/pages/garantiya.php">
                 <img src="http://russdoors.kz/assets/templates/russdoors/img/b21.jpg">
             </a>
-            <a href="/pages/interior_door">
+            <a href="/pages/interior_door.php">
                 <img src="http://russdoors.kz/assets/templates/russdoors/img/b33.png">
             </a>
         </div>
@@ -87,8 +87,8 @@
                         <li><a href="/riccardi.php">Фурнитура</a></li>
                     </ul>
                 </li>
-                <li><a href="/%D0%B2%D1%81%D0%B5-%D0%B0%D0%BA%D1%86%D0%B8%D0%B8.php">Новости и акции</a></li>
-                <li><a href="/pages/o_nas">О компании</a></li>
+                <li><a href="/pages/vse_aktsii.php">Новости и акции</a></li>
+                <li><a href="/pages/o_nas.php">О компании</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>

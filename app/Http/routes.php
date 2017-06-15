@@ -30,8 +30,22 @@ Route::get('doors/{doorCategory}/n/{doorSlug}', 'DoorsController@show');
 Route::bind('pageName', function($value){
     return \App\Models\Page::where('slug', '=', $value)->first();
 });
+Route::get('news.php', 'PagesController@allNews');
+Route::get('скидки-на-двери1.php', 'PagesController@allNews');
+Route::get('leras.php', 'PagesController@allNews');
+Route::get('shymkent.php', 'PagesController@allNews');
+Route::get('ust-kamenogorsk.php', 'PagesController@allNews');
+Route::get('taraz.php', 'PagesController@allNews');
+Route::get('taldykorgan.php', 'PagesController@allNews');
+Route::get('stroydetali.php', 'PagesController@allNews');
+Route::get('кызылорда.php', 'PagesController@allNews');
+Route::get('karaganda.php', 'PagesController@allNews');
+Route::get('balhash.php', 'PagesController@allNews');
+Route::get('astana.php', 'PagesController@allNews');
+Route::get('aktau.php', 'PagesController@allNews');
+Route::get('metal-doors.php', 'PagesController@allNews');
 Route::get('pages/interior_door', 'PagesController@interior');
-Route::get('pages/{pageName}', 'PagesController@show');
+Route::get('pages/{pageName}.php', 'PagesController@show');
 
 View::composer('parts.header', function($view){
     $menu = \App\Models\Menu::get();
