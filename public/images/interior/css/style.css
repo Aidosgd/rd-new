@@ -137,14 +137,15 @@
           left: 42% !important;
           top: 0 !important; }
         .door__js .blockz .container_door .ui-icon.ui-icon-search {
-          background: url(images/zoom.png);
+          background: url(images/resize.png);
           left: 0 !important;
           top: 0 !important; }
         .door__js .blockz .container_door .ui-icon.ui-icon-arrow-2-n-s {
           background: url(images/skew_v.png);
           right: 0 !important; }
         .door__js .blockz .container_door .ui-icon.ui-icon-gripsmall-diagonal-se {
-          background: url(images/resize.png); }
+          background: url(images/resize.png);
+        display: none}
 
 #fabHead {
   display: block;

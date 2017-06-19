@@ -112,6 +112,15 @@
   .shop-stuff .shop-stuff-b a {
     color: #d73d28; }
 
+.buttons {
+  text-align: center;
+  padding-top: 50px; }
+  .buttons a {
+    padding: 15px 25px;
+    color: white;
+    background: linear-gradient(to top, #1d100b, #44261c);
+    margin: 0 20px; }
+
 .bottom-form {
   background: linear-gradient(to top, #1d100b, #44261c);
   margin: 40px -15px 0;

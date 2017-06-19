@@ -26,7 +26,7 @@
 </ul>
 <div class="header" style="position: relative;">
     <a class="left-banner" href="/pages/rasprodazha.php">
-        <img src="/images/alexdoor.jpg">
+        <img style="margin-left: -690px;" src="/imagecache/doors/2017-06-19-03-18-aleksandriya_zolotopng.png">
         <div class="left-banner__text">
             Модель Александрия со скидкой 30%!
         </div>
@@ -44,7 +44,7 @@
     <div class="header-slider">
         <a class="tur" href="/3d/output" target="_blank">
             <span class="tur"></span>
-            {{--<iframe style="width:695px; height:405px; float:left;" src="/3d/output" frameborder="0"></iframe>--}}
+            <iframe style="width:695px; height:405px; float:left;" src="/3d/output" frameborder="0"></iframe>
         </a>
         <div class="banners-block hidden-xs">
             <a href="/pages/grafik_raboty.php">

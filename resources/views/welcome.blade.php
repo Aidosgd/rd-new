@@ -7,13 +7,13 @@
     <h1 style="padding-bottom: 30px;">Хит продаж</h1>
 
     <div class="row doors">
-        @foreach($doors as $item)
+        @foreach($doors->sortBy('weight') as $item)
             {{--{{ dd($item) }}--}}
-            <div class="col-md-3 col-sm-6">
+            <div class="{{ $item->category->id == 1 ? 'col-md-3' : 'col-md-4' }} col-sm-6">
                 <div class="shop-stuff shk-item three ">
                     <div class="shop-stuff-b">
                         <a href="/doors/{{ $item->category->slug }}/n/{{ $item->slug }}">
-                            <img class="shk-image" src="{{ $item->getSrc('doors') ? $item->getSrc('doors') : $item->images->first()->getSrc('doors') }}" alt="Asel" title="Asel" height="200">
+                            <img class="shk-image" src="{{ $item->getSrc('doors') ? $item->getSrc('doors') : $item->images->first()->getSrc('doors') }}" height="200">
                         </a>
                         <a href="/doors/{{ $item->category->slug }}/n/{{ $item->slug }}">
                             <h3>{{ $item->title }}</h3>
@@ -27,6 +27,11 @@
                 </div>
             </div>
         @endforeach
+        <div class="clearfix"></div>
+        <div class="buttons">
+            <a href="/stroydetali.php">Межкомнатные двери</a>
+            <a href="/leras.php">Металлические двери</a>
+        </div>
     </div>
 
     <div class="bottom-form">

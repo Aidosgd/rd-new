@@ -42,7 +42,9 @@
                                     <td>{{ $item->title }}</td>
                                     <td>{{ $item->price }}</td>
                                     <td>{{ $item->weight }}</td>
-                                    <td><img style="max-width: 75px; max-height: 75px;" src="/uploads/doors/{{ $item->getImage($item->id) }}" alt=""></td>
+                                    <td>
+                                        {{--<img style="max-width: 75px; max-height: 75px;" src="/uploads/doors/{{ $item->getImage($item->id) }}" alt="">--}}
+                                    </td>
                                     {{--<td>{!! $item->description  !!}</td>--}}
                                     <td>
                                         <a href="/cp/doors/{{ $item->id }}/edit" class="btn btn-warning btn-sm">

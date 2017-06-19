@@ -136,7 +136,9 @@ class DoorsController extends Controller
         $image  = $request->file('main_image');
         if($image){
             $pathOld = public_path('uploads/doors/'.$door->main_image);
-            unlink($pathOld);
+            if($door->main_image){
+                unlink($pathOld);
+            }
 
             $filename = date('Y-m-d-H-i').'-' . Str::slug($image->getClientOriginalName(), "_"). ".".$image->getClientOriginalExtension();
             $pathOriginal = public_path('uploads/doors/'.$filename);
