@@ -37,15 +37,15 @@
     <div class="bottom-form">
         <h2 style="color: #fff; text-align: center;">Оставить заявку на бесплатную консультацию</h2>
         <p class="error"></p>
-        <form method="post" action="index.php" id="FormOrder" class="form-inline">
-            <input name="formid" type="hidden"  value="ContactForm" />
+        <form method="post" action="/mail" id="FormOrder" class="form-inline">
+            <input name="_token" type="hidden"  value="{{ csrf_token() }}" />
             <div class="form-group">
                 <label for="exampleInputName2">Ваше имя <span class="mark">*</span></label>
-                <input name="i10" class="form-control text" id="exampleInputName2" type="text" value="" />
+                <input name="name" class="form-control text" id="exampleInputName2" type="text" value="" />
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail2">Контактный телефон <span class="mark">*</span></label>
-                <input name="i12" class="form-control" id="exampleInputEmail2" type="text" value="" />
+                <input name="phone" class="form-control" id="exampleInputEmail2" type="text" value="" />
             </div>
             <!--<input type="submit" name="contact" id="cfContact" class="button" style="background: url(/assets/images/send_rus.png)no-repeat; width:150px; height:25px; border:0px;" value="" />-->
             <button type="submit" class="btn btn-default">Отправить</button>
