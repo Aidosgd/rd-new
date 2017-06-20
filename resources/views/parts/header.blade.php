@@ -93,6 +93,10 @@
         </div><!-- /.navbar-collapse -->
     </nav>
     <div class="banners-block visible-xs">
+        <a style="width: 100%; position: relative" class="tur" href="/3d/output" target="_blank">
+            <span class="tur" style="width: 100%;height: 405px;display: block;position: absolute;top: 20px;"></span>
+            <iframe style="width:100%; height:405px; float:left;" src="/3d/output" frameborder="0"></iframe>
+        </a>
         <a href="/pages/grafik_raboty.php">
             <img src="/images/bnew1.jpg">
         </a>

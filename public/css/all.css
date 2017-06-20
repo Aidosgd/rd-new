@@ -10340,7 +10340,16 @@ div.jMyCarousel ul li a img {
     background: white; }
     .banners-block a {
       width: 100%;
-      display: block; } }
+      display: block; }
+  .buttons {
+    text-align: center;
+    padding-top: 50px; }
+    .buttons a {
+      display: block;
+      padding: 15px 25px;
+      color: white;
+      background: linear-gradient(to top, #1d100b, #44261c);
+      margin: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
 
