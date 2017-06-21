@@ -48,7 +48,7 @@
         </a>
         <div class="banners-block hidden-xs">
             <a href="/pages/grafik_raboty.php">
-                <img src="/images/bnew1.jpg">
+                <img src="/css/images/mode.jpg">
             </a>
             <a href="/pages/garantiya.php">
                 <img src="/images/b21.jpg">
