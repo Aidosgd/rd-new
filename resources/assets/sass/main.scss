@@ -237,6 +237,7 @@
     }
     .navbar{
       background: linear-gradient(to top, #1d100b, #44261c);
+      margin-bottom: 0;
       .navbar-brand{
         color: white;
       }
@@ -264,6 +265,28 @@
     a{
       width: 100%;
       display: block;
+    }
+    .address{
+      font-size: 16px;
+      text-align: center;
+      padding: 15px;
+      background: url(../images/fone.jpg);
+      a{
+        color: blue;
+      }
+      ul{
+        margin-top: 10px;
+        padding: 0 15px;
+        list-style: none;
+        li{
+          padding-bottom: 10px;
+          a{
+            padding: 10px;
+            background: linear-gradient(to top, #1d100b, #44261c);
+            color: white;
+          }
+        }
+      }
     }
   }
 

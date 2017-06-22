@@ -10322,7 +10322,8 @@ div.jMyCarousel ul li a img {
         position: relative;
         width: 100% !important; }
     .header .navbar {
-      background: linear-gradient(to top, #1d100b, #44261c); }
+      background: linear-gradient(to top, #1d100b, #44261c);
+      margin-bottom: 0; }
       .header .navbar .navbar-brand {
         color: white; }
       .header .navbar .collapsing {
@@ -10341,6 +10342,23 @@ div.jMyCarousel ul li a img {
     .banners-block a {
       width: 100%;
       display: block; }
+    .banners-block .address {
+      font-size: 16px;
+      text-align: center;
+      padding: 15px;
+      background: url(../images/fone.jpg); }
+      .banners-block .address a {
+        color: blue; }
+      .banners-block .address ul {
+        margin-top: 10px;
+        padding: 0 15px;
+        list-style: none; }
+        .banners-block .address ul li {
+          padding-bottom: 10px; }
+          .banners-block .address ul li a {
+            padding: 10px;
+            background: linear-gradient(to top, #1d100b, #44261c);
+            color: white; }
   .buttons {
     text-align: center;
     padding-top: 50px; }
