@@ -35,6 +35,11 @@
     </div>
 
     <div class="bottom-form">
+        @if(session()->has('message'))
+            <div class="alert alert-success">
+                <h1>{{ session()->get('message') }}</h1>
+            </div>
+        @endif
         <h2 style="color: #fff; text-align: center;">Оставить заявку на бесплатную консультацию</h2>
         <p class="error"></p>
         <form method="post" action="/mail" id="FormOrder" class="form-inline">

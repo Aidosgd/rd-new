@@ -45,7 +45,7 @@ class HomeController extends Controller
             $m->to($emails, 'Aidos')->subject('Заявка с сайта Russdoors');
         });
 
-        return redirect('/');
+        return redirect('/')->with('message', 'Письмо отправили!');
 
     }
 }
