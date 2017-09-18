@@ -151,6 +151,13 @@ Route::get('ricardi-venezia.php', function (){
     $seo_description = $pageName->seo_description;
     return view('pages.show', compact('pageName', 'seo_title', 'seo_keywords', 'seo_description'));
 });
+Route::get('распродажа.php', function (){
+    $pageName = \App\Models\Page::find(36);
+    $seo_title = $pageName->seo_title;
+    $seo_keywords = $pageName->seo_keywords;
+    $seo_description = $pageName->seo_description;
+    return view('pages.show', compact('pageName', 'seo_title', 'seo_keywords', 'seo_description'));
+});
 
 Route::get('pages/interior_door.php', 'PagesController@interior');
 Route::get('pages/{pageName}.php', 'PagesController@show');
