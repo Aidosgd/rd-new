@@ -30,7 +30,7 @@
                     <div class="shop-stuff shk-item three ">
                         <div class="shop-stuff-b">
                             <a href="/doors/{{ $item->category->slug }}/n/{{ $item->slug }}">
-                                <img class="shk-image" src="{{ $item->images->first()->getSrc('doors') }}" alt="Asel" title="Asel" height="200">
+                                <img class="shk-image" src="{{ $item->images->first()->getSrc('doors') }}" height="200">
                             </a>
                             <a href="/doors/{{ $item->category->slug }}/n/{{ $item->slug }}">
                                 <h3>{{ $item->title }}</h3>

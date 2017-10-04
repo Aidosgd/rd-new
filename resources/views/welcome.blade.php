@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-    <a href="http://russdoors.kz/%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B02.php"><h1 style="font-size: 20px;">РАСПРОДАЖА! Двери производство Россия, Украина   от 3000 тенге за полотно!</h1></a>
+    <a href="/pages/rasprodazha.php"><h1 style="font-size: 20px;">РАСПРОДАЖА! Двери производство Россия, Украина   от 3000 тенге за полотно!</h1></a>
     <h1 style="font-size: 20px;">Белорусские межкомнатные двери –ликвидация коллекции! Скидки до 50%!</h1>
     <!-- main -->
     <h1 style="padding-bottom: 30px;">Хит продаж</h1>

@@ -69,6 +69,14 @@
 
 .header .header-slider {
   height: 405px; }
+  .header .header-slider .slider {
+    width: 695px;
+    height: 405px;
+    background: transparent;
+    position: absolute; }
+    .header .header-slider .slider .slide img {
+      width: 100%;
+      height: inherit; }
   .header .header-slider .tur {
     width: 695px;
     height: 405px;

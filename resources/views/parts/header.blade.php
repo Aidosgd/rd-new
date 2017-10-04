@@ -42,17 +42,39 @@
         </p>
     </div>
     <div class="header-slider">
-        <a class="tur" href="/3d/output" target="_blank">
-            <span class="tur"></span>
-            <iframe style="width:695px; height:405px; float:left;" src="/3d/output" frameborder="0"></iframe>
-        </a>
+        <div class="slider">
+            {{--<div class="slide">--}}
+                {{--<a class="tur" href="/3d/output" target="_blank">--}}
+                    {{--<span class="tur"></span>--}}
+                    {{--<iframe style="width:695px; height:405px; float:left;" src="/3d/output" frameborder="0"></iframe>--}}
+                {{--</a>--}}
+            {{--</div>--}}
+            <div class="slide">
+                <a href="#">
+                    <img src="/css/images/Ламинат.png" alt="">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="#">
+                    <img src="/css/images/Ликвидация (1).png" alt="">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="#">
+                    <img src="/css/images/Осенний ценопад.png" alt="">
+                </a>
+            </div>
+        </div>
         <div class="banners-block hidden-xs">
             <a href="/pages/grafik_raboty.php">
                 <img src="/css/images/mode.jpg">
             </a>
-            <a href="/pages/garantiya.php">
-                <img src="/images/b21.jpg">
+            <a href="/3d/output">
+                <img src="/css/images/ЗD Тур.png">
             </a>
+            {{--<a href="/pages/garantiya.php">--}}
+                {{--<img src="/images/b21.jpg">--}}
+            {{--</a>--}}
             <a href="/pages/interior_door.php">
                 <img src="/images/b33.png">
             </a>

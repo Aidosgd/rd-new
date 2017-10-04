@@ -42,20 +42,20 @@ elixir(function(mix) {
     mix.copy('./bower_components/bootstrap/fonts/**.*', 'public/css/fonts');
 
     //admin
-    mix.scripts([
-        './bower_components/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js',
-        './bower_components/AdminLTE/bootstrap/js/bootstrap.js',
-        './bower_components/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js',
-        './bower_components/AdminLTE/plugins/fastclick/fastclick.js',
-        './bower_components/AdminLTE/dist/js/app.min.js',
-        './bower_components/AdminLTE/dist/js/demo.js',
-    ] , 'public/admin/js/all.js', '/');
-    mix.styles([
-        './bower_components/AdminLTE/bootstrap/css/bootstrap.css',
-        './bower_components/AdminLTE/dist/css/skins/_all-skins.css',
-        './bower_components/AdminLTE/dist/css/AdminLTE.css',
-    ], 'public/admin/css/all.css');
-    mix.copy('./bower_components/AdminLTE/dist/img/**.*', 'public/admin/css/images');
+    // mix.scripts([
+    //     './bower_components/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js',
+    //     './bower_components/AdminLTE/bootstrap/js/bootstrap.js',
+    //     './bower_components/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js',
+    //     './bower_components/AdminLTE/plugins/fastclick/fastclick.js',
+    //     './bower_components/AdminLTE/dist/js/app.min.js',
+    //     './bower_components/AdminLTE/dist/js/demo.js',
+    // ] , 'public/admin/js/all.js', '/');
+    // mix.styles([
+    //     './bower_components/bootstrap/dist/css/bootstrap.css',
+    //     './bower_components/AdminLTE/dist/css/skins/_all-skins.css',
+    //     './bower_components/AdminLTE/dist/css/AdminLTE.css',
+    // ], 'public/admin/css/all.css');
+    // mix.copy('./bower_components/AdminLTE/dist/img/**.*', 'public/admin/css/images');
 
     mix.browserSync({
         proxy: 'rd-new.dev'
