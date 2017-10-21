@@ -19,19 +19,15 @@
         <div class="col-md-12">
             <div class="row product__main">
                 <div class="col-sm-6">
-                    <div class="mainImage"> 
-                        <img style="height: 350px" src="/uploads/doors/{{ $door->images->first()->name }}" alt="" class="img-responsive">                       
+                    <div class="mainImage">
+                        <a class="image_js hidden-xs"  href="/uploads/doors/{{ $door->images->first()->name }}">
+                            <img style="height: 350px" src="/uploads/doors/{{ $door->images->first()->name }}" alt="" class="img-responsive">
+                        </a>
                     </div>
-                    <div class="row product__thumbs">
+                    <div class="row product__thumbs" style="margin-top: 50px; padding: 0 15px;">
                         @foreach($door->images as $index => $image)
-                            <a class="image_js hidden-xs" style="display: {{ $index == 0 ? 'block' : 'none' }};
-                                    position: absolute;
-                                    top: 0px;
-                                    font-size: 30px;"  href="/uploads/doors/{{ $image->name }}">
-                                <i class="fa fa-search-plus"></i>
-                            </a>
-                            <div class="col-xs-4">
-                                <a href="/uploads/doors/{{ $image->name }}" class="thumb group1 {{ $index == 0 ? 'active' : '' }}">
+                            <div style="display: inline-block;padding-right: 15px;margin-bottom: 15px;">
+                                <a href="/uploads/doors/{{ $image->name }}" class="image_js thumb group1 {{ $index == 0 ? 'active' : '' }}">
                                     <img style="max-height: 150px" src="/uploads/doors/{{ $image->name }}" alt="" class="img-responsive">
                                 </a>
                             </div>

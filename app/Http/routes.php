@@ -183,6 +183,8 @@ Route::get('leras', function (){
 
 Route::post('mail', 'HomeController@mail');
 
+Route::get('choco', 'HomeController@choco');
+
 //Admin
 Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function(){
     require_once "routes._admin.php";

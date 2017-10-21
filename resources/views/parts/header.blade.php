@@ -83,7 +83,7 @@
 
     <nav class="navbar navbar-default">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header hidden">
+        <div class="navbar-header visible-xs">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -134,8 +134,8 @@
         <a href="/pages/grafik_raboty.php">
             <img src="/css/images/mode.jpg">
         </a>
-        <a href="/pages/garantiya.php">
-            <img src="/images/b21.jpg">
+        <a href="/3d/output">
+            <img src="/css/images/ЗD Тур.png">
         </a>
         <a class="hidden" href="/pages/interior_door.php">
             <img src="/images/b33.png">

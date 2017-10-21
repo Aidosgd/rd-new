@@ -241,6 +241,18 @@
     }
     .header-slider{
       height: inherit;
+      .slider{
+        width: 100%;
+        height: inherit;
+        background: transparent;
+        position: relative;
+        .slide{
+          img{
+            width: 100%;
+            height: inherit;
+          }
+        }
+      }
       .tur, iframe{
         display: none;
         position: relative;

@@ -187,6 +187,14 @@
       margin-left: 0; }
     .header .header-slider {
       height: inherit; }
+      .header .header-slider .slider {
+        width: 100%;
+        height: inherit;
+        background: transparent;
+        position: relative; }
+        .header .header-slider .slider .slide img {
+          width: 100%;
+          height: inherit; }
       .header .header-slider .tur, .header .header-slider iframe {
         display: none;
         position: relative;

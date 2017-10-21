@@ -38,7 +38,7 @@ class HomeController extends Controller
     {
 
         $emails = ['denisov_sv@mail.ru', 'manager141214@mail.ru', 'gorbenko_oleg@mail.ru','aidosgd@gmail.com'];
-
+        
         $mailer->send('emails.mail', ['name' => $request->input('name'), 'phone' => $request->input('phone')], function ($m) use ($emails) {
             $m->from('info@russdoors.kz', 'Заявка с сайта Russdoors');
 
@@ -47,5 +47,12 @@ class HomeController extends Controller
 
         return redirect('/')->with('message', 'Письмо отправили!');
 
+    }
+
+    public function choco(){
+
+        $doors = Door::where('main_page', 1)->where('active', 1)->get();
+
+        return view('choco', compact('doors'));
     }
 }
