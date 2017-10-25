@@ -106,7 +106,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="/stroydetali.php">Межкомнатные Двери</a></li>
                         <li><a href="/leras.php">Металлические Двери</a></li>
-                        <li><a href="/riccardi.php">Фурнитура</a></li>
+                        <li><a href="/doors/fittings">Фурнитура</a></li>
                     </ul>
                 </li>
                 <li><a href="/pages/vse_aktsii.php">Новости и акции</a></li>
@@ -124,6 +124,7 @@
             <ul>
                 <li><a href="/stroydetali.php">Межкомнатные Двери</a></li>
                 <li><a href="/leras.php">Металлические Двери</a></li>
+                <li><a href="/doors/fittings">Фурнитура</a></li>
             </ul>
         </div>
 
