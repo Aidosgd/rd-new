@@ -25,9 +25,9 @@
     </li>
 </ul>
 <div class="header" style="position: relative;">
-    <a class="left-banner" href="https://chocolife.me/promo_link/38566-ba27bbdc3f371451ea57e09d12dbf04e3a9719a620f519da42e0d58e91ca33c4/">
-        <img style="margin-left: -690px;" src="/css/images/Door1.jpg">
-    </a>
+    {{--<a class="left-banner" href="https://chocolife.me/promo_link/38566-ba27bbdc3f371451ea57e09d12dbf04e3a9719a620f519da42e0d58e91ca33c4/">--}}
+        {{--<img style="margin-left: -690px;" src="/css/images/Door1.jpg">--}}
+    {{--</a>--}}
     <a class="right-banner" href="/pages/spetspredlozhenie.php">
         <img src="/images/pg1.png" >
     </a>
@@ -46,26 +46,26 @@
                     {{--<iframe style="width:695px; height:405px; float:left;" src="/3d/output" frameborder="0"></iframe>--}}
                 {{--</a>--}}
             {{--</div>--}}
-            <div class="slide">
-                <a href="/choco">
-                    <img src="/css/images/Баннер1.png" alt="">
-                </a>
-            </div>
-            <div class="slide">
-                <a href="/choco">
-                    <img src="/css/images/баннер2_2.png" alt="">
-                </a>
-            </div>
             {{--<div class="slide">--}}
-                {{--<a href="#">--}}
-                    {{--<img src="/css/images/Ламинат.png" alt="">--}}
+                {{--<a href="/choco">--}}
+                    {{--<img src="/css/images/Баннер1.png" alt="">--}}
                 {{--</a>--}}
             {{--</div>--}}
             {{--<div class="slide">--}}
-                {{--<a href="#">--}}
-                    {{--<img src="/css/images/Ликвидация (1).png" alt="">--}}
+                {{--<a href="/choco">--}}
+                    {{--<img src="/css/images/баннер2_2.png" alt="">--}}
                 {{--</a>--}}
             {{--</div>--}}
+            <div class="slide">
+                <a href="#">
+                    <img src="/css/images/Ламинат.png" alt="">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="#">
+                    <img src="/css/images/Ликвидация (1).png" alt="">
+                </a>
+            </div>
             <div class="slide">
                 <a href="#">
                     <img src="/css/images/Осенний ценопад.png" alt="">

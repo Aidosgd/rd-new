@@ -124,7 +124,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="fabinfo">Вы выбрали двери: <a href="http://www.russdoors.kz/палермо.php">Палермо</a></div>
+                <div class="fabinfo">Вы выбрали двери: <a href="http://russdoors.kz/doors/mezhkomnatnye-dveri/n/palermo">Палермо</a></div>
                 <center>
                     <div id="existingImges">
                         @foreach($doors as $door)

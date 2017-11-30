@@ -30,7 +30,7 @@
 <div class="container">
     <ul class="new-topmenu">
         <li>
-            <a href="https://www.facebook.com/russdoors/">
+            <a rel="nofollow" href="https://www.facebook.com/russdoors/">
                 <img src="http://russdoors.kz/images/facebook-flat.png" style="width: 25px;margin-right: 20px;">
             </a>
         </li>
@@ -38,7 +38,7 @@
         <li><a href="news.php"> новости</a></li>
         <li><a href="cooperation.php">сотрудничество</a></li>
         <li><a href="http://russdoors.kz/articles.php"> полезные советы</a></li>
-        <li><a href="contact-us.php">контакты</a></li>
+        <li><a rel="nofollow" href="contact-us.php">контакты</a></li>
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">города</a>
             <ul class="dropdown-menu">

@@ -1,10 +1,10 @@
 @extends('app')
 
 @section('content')
-    <a href="/pages/rasprodazha.php"><h1 style="font-size: 20px;">РАСПРОДАЖА! Двери производство Россия, Украина   от 3000 тенге за полотно!</h1></a>
-    <h1 style="font-size: 20px;">Белорусские межкомнатные двери –ликвидация коллекции! Скидки до 50%!</h1>
+    <a href="/pages/rasprodazha.php"><h1 style="font-size: 20px;"><p>РАСПРОДАЖА! Двери производство Россия, Украина   от 3000 тенге за полотно!</p></a>
+    <p style="font-size: 20px;">Белорусские межкомнатные двери –ликвидация коллекции! Скидки до 50%!</p>
     <!-- main -->
-    <h1 style="padding-bottom: 30px;">Хит продаж</h1>
+    <p style="padding-bottom: 30px;">Хит продаж</p></h1>
 
     <div class="row doors">
         @foreach($doors->sortBy('weight') as $item)
