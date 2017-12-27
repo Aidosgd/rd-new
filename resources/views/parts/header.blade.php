@@ -25,12 +25,9 @@
     </li>
 </ul>
 <div class="header" style="position: relative;">
-    <a class="left-banner" href="/pages/rasprodazha.php">
-        <img style="margin-left: -690px;" src="/imagecache/doors/2017-06-19-03-18-aleksandriya_zolotopng.png">
-        <div class="left-banner__text">
-            Модель Александрия со скидкой 30%!
-        </div>
-    </a>
+    {{--<a class="left-banner" href="https://chocolife.me/promo_link/38566-ba27bbdc3f371451ea57e09d12dbf04e3a9719a620f519da42e0d58e91ca33c4/">--}}
+        {{--<img style="margin-left: -690px;" src="/css/images/Door1.jpg">--}}
+    {{--</a>--}}
     <a class="right-banner" href="/pages/spetspredlozhenie.php">
         <img src="/images/pg1.png" >
     </a>
@@ -47,6 +44,16 @@
                 {{--<a class="tur" href="/3d/output" target="_blank">--}}
                     {{--<span class="tur"></span>--}}
                     {{--<iframe style="width:695px; height:405px; float:left;" src="/3d/output" frameborder="0"></iframe>--}}
+                {{--</a>--}}
+            {{--</div>--}}
+            {{--<div class="slide">--}}
+                {{--<a href="/choco">--}}
+                    {{--<img src="/css/images/Баннер1.png" alt="">--}}
+                {{--</a>--}}
+            {{--</div>--}}
+            {{--<div class="slide">--}}
+                {{--<a href="/choco">--}}
+                    {{--<img src="/css/images/баннер2_2.png" alt="">--}}
                 {{--</a>--}}
             {{--</div>--}}
             <div class="slide">
@@ -72,8 +79,8 @@
             <a href="/3d/output">
                 <img src="/css/images/ЗD Тур.png">
             </a>
-            {{--<a href="/pages/garantiya.php">--}}
-                {{--<img src="/images/b21.jpg">--}}
+            {{--<a href="/choco">--}}
+                {{--<img src="/css/images/Скидка.jpg">--}}
             {{--</a>--}}
             <a href="/pages/interior_door.php">
                 <img src="/images/b33.png">

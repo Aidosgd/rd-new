@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-
+    <h1 style="font-size: 40px;">Акция с Chocolife.me -30%.</h1>
     <h1 style="padding-bottom: 30px;">Межкомнатнаые двери</h1>
 
     <div class="row doors">
@@ -138,6 +138,23 @@
         <div class="col-md-3 col-sm-6">
             <div class="shop-stuff shk-item three ">
                 <div class="shop-stuff-b">
+                    <a href="/doors/mezhkomnatnye-dveri/n/sortex_l5">
+                        <img class="shk-image" src="http://russdoors.kz/imagecache/doors/2017-10-25-09-35-cortexpng.png" height="200">
+                    </a>
+                    <a href="/doors/mezhkomnatnye-dveri/n/sortex_l5">
+                        <h3>СORTEX –L5</h3>
+                    </a>
+                    <div class="shs-descr">
+
+                        <br>
+                        <div style="clear:both;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="shop-stuff shk-item three ">
+                <div class="shop-stuff-b">
                     <a href="/doors/mezhkomnatnye-dveri/n/tvist">
                         <img class="shk-image" src="http://russdoors.kz/imagecache/doors/2016-06-03-07-07-twistpng.png" height="200">
                     </a>
@@ -145,6 +162,23 @@
                         <h3>Твист</h3>
                     </a>
                     <div class="shs-descr">
+                        <br>
+                        <div style="clear:both;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="shop-stuff shk-item three ">
+                <div class="shop-stuff-b">
+                    <a href="/doors/mezhkomnatnye-dveri/n/velmi_sapeli">
+                        <img class="shk-image" src="http://russdoors.kz/imagecache/doors/2017-10-23-04-26-258ee2700b8562b5d51ebf2117179b3d_xljpg.jpg" height="200">
+                    </a>
+                    <a href="/doors/mezhkomnatnye-dveri/n/velmi_sapeli">
+                        <h3>Вельми Сапели</h3>
+                    </a>
+                    <div class="shs-descr">
+
                         <br>
                         <div style="clear:both;"></div>
                     </div>
@@ -203,6 +237,23 @@
         <div class="col-md-3 col-sm-6">
             <div class="shop-stuff shk-item three ">
                 <div class="shop-stuff-b">
+                    <a href="/doors/mezhkomnatnye-dveri/n/saragosa">
+                        <img class="shk-image" src="http://russdoors.kz/imagecache/doors/2017-06-18-15-19-6_apng.png" height="200">
+                    </a>
+                    <a href="/doors/mezhkomnatnye-dveri/n/saragosa">
+                        <h3>Сарагоса</h3>
+                    </a>
+                    <div class="shs-descr">
+
+                        <br>
+                        <div style="clear:both;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="shop-stuff shk-item three ">
+                <div class="shop-stuff-b">
                     <a href="/doors/mezhkomnatnye-dveri/n/verona_4">
                         <img class="shk-image" src="http://russdoors.kz/imagecache/doors/2017-06-18-15-30-6_apng.png" height="200">
                     </a>
@@ -235,6 +286,22 @@
         <div class="col-md-3 col-sm-6">
             <div class="shop-stuff shk-item three ">
                 <div class="shop-stuff-b">
+                    <a href="/doors/mezhkomnatnye-dveri/n/mirella">
+                        <img class="shk-image" src="http://russdoors.kz/imagecache/doors/2016-06-03-08-58-mirellapng.png" height="200">
+                    </a>
+                    <a href="/doors/mezhkomnatnye-dveri/n/mirella">
+                        <h3>Мирелла</h3>
+                    </a>
+                    <div class="shs-descr">
+                        <br>
+                        <div style="clear:both;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="shop-stuff shk-item three ">
+                <div class="shop-stuff-b">
                     <a href="/doors/mezhkomnatnye-dveri/n/klassika_5">
                         <img class="shk-image" src="http://russdoors.kz/imagecache/doors/2017-10-21-09-29-klassika_5_popng.png" height="200">
                     </a>
@@ -252,27 +319,11 @@
         <div class="col-md-3 col-sm-6">
             <div class="shop-stuff shk-item three ">
                 <div class="shop-stuff-b">
-                    <a href="/doors/mezhkomnatnye-dveri/n/mirella">
-                        <img class="shk-image" src="http://russdoors.kz/imagecache/doors/2016-06-03-08-58-mirellapng.png" height="200">
+                    <a href="/doors/mezhkomnatnye-dveri/n/vertikal">
+                        <img class="shk-image" src="http://russdoors.kz/imagecache/doors/2016-06-03-06-18-verticaljpg.jpg" height="200">
                     </a>
-                    <a href="/doors/mezhkomnatnye-dveri/n/mirella">
-                        <h3>Мирелла</h3>
-                    </a>
-                    <div class="shs-descr">
-                        <br>
-                        <div style="clear:both;"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="shop-stuff shk-item three ">
-                <div class="shop-stuff-b">
-                    <a href="/doors/mezhkomnatnye-dveri/n/velmi_sapeli">
-                        <img class="shk-image" src="http://russdoors.kz/imagecache/doors/2017-10-23-04-26-258ee2700b8562b5d51ebf2117179b3d_xljpg.jpg" height="200">
-                    </a>
-                    <a href="/doors/mezhkomnatnye-dveri/n/velmi_sapeli">
-                        <h3>Вельми Сапели</h3>
+                    <a href="/doors/mezhkomnatnye-dveri/n/vertikal">
+                        <h3>Вертикаль дуб дымчатый</h3>
                     </a>
                     <div class="shs-descr">
 
@@ -285,11 +336,11 @@
         <div class="col-md-3 col-sm-6">
             <div class="shop-stuff shk-item three ">
                 <div class="shop-stuff-b">
-                    <a href="/doors/mezhkomnatnye-dveri/n/saragosa">
-                        <img class="shk-image" src="http://russdoors.kz/imagecache/doors/2017-06-18-15-19-6_apng.png" height="200">
+                    <a href="/doors/mezhkomnatnye-dveri/n/vertikal_akatsiya_chernaya">
+                        <img class="shk-image" src="http://russdoors.kz/imagecache/doors/2017-06-18-15-39-dverpng.png" height="200">
                     </a>
-                    <a href="/doors/mezhkomnatnye-dveri/n/saragosa">
-                        <h3>Сарагоса</h3>
+                    <a href="/doors/mezhkomnatnye-dveri/n/vertikal_akatsiya_chernaya">
+                        <h3>Вертикаль акация черная</h3>
                     </a>
                     <div class="shs-descr">
 
@@ -299,6 +350,41 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="shop-stuff shk-item three ">
+                <div class="shop-stuff-b">
+                    <a href="/doors/mezhkomnatnye-dveri/n/mediana">
+                        <img class="shk-image" src="http://russdoors.kz/imagecache/doors/2016-06-03-06-17-medianajpg.jpg" height="200">
+                    </a>
+                    <a href="/doors/mezhkomnatnye-dveri/n/mediana">
+                        <h3>Медиана</h3>
+                    </a>
+                    <div class="shs-descr">
+
+                        <br>
+                        <div style="clear:both;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="shop-stuff shk-item three ">
+                <div class="shop-stuff-b">
+                    <a href="/doors/mezhkomnatnye-dveri/n/liniya">
+                        <img class="shk-image" src="http://russdoors.kz/imagecache/doors/2017-10-25-13-02-liniyapng.png" height="200">
+                    </a>
+                    <a href="/doors/mezhkomnatnye-dveri/n/liniya">
+                        <h3>Линия</h3>
+                    </a>
+                    <div class="shs-descr">
+
+                        <br>
+                        <div style="clear:both;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="clearfix"></div>
     </div>
 
