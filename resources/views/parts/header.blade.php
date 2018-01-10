@@ -62,13 +62,8 @@
                 </a>
             </div>
             <div class="slide">
-                <a href="#">
-                    <img src="/css/images/Ликвидация (1).png" alt="">
-                </a>
-            </div>
-            <div class="slide">
-                <a href="#">
-                    <img src="/css/images/Осенний ценопад.png" alt="">
+                <a href="/pages/aktsiya.php">
+                    <img src="/css/images/На Сайт_3.png" alt="">
                 </a>
             </div>
         </div>
