@@ -69,7 +69,7 @@
         </div>
         <div class="banners-block hidden-xs">
             <a href="/pages/grafik_raboty.php">
-                <img src="/css/images/mode.jpg">
+                <img src="/css/images/Режим работы_2018.png">
             </a>
             <a href="/3d/output">
                 <img src="/css/images/ЗD Тур.png">
@@ -113,6 +113,15 @@
                 </li>
                 <li><a href="/pages/vse_aktsii.php">Новости и акции</a></li>
                 <li><a href="/pages/o_nas.php">О компании</a></li>
+                <li><a href="/pages/aktau.php">Актау</a></li>
+                <li><a href="/pages/astana.php">Астана</a></li>
+                <li><a href="/pages/balkhash.php">Балхаш</a></li>
+                <li><a href="/pages/karaganda.php">Караганда</a></li>
+                <li><a href="/pages/taldykurgan.php">Талдыкурган</a></li>
+                <li><a href="/pages/taraz.php">Тараз</a></li>
+                <li><a href="/pages/ust_kamenogorsk.php">Усть-Каменогорск</a></li>
+                <li><a href="/pages/shymkent.php">Шымкент</a></li>
+                <li><a href="/pages/kyzylorda.php">Кызылорда</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>
@@ -135,7 +144,7 @@
             {{--<iframe style="width:100%; height:405px; float:left;" src="/3d/output" frameborder="0"></iframe>--}}
         {{--</a>--}}
         <a href="/pages/grafik_raboty.php">
-            <img src="/css/images/mode.jpg">
+            <img src="/css/images/Режим работы_2018.png">
         </a>
         <a href="/3d/output">
             <img src="/css/images/ЗD Тур.png">
