@@ -113,15 +113,15 @@
                 </li>
                 <li><a href="/pages/vse_aktsii.php">Новости и акции</a></li>
                 <li><a href="/pages/o_nas.php">О компании</a></li>
-                <li><a href="/pages/aktau.php">Актау</a></li>
-                <li><a href="/pages/astana.php">Астана</a></li>
-                <li><a href="/pages/balkhash.php">Балхаш</a></li>
-                <li><a href="/pages/karaganda.php">Караганда</a></li>
-                <li><a href="/pages/taldykurgan.php">Талдыкурган</a></li>
-                <li><a href="/pages/taraz.php">Тараз</a></li>
-                <li><a href="/pages/ust_kamenogorsk.php">Усть-Каменогорск</a></li>
-                <li><a href="/pages/shymkent.php">Шымкент</a></li>
-                <li><a href="/pages/kyzylorda.php">Кызылорда</a></li>
+                <li class="visible-xs-block"><a href="/pages/aktau.php">Актау</a></li>
+                <li class="visible-xs-block"><a href="/pages/astana.php">Астана</a></li>
+                <li class="visible-xs-block"><a href="/pages/balkhash.php">Балхаш</a></li>
+                <li class="visible-xs-block"><a href="/pages/karaganda.php">Караганда</a></li>
+                <li class="visible-xs-block"><a href="/pages/taldykurgan.php">Талдыкурган</a></li>
+                <li class="visible-xs-block"><a href="/pages/taraz.php">Тараз</a></li>
+                <li class="visible-xs-block"><a href="/pages/ust_kamenogorsk.php">Усть-Каменогорск</a></li>
+                <li class="visible-xs-block"><a href="/pages/shymkent.php">Шымкент</a></li>
+                <li class="visible-xs-block"><a href="/pages/kyzylorda.php">Кызылорда</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>
