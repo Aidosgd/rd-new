@@ -14,6 +14,11 @@
 Route::auth();
 
 Route::get('/', 'HomeController@welcome');
+Route::get('/new-home-page', function(){
+    $doors = \App\Models\Door::where('main_page', 1)->where('active', 1)->get();
+
+    return view('new-home-page', compact('doors'));
+});
 
 // DOORS
 Route::bind('doorCategory', function($value){
