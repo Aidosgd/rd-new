@@ -12,6 +12,7 @@
     <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">города</a>
         <ul class="dropdown-menu">
+            <li><a href="/pages/aktobe.php">Актобе</a></li>
             <li><a href="/pages/aktau.php">Актау</a></li>
             <li><a href="/pages/astana.php">Астана</a></li>
             <li><a href="/pages/balkhash.php">Балхаш</a></li>
@@ -66,10 +67,20 @@
                     <img src="/css/images/На Сайт_3.png" alt="">
                 </a>
             </div>
+            <div class="slide">
+                <a href="#">
+                    <img src="/css/images/IMG_5978-26-06-18-19-51.JPG" alt="">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="/pages/aktsiya.php">
+                    <img src="/css/images/На Сайт.jpg" alt="">
+                </a>
+            </div>
         </div>
         <div class="banners-block hidden-xs">
             <a href="/pages/grafik_raboty.php">
-                <img src="/css/images/Режим работы_2018.png">
+                <img src="/css/images/Режим работы (1).jpg">
             </a>
             <a href="/3d/output">
                 <img src="/css/images/ЗD Тур.png">
