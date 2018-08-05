@@ -17,6 +17,15 @@ class PagesController extends Controller
         return view('pages.show', compact('pageName', 'seo_title', 'seo_keywords', 'seo_description'));
     }
 
+    public function contacts($pageName)
+    {
+        $seo_title = $pageName->seo_title;
+        $seo_keywords = $pageName->seo_keywords;
+        $seo_description = $pageName->seo_description;
+
+        return view('newdesign.pages.contacts', compact('pageName', 'seo_title', 'seo_keywords', 'seo_description'));
+    }
+
     public function interior()
     {
         $doors = Door::where('doors_category_id', 1)

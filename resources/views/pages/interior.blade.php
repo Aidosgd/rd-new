@@ -1,4 +1,4 @@
-@extends('app')
+@extends('newdesign.app')
 @section('head')
     <link rel="stylesheet" href="/images/interior/css/cs-select.css">
     <link rel="stylesheet" href="/images/interior/css/cs-skin-border.css">

@@ -1,4 +1,4 @@
-@extends('app')
+@extends('newdesign.app')
 @section('head')
     <style>
         ul.custom{
@@ -10,6 +10,15 @@
         ul.custom li{
             display: inline-block;
             padding: 0 15px;
+        }
+        .shop-stuff.three .shop-stuff-b h3{
+            border-bottom: 1px solid;
+            border-top: 0px;
+            padding-bottom: 10px;
+            bottom: 40px;
+        }
+        .shop-stuff:hover{
+            border-color: #ed4848;
         }
     </style>
 @endsection

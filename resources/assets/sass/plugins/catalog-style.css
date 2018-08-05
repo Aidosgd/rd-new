@@ -1,7 +1,7 @@
 .relative{width:100%;position:relative;}
 .shop-stuff{width:22%;height:360px;float:left;margin:0px 14px 25px 13px;border:1px solid transparent;position:relative;}
 .shop-stuff.three{width:33%;height:360px;float:left;margin:0;border:1px solid transparent;position:relative;}
-.shop-stuff.three .shop-stuff-b h3{text-align:center;border-top:1px solid;position:absolute;bottom:0px;left:20px;right:20px;width:inherit;}
+.shop-stuff.three .shop-stuff-b h3{text-align:center;border-bottom:1px solid;border-top:0px solid;position:absolute;bottom:0px;left:20px;right:20px;width:inherit;}
 .three .shk-image{width: inherit !important;}
 .shop-stuff:hover{border-color:#E6BB7E;}
 .shop-stuff1{width:20%;height:160px;float:left;margin:0 15px 40px 5px;border:1px solid #E6BB7E;}

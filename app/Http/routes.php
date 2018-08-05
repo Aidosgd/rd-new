@@ -16,8 +16,10 @@ Route::auth();
 Route::get('/', 'HomeController@welcome');
 Route::get('/new-home-page', function(){
     $doors = \App\Models\Door::where('main_page', 1)->where('active', 1)->get();
-
     return view('new-home-page', compact('doors'));
+});
+Route::get('/new-contacts', function(){
+    return view('newdesign.pages.contacts');
 });
 
 // DOORS
@@ -166,6 +168,7 @@ Route::get('распродажа.php', function (){
 
 Route::get('pages/interior_door.php', 'PagesController@interior');
 Route::get('pages/{pageName}.php', 'PagesController@show');
+Route::get('contacts/{pageName}.php', 'PagesController@contacts');
 
 View::composer('parts.header', function($view){
     $menu = \App\Models\Menu::get();
@@ -189,6 +192,9 @@ Route::get('leras', function (){
 Route::post('mail', 'HomeController@mail');
 
 Route::get('choco', 'HomeController@choco');
+Route::get('sale', function (){
+    return view('pages.sale');
+});
 
 //Admin
 Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function(){
