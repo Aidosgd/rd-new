@@ -56,6 +56,7 @@
                 <li><a href="/leras.php">Металлические Двери</a></li>
                 <li><a href="/doors/fittings">Фурнитура</a></li>
                 <li><a href="/pages/sotrudnichestvo.php">Сотрудничество</a></li>
+                <li><a href="/contacts/almaty.php">Контакты</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>

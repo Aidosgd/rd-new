@@ -92,8 +92,11 @@
             /*background: url('/newdesign/images/header/bg.png');*/
             background: url('/newdesign/images/header/8-fon-dlya-sayta.png');
         }
+        .header .navbar .navbar-nav{
+            background: linear-gradient(to top, #1d100b, #44261c);
+        }
         .header .navbar .navbar-nav li{
-            width: 20%;
+            width: initial;
         }
         .header .navbar .navbar-nav li a{
             font-size: 16px;
@@ -106,10 +109,33 @@
         }
         .top-menu .container{
             min-height: inherit;
+            text-align: center;
         }
         .banners-block{
             position: relative;
             z-index: 10000;
+        }
+
+    </style>
+    <style>
+        ul.custom{
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+        ul.custom li{
+            display: inline-block;
+            padding: 0 15px;
+        }
+        .shop-stuff.three .shop-stuff-b h3{
+            border-bottom: 1px solid;
+            border-top: 0px;
+            padding-bottom: 10px;
+            bottom: 40px;
+        }
+        .shop-stuff:hover{
+            border-color: #ed4848;
         }
     </style>
     @yield('head')

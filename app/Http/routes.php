@@ -185,15 +185,14 @@ View::composer('parts.main_banner', function($view){
     $view->with(compact('banners'));
 });
 
-Route::get('leras', function (){
-   return 'test';
-});
-
 Route::post('mail', 'HomeController@mail');
 
 Route::get('choco', 'HomeController@choco');
 Route::get('sale', function (){
     return view('pages.sale');
+});
+Route::get('sales-doors', function (){
+    return view('pages.sales');
 });
 
 //Admin

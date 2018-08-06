@@ -77,7 +77,7 @@
                 </ul>
             </div>
             <div class="col-md-9">
-{{--                {!! $pageName->description !!}--}}
+                {!! $pageName->description !!}
             </div>
         </div>
     </div>

@@ -2,7 +2,7 @@
 @section('content')
     <div class="row">
         <div class="col-md-6">
-            <a href="/pages/rasprodazha.php">
+            <a href="/sales-doors">
                 <img src="/newdesign/images/header/sale1.JPG" class="img-responsive" alt="">
             </a>
         </div>
