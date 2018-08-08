@@ -100,6 +100,7 @@
         }
         .header .navbar .navbar-nav li a{
             font-size: 16px;
+            padding: 15px 31px;
         }
         .top-menu{
             background: black;
@@ -160,12 +161,6 @@
     @include('newdesign.parts.header')
     <div class="content">
         @yield('content')
-
-        <div class="visible-xs-block">
-            <a rel="nofollow" href="https://chocolife.me/promo_link/38566-ba27bbdc3f371451ea57e09d12dbf04e3a9719a620f519da42e0d58e91ca33c4/">
-                <img class="img-responsive" style="margin: auto" src="/css/images/Скидка.jpg">
-            </a>
-        </div>
     </div>
 
     <div class="header" style="background: linear-gradient(to top, #1d100b, #44261c); height: 51px;">

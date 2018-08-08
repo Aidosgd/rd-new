@@ -1,5 +1,50 @@
 @extends('newdesign.app')
 
+@section('header-slider')
+    <div class="header-slider hidden-xs">
+        <div class="slider">
+            <div class="slide">
+                <a href="#">
+                    <img src="/newdesign/images/header/banner3.jpg" alt="">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="#">
+                    <img src="/newdesign/images/header/banner4.jpg" alt="">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="#">
+                    <img src="/newdesign/images/header/banner5.JPG" alt="">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="#">
+                    <img src="/newdesign/images/header/Граф_Арес.jpg" alt="">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="#">
+                    <img src="/newdesign/images/header/Кредо_Луна.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="banners-block hidden-xs">
+            <a href="/pages/grafik_raboty.php">
+                <img src="/css/images/Режим работы (1).jpg">
+            </a>
+            <a href="/3d/output">
+                <img src="/css/images/ЗD Тур.png">
+            </a>
+            {{--<a href="/choco">--}}
+            {{--<img src="/css/images/Скидка.jpg">--}}
+            {{--</a>--}}
+            <a href="/pages/interior_door.php">
+                <img src="/images/b33.png">
+            </a>
+        </div>
+    </div>
+@endsection
 @section('content')
     {{--<a href="/pages/rasprodazha.php"><h1 style="font-size: 20px;"><p>РАСПРОДАЖА! Двери производство Россия, Украина   от 3000 тенге за полотно!</p></a>--}}
     {{--<p style="font-size: 20px;">Белорусские межкомнатные двери –ликвидация коллекции! Скидки до 50%!</p>--}}
