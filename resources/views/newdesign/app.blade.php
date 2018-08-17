@@ -90,7 +90,7 @@
         }
         .content{
             /*background: url('/newdesign/images/header/bg.png');*/
-            background: url('/newdesign/images/header/8-fon-dlya-sayta.png');
+            background: url('/newdesign/images/header/light-wooden-background.jpg');
         }
         .header .navbar .navbar-nav{
             background: linear-gradient(to top, #1d100b, #44261c);
