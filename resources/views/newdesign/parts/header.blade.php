@@ -42,7 +42,7 @@
             </ul>
         </div>
         <a href="/pages/grafik_raboty.php">
-            <img src="/css/images/Режим работы (1).jpg">
+            <img src="/images/b33.png">
         </a>
         <a href="/3d/output">
             <img src="/css/images/ЗD Тур.png">
