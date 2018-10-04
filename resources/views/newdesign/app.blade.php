@@ -112,13 +112,13 @@
             min-height: inherit;
             text-align: center;
         }
+        .top-menu a{
+            color: white;
+        }
         .banners-block{
             position: relative;
             z-index: 10000;
         }
-
-    </style>
-    <style>
         ul.custom{
             list-style: none;
             text-align: center;
@@ -147,12 +147,24 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <i class="fa fa-map-marker"></i>
-                г. Алматы, ул. Райымбека 152 (уг. ул. Наурызбай Батыра);
+                <a href="/contacts/almaty.php">
+                    <i class="fa fa-map-marker"></i>
+                    г. Алматы, ул. Райымбека 152 (уг. ул. Наурызбай Батыра);
+                </a>
             </div>
             <div class="col-md-6">
                 <i class="fa fa-phone"></i>
                 8 (727) 345-01-01; 8 (747) 488-29-12;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <i class="fa fa-map-marker"></i>
+                г.Алматы ул. Толе би 189 уг.ул. Гагарина (возле завода АЗТМ)
+            </div>
+            <div class="col-md-6">
+                <i class="fa fa-phone"></i>
+                тел. 3791352, 3791342, 87479493016
             </div>
         </div>
     </div>

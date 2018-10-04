@@ -52,9 +52,15 @@
             font-size: 16px;
             padding: 15px;
             display: block;
+            color: black;
+            font-weight: bold;
         }
         .contacts-menu li a:hover{
             background: #ccc;
+        }
+        h2, h1{
+            color: black !important;
+            font-weight: bold;
         }
     </style>
 @endsection
