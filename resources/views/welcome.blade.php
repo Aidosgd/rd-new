@@ -5,6 +5,11 @@
         <div class="slider">
             <div class="slide">
                 <a href="#">
+                    <img src="/newdesign/images/header/banner6.jpg" alt="">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="#">
                     <img src="/newdesign/images/header/banner3.jpg" alt="">
                 </a>
             </div>
