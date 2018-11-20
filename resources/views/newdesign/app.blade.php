@@ -89,8 +89,7 @@
             overflow: hidden;
         }
         .content{
-            /*background: url('/newdesign/images/header/bg.png');*/
-            background: url('/newdesign/images/header/light-wooden-background.jpg');
+            background: url('/newdesign/images/content/20230149.jpg');
         }
         .header .navbar .navbar-nav{
             background: linear-gradient(to top, #1d100b, #44261c);
@@ -185,7 +184,7 @@
         </div>
     </div>
 
-    @include('parts.footer')
+    @include('newdesign.parts.footer')
 
     <script  src="/js/all.js"></script>
     @yield('scripts')
