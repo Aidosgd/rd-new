@@ -58,7 +58,7 @@
         .contacts-menu li a:hover{
             background: #ccc;
         }
-        h2, h1{
+        h2, h1, p{
             color: black !important;
             font-weight: bold;
         }

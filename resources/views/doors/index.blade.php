@@ -4,9 +4,9 @@
 
     @if($doorCategory->id == 1)
         <ul class="custom">
-            <li style="padding-left: 0;"><a href="/doors/mezhkomnatnye-dveri/m/1">Российские</a></li>
-            <li><a href="/doors/mezhkomnatnye-dveri/m/2">Белорусские</a></li>
-            <li><a href="/doors/mezhkomnatnye-dveri/m/3">Элитные</a></li>
+            <li style="padding-left: 0;"><a class="btn btn-default" href="/doors/mezhkomnatnye-dveri/m/1">Российские</a></li>
+            <li><a class="btn btn-default" href="/doors/mezhkomnatnye-dveri/m/2">Белорусские</a></li>
+            <li><a class="btn btn-default" href="/doors/mezhkomnatnye-dveri/m/3">Элитные</a></li>
         </ul>
     @endif
     <div class="row doors">
