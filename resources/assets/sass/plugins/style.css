@@ -28,7 +28,7 @@ a img {
 h1 {
     font-family: Georgia;
     font-size: 20px;
-    color: #d73d28;
+    color: black;
     margin: 25px 10px 5px 15px;
     text-align: center;
 }
@@ -36,14 +36,14 @@ h1 {
 h2 {
     font-family: Georgia;
     font-size: 18px;
-    color: #d73d28;
+    color: black;
     margin: 5px 10px 15px 0;
 }
 
 h3 {
     font-family: Georgia;
     font-size: 15px;
-    color: #d73d28;
+    color: black;
     padding: 10px 20px 0 0;
 }
 
@@ -142,7 +142,6 @@ div.right_block {
 }
 
 .title {
-    padding-left: 20px;
     padding: 10px 20px 10px 20px;
     max-width: 1200px;
     font-size: 18px;
@@ -395,11 +394,10 @@ div.jMyCarousel ul li a img {
 
 .subnav a:hover {
     color: #d73d28;
-    background-color:;
 }
 
 .subnav ul ul a, #column .subnav ul ul ul a, #column .subnav ul ul ul ul a, #column .subnav ul ul ul ul ul a {
-    background: url(../images/black_file.gif) no-repeat #;
+    background: url(../images/black_file.gif) no-repeat;
 }
 
 .subnav ul ul a {
@@ -478,18 +476,12 @@ div.jMyCarousel ul li a img {
 }
 
 .subnav1 h3 {
+    font-family: Georgia;
+    font-size: 16px;
+    color: #d73d28;
+    padding: 10px 20px 0 0;
+}
 
-{
-    font-family: Georgia
-;
-    font-size: 16px
-;
-    color: #d73d28
-;
-    padding: 10px 20px 0 0
-;
-}
-}
 .subnav1 ul {
     margin: 0;
     padding: 0;
@@ -517,11 +509,10 @@ div.jMyCarousel ul li a img {
 
 .subnav1 a:hover {
     color: #d73d28;
-    background-color:;
 }
 
 .subnav1 ul ul a, .subnav1 ul ul ul a, .subnav1 ul ul ul ul a, .subnav1 ul ul ul ul ul a {
-    background: url(../images/black_file.gif) no-repeat #;
+    background: url(../images/black_file.gif) no-repeat;
 }
 
 .subnav1 ul ul a {

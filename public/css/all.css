@@ -9167,7 +9167,7 @@ button.close {
 .relative{width:100%;position:relative;}
 .shop-stuff{width:22%;height:360px;float:left;margin:0px 14px 25px 13px;border:1px solid transparent;position:relative;}
 .shop-stuff.three{width:33%;height:360px;float:left;margin:0;border:1px solid transparent;position:relative;}
-.shop-stuff.three .shop-stuff-b h3{text-align:center;border-top:1px solid;position:absolute;bottom:0px;left:20px;right:20px;width:inherit;}
+.shop-stuff.three .shop-stuff-b h3{text-align:center;border-bottom:1px solid;border-top:0px solid;position:absolute;bottom:0px;left:20px;right:20px;width:inherit;}
 .three .shk-image{width: inherit !important;}
 .shop-stuff:hover{border-color:#E6BB7E;}
 .shop-stuff1{width:20%;height:160px;float:left;margin:0 15px 40px 5px;border:1px solid #E6BB7E;}
@@ -9282,7 +9282,7 @@ a img {
 h1 {
     font-family: Georgia;
     font-size: 20px;
-    color: #d73d28;
+    color: black;
     margin: 25px 10px 5px 15px;
     text-align: center;
 }
@@ -9290,14 +9290,14 @@ h1 {
 h2 {
     font-family: Georgia;
     font-size: 18px;
-    color: #d73d28;
+    color: black;
     margin: 5px 10px 15px 0;
 }
 
 h3 {
     font-family: Georgia;
     font-size: 15px;
-    color: #d73d28;
+    color: black;
     padding: 10px 20px 0 0;
 }
 
@@ -9396,7 +9396,6 @@ div.right_block {
 }
 
 .title {
-    padding-left: 20px;
     padding: 10px 20px 10px 20px;
     max-width: 1200px;
     font-size: 18px;
@@ -9649,11 +9648,10 @@ div.jMyCarousel ul li a img {
 
 .subnav a:hover {
     color: #d73d28;
-    background-color:;
 }
 
 .subnav ul ul a, #column .subnav ul ul ul a, #column .subnav ul ul ul ul a, #column .subnav ul ul ul ul ul a {
-    background: url(../images/black_file.gif) no-repeat #;
+    background: url(../images/black_file.gif) no-repeat;
 }
 
 .subnav ul ul a {
@@ -9732,18 +9730,12 @@ div.jMyCarousel ul li a img {
 }
 
 .subnav1 h3 {
+    font-family: Georgia;
+    font-size: 16px;
+    color: #d73d28;
+    padding: 10px 20px 0 0;
+}
 
-{
-    font-family: Georgia
-;
-    font-size: 16px
-;
-    color: #d73d28
-;
-    padding: 10px 20px 0 0
-;
-}
-}
 .subnav1 ul {
     margin: 0;
     padding: 0;
@@ -9771,11 +9763,10 @@ div.jMyCarousel ul li a img {
 
 .subnav1 a:hover {
     color: #d73d28;
-    background-color:;
 }
 
 .subnav1 ul ul a, .subnav1 ul ul ul a, .subnav1 ul ul ul ul a, .subnav1 ul ul ul ul ul a {
-    background: url(../images/black_file.gif) no-repeat #;
+    background: url(../images/black_file.gif) no-repeat;
 }
 
 .subnav1 ul ul a {
@@ -10251,12 +10242,12 @@ div.jMyCarousel ul li a img {
   background: url("../images/fone.jpg");
   padding: 30px 15px; }
   .content a, .content h1 {
-    color: #d73d28; }
+    color: black; }
 
 .shop-stuff {
   width: 100% !important; }
   .shop-stuff .shop-stuff-b a {
-    color: #d73d28; }
+    color: black; }
 
 .buttons {
   text-align: center;
