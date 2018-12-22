@@ -55,6 +55,21 @@
         </div>
     </div>
 @endsection
+@section('mobileBanners')
+    <div class="header">
+        <div class="banners-block visible-xs">
+            <a href="/pages/grafik_raboty.php">
+                <img src="/images/b333.png">
+            </a>
+            <a href="/3d/output">
+                <img src="/css/images/ЗD Тур.png">
+            </a>
+            {{--<a href="/pages/interior_door.php">--}}
+                {{--<img src="/images/b33.png">--}}
+            {{--</a>--}}
+        </div>
+    </div>
+@endsection
 @section('content')
     <h1 style="padding-bottom: 30px;">Хит продаж</h1>
 

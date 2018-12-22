@@ -20,7 +20,7 @@
             <div class="row product__main">
                 <div class="col-sm-6">
                     <div class="mainImage">
-                        <a class="image_js hidden-xs"  href="/uploads/doors/{{ $door->images->first()->name }}">
+                        <a data-fancybox="gallery" class="image_js hidden-xs"  href="/uploads/doors/{{ $door->images->first()->name }}">
                             <img style="height: 350px" src="/uploads/doors/{{ $door->images->first()->name }}" alt="" class="img-responsive">
                         </a>
                     </div>

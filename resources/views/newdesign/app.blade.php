@@ -141,7 +141,7 @@
 
 </head>
 <body>
-<div class="top-menu">
+<div class="top-menu hidden-xs">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -169,6 +169,7 @@
 </div>
 <div class="container">
     @include('newdesign.parts.header')
+    @yield('mobileBanners')
     <div class="content">
         @yield('content')
     </div>
@@ -176,6 +177,7 @@
     <div class="header" style="background: linear-gradient(to top, #1d100b, #44261c); height: 51px;">
         <div class="navbar">
             <ul class="nav navbar-nav">
+                <li><a href="/pages/o_nas.php">Контакты</a></li>
                 <li><a href="/pages/o_nas.php">О компании</a></li>
                 <li><a href="news.php">Новости</a></li>
                 <li><a href="/pages/poleznye_stati.php">Полезные советы</a></li>

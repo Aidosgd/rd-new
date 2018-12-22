@@ -41,14 +41,5 @@
                 <li><a href="/doors/fittings">Фурнитура</a></li>
             </ul>
         </div>
-        <a href="/pages/grafik_raboty.php">
-            <img src="/images/b33.png">
-        </a>
-        <a href="/3d/output">
-            <img src="/css/images/ЗD Тур.png">
-        </a>
-        <a href="/pages/interior_door.php">
-            <img src="/images/b33.png">
-        </a>
     </div>
 </div>

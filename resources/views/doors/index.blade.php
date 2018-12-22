@@ -3,7 +3,7 @@
     <h1>{{ $doorCategory->name }}</h1>
 
     @if($doorCategory->id == 1)
-        <ul class="custom">
+        <ul class="custom hidden">
             <li style="padding-left: 0;"><a class="btn btn-default" href="/doors/mezhkomnatnye-dveri/m/1">Российские</a></li>
             <li><a class="btn btn-default" href="/doors/mezhkomnatnye-dveri/m/2">Белорусские</a></li>
             <li><a class="btn btn-default" href="/doors/mezhkomnatnye-dveri/m/3">Под заказ</a></li>
