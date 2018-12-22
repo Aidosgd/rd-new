@@ -89,10 +89,8 @@
             overflow: hidden;
         }
         .content{
-            background: url('/newdesign/images/content/20230149.jpg');
-        }
-        .header .navbar .navbar-nav{
-            background: linear-gradient(to top, #1d100b, #44261c);
+            /*background: url('/newdesign/images/content/100761_0.jpg');*/
+            background: beige;
         }
         .header .navbar .navbar-nav li{
             width: initial;
@@ -102,7 +100,8 @@
             padding: 15px 31px;
         }
         .top-menu{
-            background: black;
+            background: linear-gradient(to top, #1d100b, #44261c);
+            /*background: rgb(57, 55, 56);*/
             color: white;
             font-size: 16px;
             padding: 8px;
@@ -272,6 +271,12 @@
         <div><img src="https://mc.yandex.ru/watch/34783985" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
+
+    <!-- BEGIN JIVOSITE CODE -->
+    <script type='text/javascript'>
+        (function(){ var widget_id = 'q5pj7WkUOl';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    </script>
+    <!-- END JIVOSITE CODE -->
 </div>
 
 </body>

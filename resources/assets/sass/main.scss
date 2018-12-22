@@ -113,10 +113,12 @@
     .navbar-nav{
       width: 100%;
       display: block;
+      background: linear-gradient(to top, #1d100b, #44261c);
       li{
         width: 25%;
         text-align: center;
         a{
+          //background: linear-gradient(to top, #393738, #272727);
           background: linear-gradient(to top, #1d100b, #44261c);
           color: white;
           font-size: 20px;
