@@ -67,108 +67,49 @@
         carrotquest.connect('13135-4ed1ec2e9c2505c969d1dd1209');
     </script>
     <!-- CarrotQuest END -->
-    <style>
-        .container{
-            width: 100%;
-            max-width: 1400px;
-            min-height: 1030px;
-        }
-        div.header{
-            width: 100%;
-            background: #e2be8e;
-        }
-        .header-slider{
-            width: 100%;
-        }
-        .header .right-banner img{
-            display: none;
-        }
-        .header .header-slider .slider{
-            padding-right: 300px;
-            width: 100%;
-            overflow: hidden;
-        }
-        .content{
-            /*background: url('/newdesign/images/content/100761_0.jpg');*/
-            background: beige;
-        }
-        .header .navbar .navbar-nav li{
-            width: initial;
-        }
-        .header .navbar .navbar-nav li a{
-            font-size: 16px;
-            padding: 15px 31px;
-        }
-        .top-menu{
-            background: linear-gradient(to top, #1d100b, #44261c);
-            /*background: rgb(57, 55, 56);*/
-            color: white;
-            font-size: 16px;
-            padding: 8px;
-        }
-        .top-menu .container{
-            min-height: inherit;
-            text-align: center;
-        }
-        .top-menu a{
-            color: white;
-        }
-        .banners-block{
-            position: relative;
-            z-index: 10000;
-        }
-        ul.custom{
-            list-style: none;
-            text-align: center;
-            padding: 0;
-            margin-bottom: 30px;
-        }
-        ul.custom li{
-            display: inline-block;
-            padding: 0 15px;
-        }
-        .shop-stuff.three .shop-stuff-b h3{
-            border-bottom: 1px solid;
-            border-top: 0px;
-            padding-bottom: 10px;
-            bottom: 40px;
-        }
-        .shop-stuff:hover{
-            border-color: #ed4848;
-        }
-    </style>
     @yield('head')
 
 </head>
 <body>
-<div class="top-menu">
+<div class="top-menu hidden-xs">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <a href="/contacts/almaty.php">
                     <i class="fa fa-map-marker"></i>
                     г. Алматы, ул. Райымбека 152 (уг. ул. Наурызбай Батыра);
                 </a>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <i class="fa fa-phone"></i>
                 8 (727) 345-01-01; 8 (747) 488-29-12;
             </div>
+            <div class="col-md-2">
+                <a href="https://www.facebook.com/russdoors/?ref=br_rs" target="_blank">
+                    <i class="fa fa-facebook"></i> @russdoors.kz
+                </a>
+            </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <i class="fa fa-map-marker"></i>
                 г.Алматы ул. Толе би 189 уг.ул. Гагарина (возле завода АЗТМ)
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <i class="fa fa-phone"></i>
                 тел. 3791352, 3791342, 87479493016
+            </div>
+            <div class="col-md-2">
+                <a href="https://www.instagram.com/russdoors.kz/">
+                    <i class="fa fa-instagram"></i> @russdoors.kz
+                </a>
             </div>
         </div>
     </div>
 </div>
 <div class="container">
     @include('newdesign.parts.header')
+    @yield('mobileBanners')
     <div class="content">
         @yield('content')
     </div>
@@ -176,6 +117,7 @@
     <div class="header" style="background: linear-gradient(to top, #1d100b, #44261c); height: 51px;">
         <div class="navbar">
             <ul class="nav navbar-nav">
+                <li><a href="/pages/o_nas.php">Контакты</a></li>
                 <li><a href="/pages/o_nas.php">О компании</a></li>
                 <li><a href="news.php">Новости</a></li>
                 <li><a href="/pages/poleznye_stati.php">Полезные советы</a></li>

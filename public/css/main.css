@@ -248,4 +248,72 @@
       background: linear-gradient(to top, #1d100b, #44261c);
       margin: 20px; } }
 
+.container {
+  width: 100%;
+  max-width: 1400px;
+  min-height: 1030px; }
+
+div.header {
+  width: 100%;
+  background: #e2be8e; }
+
+.header-slider {
+  width: 100%; }
+
+.header .right-banner img {
+  display: none; }
+
+.header .header-slider .slider {
+  padding-right: 300px;
+  width: 100%;
+  overflow: hidden; }
+
+.content {
+  /*background: url('/newdesign/images/content/100761_0.jpg');*/
+  background: beige; }
+
+.header .navbar .navbar-nav li {
+  width: initial; }
+
+.header .navbar .navbar-nav li a {
+  font-size: 16px;
+  padding: 15px 31px; }
+
+.top-menu {
+  background: linear-gradient(to top, #1d100b, #44261c);
+  /*background: rgb(57, 55, 56);*/
+  color: white;
+  font-size: 16px;
+  padding: 8px; }
+
+.top-menu .container {
+  min-height: inherit;
+  text-align: center; }
+
+.top-menu a {
+  color: white; }
+
+.banners-block {
+  position: relative;
+  z-index: 10000; }
+
+ul.custom {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 30px; }
+
+ul.custom li {
+  display: inline-block;
+  padding: 0 15px; }
+
+.shop-stuff.three .shop-stuff-b h3 {
+  border-bottom: 1px solid;
+  border-top: 0px;
+  padding-bottom: 10px;
+  bottom: 40px; }
+
+.shop-stuff:hover {
+  border-color: #ed4848; }
+
 /*# sourceMappingURL=main.css.map */

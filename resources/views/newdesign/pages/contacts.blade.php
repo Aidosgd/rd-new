@@ -62,12 +62,28 @@
             color: black !important;
             font-weight: bold;
         }
+        @media (max-width:480px)  {
+            .map iframe{
+                width: 100% !important;
+            }
+        }
+        .btn-contact{
+            padding: 10px;
+            background: linear-gradient(to top, #1d100b, #44261c);
+            color: white;
+            width: 90%;
+            margin: auto;
+            display: block;
+        }
+        .btn-contact:hover, .btn-contact:focus{
+            color: white;
+        }
     </style>
 @endsection
 @section('content')
     <div class="contacts">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 hidden-xs">
                 <ul class="contacts-menu">
                     <li><a href="/contacts/almaty.php">Алматы</a></li>
                     <li><a href="/contacts/astana.php">Астана</a></li>
@@ -83,6 +99,25 @@
                 </ul>
             </div>
             <div class="col-md-9">
+                <div class="visible-xs">
+                    <button class="btn btn-contact" data-toggle="collapse" data-target="#demo">Список городов</button>
+
+                    <div id="demo" class="collapse">
+                        <ul class="contacts-menu">
+                            <li><a href="/contacts/almaty.php">Алматы</a></li>
+                            <li><a href="/contacts/astana.php">Астана</a></li>
+                            <li><a href="/contacts/aktobe.php">Актобе</a></li>
+                            <li><a href="/contacts/aktau.php">Актау</a></li>
+                            <li><a href="/contacts/balkhash.php">Балхаш</a></li>
+                            <li><a href="/contacts/karaganda.php">Караганда</a></li>
+                            <li><a href="/contacts/taldykurgan.php">Талдыкурган</a></li>
+                            <li><a href="/contacts/taraz.php">Тараз</a></li>
+                            <li><a href="/contacts/ust_kamenogorsk.php">Усть-Каменогорск</a></li>
+                            <li><a href="/contacts/shymkent.php">Шымкент</a></li>
+                            <li><a href="/contacts/kyzylorda.php">Кызылорда</a></li>
+                        </ul>
+                    </div>
+                </div>
                 {!! $pageName->description !!}
             </div>
         </div>

@@ -5,12 +5,12 @@
         <div class="slider">
             <div class="slide">
                 <a href="#">
-                    <img src="/newdesign/images/header/banner7.jpeg" alt="">
+                    <img src="/newdesign/images/header/banner6.jpg" alt="">
                 </a>
             </div>
             <div class="slide">
                 <a href="#">
-                    <img src="/newdesign/images/header/banner6.jpg" alt="">
+                    <img src="/newdesign/images/header/banner7.jpeg" alt="">
                 </a>
             </div>
             <div class="slide">
@@ -55,6 +55,21 @@
         </div>
     </div>
 @endsection
+@section('mobileBanners')
+    <div class="header">
+        <div class="banners-block visible-xs">
+            <a href="/pages/grafik_raboty.php">
+                <img src="/images/b333.png">
+            </a>
+            <a href="/3d/output">
+                <img src="/css/images/ЗD Тур.png">
+            </a>
+            {{--<a href="/pages/interior_door.php">--}}
+                {{--<img src="/images/b33.png">--}}
+            {{--</a>--}}
+        </div>
+    </div>
+@endsection
 @section('content')
     <h1 style="padding-bottom: 30px;">Хит продаж</h1>
 
@@ -67,7 +82,7 @@
                             <img class="shk-image" src="{{ $item->getSrc('doors') ? $item->getSrc('doors') : $item->images->first()->getSrc('doors') }}" height="200">
                         </a>
                         <a href="/doors/{{ $item->category->slug }}/n/{{ $item->slug }}">
-                            <h3>{{ $item->title }}</h3>
+                            <h3>{{ $item->title }} <b>{{ $item->price }} ₸</b></h3>
                         </a>
                         <div class="shs-descr">
 
