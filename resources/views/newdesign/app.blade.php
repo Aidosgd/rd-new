@@ -89,10 +89,8 @@
             overflow: hidden;
         }
         .content{
-            background: url('/newdesign/images/content/20230149.jpg');
-        }
-        .header .navbar .navbar-nav{
-            background: linear-gradient(to top, #1d100b, #44261c);
+            /*background: url('/newdesign/images/content/100761_0.jpg');*/
+            background: beige;
         }
         .header .navbar .navbar-nav li{
             width: initial;
@@ -102,7 +100,8 @@
             padding: 15px 31px;
         }
         .top-menu{
-            background: black;
+            background: linear-gradient(to top, #1d100b, #44261c);
+            /*background: rgb(57, 55, 56);*/
             color: white;
             font-size: 16px;
             padding: 8px;
