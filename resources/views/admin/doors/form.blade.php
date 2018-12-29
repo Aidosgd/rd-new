@@ -109,6 +109,19 @@
                             </div>
 
                             <div class="form-group">
+                                <label> Видео:</label>
+                                {{ Form::file('video', ['id' => 'files']) }}
+                                
+                                @if($door->video)
+                                    <video width="400" src="/uploads/videos/{{ $door->video }}" controls>
+                                        <source src="/uploads/videos/{{ $door->video }}" type="video/mp4">
+                                        Your browser does not support HTML5 video.
+                                    </video>
+                                @endif
+                                
+                            </div>
+
+                            <div class="form-group">
                                 <label>Главная страница:</label>
                                 {{ Form::checkbox('main_page', null) }}
                                 <output id="list"></output>

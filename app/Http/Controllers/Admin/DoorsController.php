@@ -70,6 +70,7 @@ class DoorsController extends Controller
             'seo_description' => $input['seo_description'],
         ]);
 
+        // Main Image
         $main_image  = $request->file('main_image');
 
         if($main_image){
@@ -79,6 +80,19 @@ class DoorsController extends Controller
 
             $door->fill([
                 'main_image' => $filename,
+            ]);
+        }
+
+        //Video
+        $video  = $request->file('video');
+
+        if($video){
+            $filename = $video->getClientOriginalName();
+            $path = public_path().'/uploads/videos/';
+            $video->move($path, $filename);
+
+            $door->fill([
+                'video' => $filename,
             ]);
         }
 
@@ -175,6 +189,19 @@ class DoorsController extends Controller
                 'seo_title' => $input['seo_title'],
                 'seo_keywords' => $input['seo_keywords'],
                 'seo_description' => $input['seo_description'],
+            ]);
+        }
+
+        //Video
+        $video  = $request->file('video');
+
+        if($video){
+            $filename = $video->getClientOriginalName();
+            $path = public_path().'/uploads/videos/';
+            $video->move($path, $filename);
+
+            $door->fill([
+                'video' => $filename,
             ]);
         }
 

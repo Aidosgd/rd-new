@@ -1,4 +1,17 @@
 @extends('newdesign.app')
+@section('head')
+    <style>
+        .product__details p{
+            padding: 0 5px;
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            video{
+                width: 100% !important;
+            }
+        }
+    </style>
+@endsection
 @section('content')
     <div class="row">
         <div class="col-md-12">
@@ -18,7 +31,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="row product__main">
-                <div class="col-sm-6">
+                <div class="col-sm-3">
                     <div class="mainImage">
                         <a data-fancybox="gallery" class="image_js hidden-xs"  href="/uploads/doors/{{ $door->images->first()->name }}">
                             <img style="height: 350px" src="/uploads/doors/{{ $door->images->first()->name }}" alt="" class="img-responsive">
@@ -34,7 +47,15 @@
                         @endforeach
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-md-4">
+                    @if($door->video)
+                        <video width="400" style="max-height: 570px" src="/uploads/videos/{{ $door->video }}" controls>
+                            <source src="/uploads/videos/{{ $door->video }}" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                    @endif
+                </div>
+                <div class="col-sm-5">
                     <div class="product__details">
                         <h4>Описание</h4>
                         {!! $door->description !!}
