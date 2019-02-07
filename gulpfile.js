@@ -68,6 +68,6 @@ elixir(function(mix) {
     mix.copy('./bower_components/AdminLTE/dist/img/**.*', 'public/admin/css/images');
 
     mix.browserSync({
-        proxy: 'rd-new.test'
+        proxy: 'rd.test'
     });
 });

@@ -4,29 +4,36 @@ body{
 .new-2019{
   .container{
     width: 1300px;
+    //border: 2px solid;
   }
 
   .nav{
     background-color: rgb(212, 199, 157);
-    padding: 30px;
+    padding: 26px;
     width: 100%;
     margin: auto;
+    .buttons{
+      float:right;
+      position:relative;
+      left:-50%;
+      text-align:left;
+    }
     ul{
       padding: 0;
       margin: 0;
+      list-style:none;
+      position:relative;
+      left:50%;
       li{
-        clear: both;
-        display: inline;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: 0;
-        white-space: nowrap;
-
-        color: #422a20;
+        float:left;position:relative;
+        display: inline-block;
         font-size: 20px;
         font-weight: 300;
         text-transform: uppercase;
+        text-align: center;
+        padding: 0 15px;
         a{
+          color: #422a20;
           &:hover{
             color: #0a0a0a;
           }
@@ -39,14 +46,125 @@ body{
   .header{
     background: url("/css/images/new2019/russdoors-header.jpg") center center;
     width: 100%;
-    height: 260px;
+    height: 240px;
     &__address{
       color: #b38a54;
       font-size: 23px;
       line-height: 1.4;
       font-weight: 400;
       text-align: right;
+      padding: 43px 50px 0 0;
+      p{
+        margin-bottom: 0;
+      }
+    }
+    img{
+      width: 240px;
+      position: relative;
+      left: 35px;
+      top: 5px;
+    }
+  }
+
+  .home-slider{
+    overflow: hidden;
+    .slide{
+      margin: -135px 0;
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .bestseller{
+    h1{
+      color: rgb(66, 42, 32);
+      font-size: 52px;
+      font-weight: bold;
+      margin: 20px 0;
     }
 
+    h2{
+      color: rgb(66, 42, 32);
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .bg-s{
+      background: #f2ede6;
+      width: 100%;
+      padding: 40px 0;
+    }
+    .doors-list{
+      .door-item{
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .download-catalog{
+    height: 80vh;
+    position: relative;
+    background: url("/css/images/new2019/russdoors-bg1.jpg") no-repeat 100%;
+    width: 100%;
+    background-size: cover;
+    .container{
+      position: relative;
+      height: 80vh;
+    }
+    .block{
+      margin: 0 50px;
+      padding: 60px 45px 70px;
+      background-color: #ede2cc;
+      width: 90%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      h3{
+        font-size: 42px;
+        color: #000;
+        font-family: 'Roboto',Arial,sans-serif;
+        font-weight: bold;
+        text-align: center;
+      }
+      p{
+        font-size: 24px;
+        color: #0a0a0a;
+        margin-top: 24px;
+        font-family: 'Roboto',Arial,sans-serif;
+        text-align: center;
+      }
+      &__width{
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+        input{
+          width: 100%;
+          color: #000000;
+          border: 2px solid #cfcfcf;
+          background-color: #ffffff;
+          border-radius: 1px;
+          padding: 14px;
+        }
+        .btn{
+          color: #ffffff;
+          background-color: #b58f6b;
+          border-radius: 1px;
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+          border: 0;
+          padding: 14px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .padding-30{
+    padding: 0 30px;
   }
 }

@@ -75,14 +75,16 @@
 <div class="new-2019">
     <nav class="nav">
         <div class="container">
-            <ul>
-                <li><a href="#">МЕЖКОМНАТНЫЕ ДВЕРИ</a></li>
-                <li><a href="#">МЕТАЛЛИЧЕСКИЕ ДВЕРИ</a></li>
-                <li><a href="#">ФУРНИТУРА</a></li>
-                <li><a href="#">АКЦИИ</a></li>
-                <li><a href="#">СОТРУДНИЧЕСТВО</a></li>
-                <li><a href="#">КОНТАКТЫ</a></li>
-            </ul>
+            <div class="buttons">
+                <ul>
+                    <li><a href="#">МЕЖКОМНАТНЫЕ ДВЕРИ</a></li>
+                    <li><a href="#">МЕТАЛЛИЧЕСКИЕ ДВЕРИ</a></li>
+                    <li><a href="#">ФУРНИТУРА</a></li>
+                    <li><a href="#">АКЦИИ</a></li>
+                    <li><a href="#">СОТРУДНИЧЕСТВО</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -100,9 +102,186 @@
             </div>
         </div>
     </div>
+
+    <div class="home-slider">
+        <div class="slide">
+            <img src="/css/images/new2019/rossiiskie-dveri-ban.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="/css/images/new2019/ustanovka-dverei-v-p.jpg" alt="">
+        </div>
+    </div>
+
+    <section class="bestseller">
+        <h1 class="text-center">Хиты продаж</h1>
+
+        <div class="bg-s">
+            <div class="container">
+                <h2>Межкомнатные двери</h2>
+
+                <div class="row doors-list">
+                    <div class="col-md-3">
+                        <div class="door-item">
+                            <img src="/css/images/new2019/door01.png" class="padding-30" alt="">
+                            <h3>Дверь "01"</h3>
+                            <p>Гладкое полотно, покрытие искусственный шпон и плёнка. Представлено в четырех цветах</p>
+                            <div class="price">9000тг.</div>
+                            <a href="" class="btn btn-default">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="door-item">
+                            <img src="/css/images/new2019/door01.png" class="padding-30" alt="">
+                            <h3>Дверь "01"</h3>
+                            <p>Гладкое полотно, покрытие искусственный шпон и плёнка. Представлено в четырех цветах</p>
+                            <div class="price">9000тг.</div>
+                            <a href="" class="btn btn-default">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="door-item">
+                            <img src="/css/images/new2019/door01.png" class="padding-30" alt="">
+                            <h3>Дверь "01"</h3>
+                            <p>Гладкое полотно, покрытие искусственный шпон и плёнка. Представлено в четырех цветах</p>
+                            <div class="price">9000тг.</div>
+                            <a href="" class="btn btn-default">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="door-item">
+                            <img src="/css/images/new2019/door01.png" class="padding-30" alt="">
+                            <h3>Дверь "01"</h3>
+                            <p>Гладкое полотно, покрытие искусственный шпон и плёнка. Представлено в четырех цветах</p>
+                            <div class="price">9000тг.</div>
+                            <a href="" class="btn btn-default">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Металлические двери</h2>
+
+                <div class="row doors-list">
+                    <div class="col-md-4">
+                        <div class="door-item">
+                            <img src="/css/images/new2019/2016-09-06-15-35-ase.png" alt="">
+                            <h3>Дверь "01"</h3>
+                            <p>Гладкое полотно, покрытие искусственный шпон и плёнка. Представлено в четырех цветах</p>
+                            <div class="price">9000тг.</div>
+                            <a href="" class="btn btn-default">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="door-item">
+                            <img src="/css/images/new2019/2016-09-06-15-35-ase.png" alt="">
+                            <h3>Дверь "01"</h3>
+                            <p>Гладкое полотно, покрытие искусственный шпон и плёнка. Представлено в четырех цветах</p>
+                            <div class="price">9000тг.</div>
+                            <a href="" class="btn btn-default">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="door-item">
+                            <img src="/css/images/new2019/2016-09-06-15-35-ase.png" alt="">
+                            <h3>Дверь "01"</h3>
+                            <p>Гладкое полотно, покрытие искусственный шпон и плёнка. Представлено в четырех цветах</p>
+                            <div class="price">9000тг.</div>
+                            <a href="" class="btn btn-default">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download-catalog">
+        <div class="container">
+            <div class="block">
+                <h3>Скачайте весь каталог дверей</h3>
+                <p>Оставьте свой email и мы пришлем Вам каталог <br> дверей</p>
+
+                <div class="block__width">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <input type="email" placeholder="Your E-mail">
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-default">Получить каталог</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quality">
+        <div class="container">
+            <h2>Гарантии низкой цены при высоком качестве:</h2>
+
+            <div class="row">
+                <div class="col-md-6 quality-item">
+                    <h3>ОПЫТ</h3>
+                    <p>За 20 лет на рынке успели зарекомендовать себя как лидеров в продажах межкомнатных и металлических дверей </p>
+                </div>
+                <div class="col-md-6 quality-item">
+                    <h3>ВЫБОР</h3>
+                    <p>Цены на межкомнатные двери от 8000 тенге до премиум класса
+                        Более 50 моделей всегда в наличии</p>
+                </div>
+                <div class="col-md-6 quality-item">
+                    <h3>СТАТУС</h3>
+                    <p>Являемся официальными партнерами российских и белорусских заводов-изготовителей</p>
+                </div>
+                <div class="col-md-6 quality-item">
+                    <h3>СКОРОСТЬ</h3>
+                    <p>Бесплатная доставка и установка в течение 1 дня с момента заказа</p>
+                </div>
+                <div class="col-md-6 quality-item">
+                    <h3>НАДЕЖНОСТЬ</h3>
+                    <p>Работаем только с сертифицированной и качественной продукцией</p>
+                </div>
+                <div class="col-md-6 quality-item">
+                    <h3>ЭКСКЛЮЗИВНОСТЬ</h3>
+                    <p>Только у нас Вы можете заказать индивидуальное создание дверей на заводе России или Беларуси по собственному эскизу</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about-us">
+        <div class="container">
+            <h2>Компания "Российские Двери" Алматы</h2>
+
+            <p>ТОО «Российские двери» предлагает межкомнатные двери производства России в Алматы, в полном ценовом ассортименте, широкая гамма цветов и оттенков, от «эконом» - класса до класса «премиум» с разными видами отделки. </p>
+            <p>В наличии имеются двери в стиле классики и модерна, глухие и остеклённые. Наши двери рассчитаны для применения внутри помещений. Все модели дверей могут быть использованы как в жилых, так и в общественных помещениях с влажностью воздуха не более 65%.</p>
+            <p>Также в продаже имеются металлические двери, ламинат, плинтус, широкий выбор фурнитуры.</p>
+            <p>Ассортимент:</p>
+            <p>* двери из массива сосны, покрытие натуральный шпон</p>
+            <p>* облегчённые двери, покрытие натуральный шпон</p>
+            <p>* облегчённые двери, покрытие искусственный шпон</p>
+            <p>* облегчённые двери, лакокрасочное покрытие.</p>
+
+            <h3>Сертификаты и грамоты:</h3>
+
+            <ul>
+                <li><img src="/css/images/new2019/cert/1.png" alt=""></li>
+                <li><img src="/css/images/new2019/cert/__1.png" alt=""></li>
+                <li><img src="/css/images/new2019/cert/__001.jpg" alt=""></li>
+                <li><img src="/css/images/new2019/cert/_MD_002.jpg" alt=""></li>
+                <li><img src="/css/images/new2019/cert/Screenshot_2.png" alt=""></li>
+                <li><img src="/css/images/new2019/cert/sertificate-russdoor.jpg" alt=""></li>
+            </ul>
+        </div>
+    </section>
+
 </div>
 
 <script  src="/js/all.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.home-slider').slick();
+    })
+</script>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

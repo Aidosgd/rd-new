@@ -10,11 +10,6 @@
             </div>
             <div class="slide">
                 <a href="#">
-                    <img src="/newdesign/images/header/banner7.jpeg" alt="">
-                </a>
-            </div>
-            <div class="slide">
-                <a href="#">
                     <img src="/newdesign/images/header/banner3.jpg" alt="">
                 </a>
             </div>
