@@ -164,6 +164,93 @@ body{
     }
   }
 
+  .quality{
+    background: url("/css/images/new2019/russdoors-bg.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 40px;
+    h2{
+      color: #ede2cc;
+      font-size: 42px;
+      font-family: 'Arial';
+      line-height: 1.55;
+      font-weight: 700;
+      background-position: center center;
+      border-color: transparent;
+      border-style: solid;
+      text-align: center;
+    }
+
+    .row{
+      margin: 0 100px 0 200px;
+    }
+
+    &-item{
+      margin-bottom: 50px;
+      position: relative;
+      padding-right: 70px;
+      &:before{
+        content: '';
+        position: absolute;
+        left: -40px;
+        top: 30px;
+        background: url(/css/images/new2019/done.svg) no-repeat;
+        background-size: 45px;
+        width: 100%;
+        height: 200px;
+      }
+      h3{
+        color: #ede2cc;
+        font-size: 22px;
+        font-family: 'Arial';
+        line-height: 1.55;
+        font-weight: 700;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+      }
+      p{
+        color: #ede2cc;
+        font-size: 16px;
+        font-family: 'Arial';
+        line-height: 1.55;
+        font-weight: 400;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+      }
+    }
+  }
+
+  .about-us{
+    h2{
+      text-align: center;
+      font-size: 38px;
+      font-weight: bold;
+      margin: 40px 0 70px;
+      color: rgb(66, 42, 32);
+    }
+    p{
+      font-size: 20px;
+      font-weight: 300;
+      font-family: 'Roboto',Arial,sans-serif;
+      margin-bottom: 40px;
+    }
+    .inner-c{
+      padding: 0 250px;
+    }
+    h3{
+      text-align: center;
+      font-size: 26px;
+      color: rgb(66, 42, 32);
+      font-weight: bold;
+    }
+    table{
+      border-spacing: 10px;
+      border-collapse: initial;
+    }
+  }
+
   .padding-30{
     padding: 0 30px;
   }
