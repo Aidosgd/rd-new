@@ -51,22 +51,7 @@
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-    <!-- CarrotQuest BEGIN -->
-    <script type="text/javascript">
-        (function(){
-            function Build(name, args){return function(){window.carrotquestasync.push(name, arguments);} }
-            if (typeof carrotquest === 'undefined') {
-                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
-                s.src = '//cdn.carrotquest.io/api.min.js';
-                var x = document.getElementsByTagName('head')[0]; x.appendChild(s);
-                window.carrotquest = {}; window.carrotquestasync = []; carrotquest.settings = {};
-                var m = ['connect', 'track', 'identify', 'auth', 'open', 'onReady', 'addCallback', 'removeCallback', 'trackMessageInteraction'];
-                for (var i = 0; i < m.length; i++) carrotquest[m[i]] = Build(m[i]);
-            }
-        })();
-        carrotquest.connect('13135-4ed1ec2e9c2505c969d1dd1209');
-    </script>
-    <!-- CarrotQuest END -->
+
     @yield('head')
 
 </head>
@@ -88,7 +73,7 @@
         </div>
     </nav>
 
-    <div class="header">
+    <header class="header">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -101,7 +86,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
     <div class="home-slider">
         <div class="slide">
@@ -322,104 +307,122 @@
         </div>
     </section>
 
+    <section class="feedback">
+        <div class="container">
+            <h2>ЕСТЬ ВОПРОСЫ?</h2>
+
+            <p>Закажите обратный звонок <br> Наш менеджер перезвонит Вам в течение 5 минут</p>
+
+            <div class="form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control">
+                        </div>
+                        <button class="btn btn-default">Заказать звонок</button>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/css/images/new2019/milan-door-russdoors.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map">
+        <div id="map"></div>
+        <div class="container">
+            <div class="map-content">
+                <h3>Контакты</h3>
+
+                <p><b>Телефоны:</b></p>
+                <p>+7 747 9493016; +7 (747) 488-29-12;</p>
+                <p>+7 (727) 345-01-01, 379-13-52, 379-13-42.</p>
+                <br>
+
+                <p><b>Адреса:</b></p>
+                <p>г. Алматы, ул. Райымбека 152 (уг. ул. Наурызбай Батыра);</p>
+                <br>
+                <p><b>Режим Работы:</b></p>
+                <p>Понедельник-Пятница : с 9:00 до 18:00</p>
+                <p>Суббота: с 9:00 до 16:00</p>
+                <p>Воскресенье: ВЫХОДНОЙ</p>
+
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="buttons">
+                <ul class="footer__menu">
+                    <li><a href="#">МЕЖКОМНАТНЫЕ ДВЕРИ</a></li>
+                    <li><a href="#">МЕТАЛЛИЧЕСКИЕ ДВЕРИ</a></li>
+                    <li><a href="#">АКЦИИ</a></li>
+                    <li><a href="#">СОТРУДНИЧЕСТВО</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                    <li><a href="#">РЕЖИМ РАБОТЫ</a></li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="footer__logo">
+                <img src="/css/images/new2019/russdoorskz-logo.png" alt="">
+            </div>
+
+            <div class="footer__copyright">
+                <p>© Все права защищены <br>
+                    2010-2019</p>
+            </div>
+        </div>
+    </footer>
+
 </div>
 
 <script  src="/js/all.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script>
     $(document).ready(function () {
         $('.home-slider').slick();
         $('.review-slider').slick();
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [43.269270, 76.925565],
+                zoom: 15
+            });
+
+            myPlacemark = new ymaps.Placemark([43.269267, 76.934868], {
+                hintContent: 'Собственный значок метки',
+                balloonContent: 'Это красивая метка'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: '/css/images/new2019/icons/678111-map-marker-512.png',
+                // Размеры метки.
+                iconImageSize: [30, 30],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-5, -38]
+            });
+
+            myMap.geoObjects
+                .add(myPlacemark)
+        }
     })
 </script>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-72113909-1', 'auto');
-    ga('send', 'pageview');
-</script>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter26941914 = new Ya.Metrika({id:26941914,
-                    webvisor:true,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true});
-            } catch(e) { }
-        });
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/26941914" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-<!-- Optional -->
-<!-- {literal} -->
-<script type='text/javascript'>
-    window['liv'+'eT'+'e'+'x'] = true,
-        window['live'+'T'+'e'+'xI'+'D'] = 82515,
-        window['li'+'veTex'+'_obj'+'ect'] = true;
-    (function() {
-        var t = document['creat'+'eE'+'lem'+'ent']('script');
-        t.type ='text/javascript';
-        t.async = true;
-        t.src = '//'+'c'+'s15'+'.li'+'v'+'e'+'te'+'x'+'.'+'ru/js/clien'+'t.js';
-        var c = document['getElemen'+'tsByTagNa'+'me']('script')[0];
-        if ( c ) c['paren'+'t'+'No'+'de']['i'+'nser'+'tBefo'+'re'](t, c);
-        else document['doc'+'um'+'entEle'+'m'+'ent']['f'+'irst'+'Chi'+'ld']['a'+'ppen'+'dChil'+'d'](t);
-    })();
-</script>
-<!-- {/literal} -->
-<!-- end footer -->
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter34783985 = new Ya.Metrika({
-                    id: 34783985,
-                    clickmap: true,
-                    trackLinks: true,
-                    accurateTrackBounce: true
-                });
-            } catch (e) {}
-        });
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function() {
-                n.parentNode.insertBefore(s, n);
-            };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else {
-            f();
-        }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript>
-    <div><img src="https://mc.yandex.ru/watch/34783985" style="position:absolute; left:-9999px;" alt="" /></div>
-</noscript>
-<!-- /Yandex.Metrika counter -->
-
-{{--<!-- BEGIN JIVOSITE CODE -->--}}
-{{--<script type='text/javascript'>--}}
-    {{--(function(){ var widget_id = 'q5pj7WkUOl';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();--}}
-{{--</script>--}}
-{{--<!-- END JIVOSITE CODE -->--}}
-
 </body>
 </html>
