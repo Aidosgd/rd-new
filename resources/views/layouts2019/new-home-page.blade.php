@@ -90,10 +90,10 @@
 
     <div class="home-slider">
         <div class="slide">
-            <img src="/css/images/new2019/rossiiskie-dveri-ban.jpg" alt="">
+            <img src="/css/images/new2019/ustanovka-dverei-v-p.jpg" alt="">
         </div>
         <div class="slide">
-            <img src="/css/images/new2019/ustanovka-dverei-v-p.jpg" alt="">
+            <img src="/css/images/new2019/rossiiskie-dveri-ban.jpg" alt="">
         </div>
     </div>
 
@@ -102,77 +102,49 @@
 
         <div class="bg-s">
             <div class="container">
+
                 <h2>Межкомнатные двери</h2>
 
+                <div class="visible-xs scroll-icon-wrap">
+                    <svg class="scroll-icon" style="width:22px;fill:#bebebe;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"> <path d="M97.2 298.2S56.1 225 38.8 193.3c-23-42.2-26.8-60-10.9-68.8 9.9-5.5 23.6-3.2 32 11.4l19.6 31.2V44.8s-1.2-32.3 21.8-32.3c24.5 0 22.4 32.3 22.4 32.3v59.4s12.9-9.3 28-5.1c7.7 2.1 16.7 5.8 21.5 18 0 0 30.7-14.9 46 16.8 0 0 35.4-7 35.4 29.7s-44.2 134.6-44.2 134.6H97.2zM249.9.5l-10.6 10.6 24.1 23.8H158.5v15h105l-24.2 23.9 10.6 10.6 42.5-42z" class="st0"></path> </svg>
+                </div>
+
                 <div class="row doors-list">
-                    <div class="col-md-3">
-                        <div class="door-item">
-                            <img src="/css/images/new2019/door01.png" class="padding-30" alt="">
-                            <h3>Дверь "01"</h3>
-                            <p>Гладкое полотно, покрытие искусственный шпон и плёнка. Представлено в четырех цветах</p>
-                            <div class="price">9000тг.</div>
-                            <a href="" class="btn btn-default">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="door-item">
-                            <img src="/css/images/new2019/door01.png" class="padding-30" alt="">
-                            <h3>Дверь "01"</h3>
-                            <p>Гладкое полотно, покрытие искусственный шпон и плёнка. Представлено в четырех цветах</p>
-                            <div class="price">9000тг.</div>
-                            <a href="" class="btn btn-default">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="door-item">
-                            <img src="/css/images/new2019/door01.png" class="padding-30" alt="">
-                            <h3>Дверь "01"</h3>
-                            <p>Гладкое полотно, покрытие искусственный шпон и плёнка. Представлено в четырех цветах</p>
-                            <div class="price">9000тг.</div>
-                            <a href="" class="btn btn-default">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="door-item">
-                            <img src="/css/images/new2019/door01.png" class="padding-30" alt="">
-                            <h3>Дверь "01"</h3>
-                            <p>Гладкое полотно, покрытие искусственный шпон и плёнка. Представлено в четырех цветах</p>
-                            <div class="price">9000тг.</div>
-                            <a href="" class="btn btn-default">Подробнее</a>
-                        </div>
-                    </div>
+                    @foreach($doors->sortBy('weight') as $index => $item)
+                        @if($item->category->id == 1)
+                            <div class="col-md-3">
+                                <div class="door-item">
+                                    <img src="{{ $item->getSrc('doors') ? $item->getSrc('doors') : $item->images->first()->getSrc('doors') }}" class="padding-30" alt="">
+                                    <h3>{{ $item->title }}</h3>
+                                    <div class="price">{{ $item->price }} ₸</div>
+                                    <a href="/doors/{{ $item->category->slug }}/n/{{ $item->slug }}" class="btn btn-default">Подробнее</a>
+                                </div>
+                            </div>
+                            @if($item->weight % 4 === 0)
+                                <div class="clearfix"></div>
+                            @endif
+                        @endif
+                    @endforeach
                 </div>
 
                 <h2>Металлические двери</h2>
 
+                <div class="visible-xs scroll-icon-wrap">
+                    <svg class="scroll-icon" style="width:22px;fill:#bebebe;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"> <path d="M97.2 298.2S56.1 225 38.8 193.3c-23-42.2-26.8-60-10.9-68.8 9.9-5.5 23.6-3.2 32 11.4l19.6 31.2V44.8s-1.2-32.3 21.8-32.3c24.5 0 22.4 32.3 22.4 32.3v59.4s12.9-9.3 28-5.1c7.7 2.1 16.7 5.8 21.5 18 0 0 30.7-14.9 46 16.8 0 0 35.4-7 35.4 29.7s-44.2 134.6-44.2 134.6H97.2zM249.9.5l-10.6 10.6 24.1 23.8H158.5v15h105l-24.2 23.9 10.6 10.6 42.5-42z" class="st0"></path> </svg>
+                </div>
                 <div class="row doors-list">
-                    <div class="col-md-4">
-                        <div class="door-item">
-                            <img src="/css/images/new2019/2016-09-06-15-35-ase.png" alt="">
-                            <h3>Дверь "01"</h3>
-                            <p>Гладкое полотно, покрытие искусственный шпон и плёнка. Представлено в четырех цветах</p>
-                            <div class="price">9000тг.</div>
-                            <a href="" class="btn btn-default">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="door-item">
-                            <img src="/css/images/new2019/2016-09-06-15-35-ase.png" alt="">
-                            <h3>Дверь "01"</h3>
-                            <p>Гладкое полотно, покрытие искусственный шпон и плёнка. Представлено в четырех цветах</p>
-                            <div class="price">9000тг.</div>
-                            <a href="" class="btn btn-default">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="door-item">
-                            <img src="/css/images/new2019/2016-09-06-15-35-ase.png" alt="">
-                            <h3>Дверь "01"</h3>
-                            <p>Гладкое полотно, покрытие искусственный шпон и плёнка. Представлено в четырех цветах</p>
-                            <div class="price">9000тг.</div>
-                            <a href="" class="btn btn-default">Подробнее</a>
-                        </div>
-                    </div>
+                    @foreach($doors->sortBy('weight') as $item)
+                        @if($item->category->id != 1)
+                            <div class="col-md-4">
+                                <div class="door-item">
+                                    <img src="{{ $item->getSrc('doors') ? $item->getSrc('doors') : $item->images->first()->getSrc('doors') }}" class="padding-30 width-100" alt="">
+                                    <h3>{{ $item->title }}</h3>
+                                    <div class="price">{{ $item->price }} ₸</div>
+                                    <a href="/doors/{{ $item->category->slug }}/n/{{ $item->slug }}" class="btn btn-default">Подробнее</a>
+                                </div>
+                            </div>
+                        @endif
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -235,6 +207,22 @@
 
     </section>
 
+    <section class="tour-3d">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Пройдите 3D-ТУР по нашему выставочному залу</h4>
+                    <h3>Оцените наш ассортимент! Прогуляйтесь по нашему магазину онлайн</h3>
+                    <p>Если Вы хотите убедиться в широком ассортименте представленных моделей входных и межкомнатных дверей в нашем салоне, пройдите виртуальный 3D-тур по магазину 'Российские Двери" </p>
+                    <a href="#" class="btn btn-default">ПРОЙТИ 3D ТУР</a>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive" src="/css/images/new2019/Showroom_20-1280x806.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="about-us">
         <div class="container">
             <div class="inner-c">
@@ -252,8 +240,9 @@
             </div>
             <h3>Сертификаты и грамоты:</h3>
 
-            <table>
-                <tbody>
+            <div class="table-responsive">
+                <table>
+                    <tbody>
                     <tr>
                         <td><img src="/css/images/new2019/cert/1.png" alt=""></td>
                         <td><img src="/css/images/new2019/cert/__1.png" alt=""></td>
@@ -262,8 +251,24 @@
                         <td><img src="/css/images/new2019/cert/Screenshot_2.png" alt=""></td>
                         <td><img src="/css/images/new2019/cert/sertificate-russdoor.jpg" alt=""></td>
                     </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="door-interier">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="/css/images/new2019/Showroom_20-1280x806.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h3>Пройдите 3D-ТУР по нашему выставочному залу</h3>
+                    <p>Попробуйте себя в роли дизайнера интерьеров. Выбирайте любой из представленных интерьера, выбирайте дверь и оценивайте результат!</p>
+                    <a href="#" class="btn btn-default">ПРОЙТИ 3D ТУР</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -282,7 +287,7 @@
                                 <p><b>Максим</b> <br>г. Алматы</p>
                             </div>
                             <div class="col-md-4">
-                                <img src="/css/images/new2019/reviews/russdoors-kz-.jpg" alt="">
+                                <img src="/css/images/new2019/reviews/russdoors-kz-otziv.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -293,13 +298,14 @@
                         <div class="row">
                             <div class="col-md-8">
                                 <p class="review-text">
-                                    Долго искал металлическую дверь с прямым выходом на улицу, что бы и красиво, и недорого было! В компании "Российские двери" оказался самый приемлемый выбор и доступные цены! Отдельное спасибо за оперативную установку!
+                                    Спасибо за мою красавицу - двухстворчатую входную дверь сделанную на заказ специально для нашей семьи! Всегда о такой мечтала!
                                 </p>
-                                <p><b>Максим</b> <br>г. Алматы</p>
+                                <p><b>Татьяна</b> <br>г. Алматы</p>
                             </div>
                             <div class="col-md-4">
-                                <img src="/css/images/new2019/reviews/russdoors-kz-otziv.jpg" alt="">
+                                <img src="/css/images/new2019/reviews/russdoors-kz-.jpg" alt="">
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -317,13 +323,13 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" placeholder="Ваш телефон">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" placeholder="Ваш имейл">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" placeholder="Ваше имя">
                         </div>
                         <button class="btn btn-default">Заказать звонок</button>
                     </div>
@@ -336,8 +342,29 @@
     </section>
 
     <section class="map">
+        <div class="map-content visible-xs">
+            <h3>Контакты</h3>
+
+            <p><b>Телефоны:</b></p>
+            <p>+7 747 9493016; +7 (747) 488-29-12;</p>
+            <p>+7 (727) 345-01-01, 379-13-52, 379-13-42.</p>
+            <br>
+
+            <p><b>Адреса:</b></p>
+            <p>г. Алматы, ул. Райымбека 152 (уг. ул. Наурызбай Батыра);</p>
+            <br>
+            <p><b>Режим Работы:</b></p>
+            <p>Понедельник-Пятница : с 9:00 до 18:00</p>
+            <p>Суббота: с 9:00 до 16:00</p>
+            <p>Воскресенье: ВЫХОДНОЙ</p>
+
+            <ul class="social-links">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
         <div id="map"></div>
-        <div class="container">
+        <div class="container hidden-xs">
             <div class="map-content">
                 <h3>Контакты</h3>
 

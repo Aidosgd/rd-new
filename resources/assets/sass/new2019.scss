@@ -234,6 +234,73 @@ body{
       }
     }
   }
+  @-webkit-keyframes t776__icon-anim{
+    0%{
+      -webkit-transform:translate3d(-20px,0,0);
+      opacity:0
+    }
+    10%{
+      -webkit-transform:translate3d(-20px,0,0);
+      opacity:0
+    }
+    20%{
+      -webkit-transform:translate3d(-20px,0,0);
+      opacity:1
+    }
+    70%{
+      -webkit-transform:translate3d(0,0,0);
+      opacity:1
+    }
+    80%{
+      -webkit-transform:translate3d(0,0,0);
+      opacity:1
+    }
+    81%{
+      -webkit-transform:translate3d(0,0,0);
+      opacity:0
+    }
+    100%{
+      -webkit-transform:translate3d(0,0,0);
+      opacity:0
+    }
+  }
+  @keyframes t776__icon-anim{
+    0%{
+      transform:translate3d(-20px,0,0);
+      opacity:0
+    }
+    10%{
+      transform:translate3d(-20px,0,0);
+      opacity:0
+    }
+    20%{
+      transform:translate3d(-20px,0,0);
+      opacity:1
+    }
+    70%{
+      transform:translate3d(0,0,0);
+      opacity:1
+    }
+    80%{
+      transform:translate3d(0,0,0);
+      opacity:1
+    }
+    81%{
+      transform:translate3d(0,0,0);
+      opacity:0
+    }
+    100%{
+      transform:translate3d(0,0,0);
+      opacity:0
+    }
+  }
+  .scroll-icon-wrap{
+    text-align: right;
+    padding: 0 30px;
+    .scroll-icon{
+      animation: t776__icon-anim 1.5s infinite;
+    }
+  }
 
   .bestseller{
     h1{
@@ -250,7 +317,19 @@ body{
       text-align: center;
       margin: 40px 0;
     }
-
+    h3{
+      font-size: 16px;
+      font-weight: bold;
+      font-family: 'Arial';
+    }
+    p{
+      font-family: 'Roboto',Arial,sans-serif;
+      font-size: 14px;
+    }
+    .price{
+      font-weight: bold;
+      margin: 12px 0;
+    }
     .bg-s{
       background: #f2ede6;
       width: 100%;
@@ -258,10 +337,23 @@ body{
     }
     .doors-list{
       .door-item{
+        margin-bottom: 30px;
         img{
-          width: 100%;
+          height: 400px;
+          display: block;
+          margin: auto;
+          &.width-100{
+            width: 100%;
+            height: initial;
+          }
         }
       }
+    }
+    .btn-default{
+      background: #422a20;
+      color: #ede2cc;
+      border-radius: 0;
+      padding: 14px 30px;
     }
   }
 
@@ -309,6 +401,7 @@ body{
           background-color: #ffffff;
           border-radius: 1px;
           padding: 14px;
+          font-family: 'Roboto',Arial,sans-serif;
         }
         .btn{
           color: #ffffff;
@@ -318,6 +411,7 @@ body{
           border: 0;
           padding: 14px;
           width: 100%;
+          font-family: 'Roboto',Arial,sans-serif;
         }
       }
     }
@@ -341,7 +435,7 @@ body{
     }
 
     .row{
-      margin: 0 100px 0 200px;
+      margin: 0 70px 0 170px;
     }
 
     &-item{
@@ -381,6 +475,45 @@ body{
     }
   }
 
+  .tour-3d{
+    padding: 60px 0;
+    background: #f2ede6;
+    h4{
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Georgia;
+    }
+    h3{
+      font-size: 30px;
+      font-weight: bold;
+      font-family: Georgia;
+    }
+    p{
+      font-size: 18px;
+      font-family: 'Roboto',Arial,sans-serif;
+      margin: 20px 0;
+    }
+    .btn-default{
+      color: rgb(255, 255, 255);
+      background-color: rgb(181, 143, 107);
+      display: inline-block;
+      font-family: 'Roboto',Arial,sans-serif;
+      height: 60px;
+      padding: 18px 0;
+      border-radius: 0;
+      border: 0 none;
+      font-size: 16px;
+      padding-left: 60px;
+      padding-right: 60px;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      font-weight: 700;
+      background-image: none;
+      cursor: pointer;
+    }
+  }
+
   .about-us{
     h2{
       text-align: center;
@@ -415,6 +548,44 @@ body{
           }
         }
       }
+    }
+  }
+
+  .door-interier{
+    padding: 60px 0;
+    h4{
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Georgia;
+    }
+    h3{
+      font-size: 30px;
+      font-weight: bold;
+      font-family: Georgia;
+    }
+    p{
+      font-size: 18px;
+      font-family: 'Roboto',Arial,sans-serif;
+      margin: 20px 0;
+    }
+    .btn-default{
+      color: rgb(255, 255, 255);
+      background-color: rgb(181, 143, 107);
+      display: inline-block;
+      font-family: 'Roboto',Arial,sans-serif;
+      height: 60px;
+      padding: 18px 0;
+      border-radius: 0;
+      border: 0 none;
+      font-size: 16px;
+      padding-left: 60px;
+      padding-right: 60px;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      font-weight: 700;
+      background-image: none;
+      cursor: pointer;
     }
   }
 
@@ -466,9 +637,28 @@ body{
       margin-top: 100px;
       .form-group{
         .form-control{
-          padding: 14px;
+          padding: 24px 14px;
         }
       }
+    }
+    .btn{
+      color: #422a20;
+      background-color: #b58f6b;
+      text-transform: uppercase;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+      font-family: 'Roboto',Arial,sans-serif;
+      text-align: center;
+      height: 60px;
+      border: 0 none;
+      font-size: 16px;
+      padding-left: 60px;
+      padding-right: 60px;
+      -webkit-appearance: none;
+      font-weight: 700;
+      white-space: nowrap;
+      background-image: none;
+      cursor: pointer;
+      margin: 0;
     }
     img{
       width: 100%;
@@ -571,5 +761,156 @@ body{
 
   .padding-30{
     padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .new-2019 {
+    .nav{
+      ul{
+        li{
+          display: block;
+          float: none;
+        }
+      }
+    }
+    .header{
+      &__address{
+        display: none;
+      }
+    }
+    .home-slider{
+      .slide{
+        margin: 0;
+        height: 400px;
+        img{
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+    .bestseller{
+      .doors-list{
+        display: flex;
+        overflow-x: scroll;
+        max-width: 100%;
+        .col-md-3, .col-md-4{
+          display: inline-block;
+        }
+        .door-item{
+          img{
+            height: 200px;
+            &.width-100{
+              height: 200px;
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+    .download-catalog{
+      .block{
+        padding: 30px;
+        position: relative;
+        width: 100%;
+        transform: none;
+        top: 50px;
+        margin: 0;
+        h3{
+          font-size: 30px;
+        }
+        p{
+          font-size: 20px;
+        }
+        &__width{
+          padding: 10px;
+          input{
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    .quality{
+      padding: 20px;
+      h2{
+        font-size: 30px;
+      }
+      .row{
+        margin: 0 0 0 30px;
+      }
+      .quality-item{
+        padding: 0 15px;
+        p{
+          font-size: 12px;
+        }
+      }
+    }
+    .tour-3d, .door-interier{
+      padding: 15px;
+      .btn-default{
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+    .about-us{
+      .inner-c{
+        padding: 0 15px;
+      }
+      h2{
+        font-size: 30px;
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+    .reviews{
+      h2{
+        font-size: 30px;
+      }
+      .review-slider{
+        .review-item{
+          width: initial;
+          height: initial;
+          p{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .feedback{
+      .form{
+        margin-top: 30px;
+      }
+      .btn{
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+    .map{
+      .map-content{
+        position: relative;
+        width: initial;
+        left: 0;
+        top: 0;
+        transform: none;
+      }
+    }
+    .footer{
+      padding: 50px 15px;
+      &__menu{
+        li{
+          display: block;
+          float: none;
+        }
+      }
+      &__logo{
+        img{
+          margin: 30px auto;
+        }
+      }
+    }
   }
 }

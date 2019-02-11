@@ -193,6 +193,35 @@ body {
     .new-2019 .home-slider .slide img {
       width: 100%; }
 
+@keyframes t776__icon-anim {
+  0% {
+    transform: translate3d(-20px, 0, 0);
+    opacity: 0; }
+  10% {
+    transform: translate3d(-20px, 0, 0);
+    opacity: 0; }
+  20% {
+    transform: translate3d(-20px, 0, 0);
+    opacity: 1; }
+  70% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; }
+  80% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; }
+  81% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0; }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0; } }
+
+.new-2019 .scroll-icon-wrap {
+  text-align: right;
+  padding: 0 30px; }
+  .new-2019 .scroll-icon-wrap .scroll-icon {
+    animation: t776__icon-anim 1.5s infinite; }
+
 .new-2019 .bestseller h1 {
   color: #422a20;
   font-size: 52px;
@@ -206,13 +235,39 @@ body {
   text-align: center;
   margin: 40px 0; }
 
+.new-2019 .bestseller h3 {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Arial'; }
+
+.new-2019 .bestseller p {
+  font-family: 'Roboto',Arial,sans-serif;
+  font-size: 14px; }
+
+.new-2019 .bestseller .price {
+  font-weight: bold;
+  margin: 12px 0; }
+
 .new-2019 .bestseller .bg-s {
   background: #f2ede6;
   width: 100%;
   padding: 40px 0; }
 
-.new-2019 .bestseller .doors-list .door-item img {
-  width: 100%; }
+.new-2019 .bestseller .doors-list .door-item {
+  margin-bottom: 30px; }
+  .new-2019 .bestseller .doors-list .door-item img {
+    height: 400px;
+    display: block;
+    margin: auto; }
+    .new-2019 .bestseller .doors-list .door-item img.width-100 {
+      width: 100%;
+      height: initial; }
+
+.new-2019 .bestseller .btn-default {
+  background: #422a20;
+  color: #ede2cc;
+  border-radius: 0;
+  padding: 14px 30px; }
 
 .new-2019 .download-catalog {
   height: 80vh;
@@ -254,7 +309,8 @@ body {
         border: 2px solid #cfcfcf;
         background-color: #ffffff;
         border-radius: 1px;
-        padding: 14px; }
+        padding: 14px;
+        font-family: 'Roboto',Arial,sans-serif; }
       .new-2019 .download-catalog .block__width .btn {
         color: #ffffff;
         background-color: #b58f6b;
@@ -262,7 +318,8 @@ body {
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
         border: 0;
         padding: 14px;
-        width: 100%; }
+        width: 100%;
+        font-family: 'Roboto',Arial,sans-serif; }
 
 .new-2019 .quality {
   background: url("/css/images/new2019/russdoors-bg.jpg") no-repeat;
@@ -280,7 +337,7 @@ body {
     border-style: solid;
     text-align: center; }
   .new-2019 .quality .row {
-    margin: 0 100px 0 200px; }
+    margin: 0 70px 0 170px; }
   .new-2019 .quality-item {
     margin-bottom: 50px;
     position: relative;
@@ -313,6 +370,40 @@ body {
       border-color: transparent;
       border-style: solid; }
 
+.new-2019 .tour-3d {
+  padding: 60px 0;
+  background: #f2ede6; }
+  .new-2019 .tour-3d h4 {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Georgia; }
+  .new-2019 .tour-3d h3 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia; }
+  .new-2019 .tour-3d p {
+    font-size: 18px;
+    font-family: 'Roboto',Arial,sans-serif;
+    margin: 20px 0; }
+  .new-2019 .tour-3d .btn-default {
+    color: white;
+    background-color: #b58f6b;
+    display: inline-block;
+    font-family: 'Roboto',Arial,sans-serif;
+    height: 60px;
+    padding: 18px 0;
+    border-radius: 0;
+    border: 0 none;
+    font-size: 16px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-weight: 700;
+    background-image: none;
+    cursor: pointer; }
+
 .new-2019 .about-us h2 {
   text-align: center;
   font-size: 38px;
@@ -341,6 +432,39 @@ body {
   width: 1000px; }
   .new-2019 .about-us table tr td img {
     max-height: 160px; }
+
+.new-2019 .door-interier {
+  padding: 60px 0; }
+  .new-2019 .door-interier h4 {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Georgia; }
+  .new-2019 .door-interier h3 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia; }
+  .new-2019 .door-interier p {
+    font-size: 18px;
+    font-family: 'Roboto',Arial,sans-serif;
+    margin: 20px 0; }
+  .new-2019 .door-interier .btn-default {
+    color: white;
+    background-color: #b58f6b;
+    display: inline-block;
+    font-family: 'Roboto',Arial,sans-serif;
+    height: 60px;
+    padding: 18px 0;
+    border-radius: 0;
+    border: 0 none;
+    font-size: 16px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-weight: 700;
+    background-image: none;
+    cursor: pointer; }
 
 .new-2019 .reviews {
   background-color: #b58f6b;
@@ -380,7 +504,25 @@ body {
   .new-2019 .feedback .form {
     margin-top: 100px; }
     .new-2019 .feedback .form .form-group .form-control {
-      padding: 14px; }
+      padding: 24px 14px; }
+  .new-2019 .feedback .btn {
+    color: #422a20;
+    background-color: #b58f6b;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto',Arial,sans-serif;
+    text-align: center;
+    height: 60px;
+    border: 0 none;
+    font-size: 16px;
+    padding-left: 60px;
+    padding-right: 60px;
+    -webkit-appearance: none;
+    font-weight: 700;
+    white-space: nowrap;
+    background-image: none;
+    cursor: pointer;
+    margin: 0; }
   .new-2019 .feedback img {
     width: 100%; }
 
@@ -461,5 +603,94 @@ body {
 
 .new-2019 .padding-30 {
   padding: 0 30px; }
+
+@media (max-width: 768px) {
+  .new-2019 .nav ul li {
+    display: block;
+    float: none; }
+  .new-2019 .header__address {
+    display: none; }
+  .new-2019 .home-slider .slide {
+    margin: 0;
+    height: 400px; }
+    .new-2019 .home-slider .slide img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%; }
+  .new-2019 .bestseller .doors-list {
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: scroll;
+    max-width: 100%; }
+    .new-2019 .bestseller .doors-list .col-md-3, .new-2019 .bestseller .doors-list .col-md-4 {
+      display: inline-block; }
+    .new-2019 .bestseller .doors-list .door-item img {
+      height: 200px; }
+      .new-2019 .bestseller .doors-list .door-item img.width-100 {
+        height: 200px;
+        width: auto; }
+  .new-2019 .download-catalog .block {
+    padding: 30px;
+    position: relative;
+    width: 100%;
+    transform: none;
+    top: 50px;
+    margin: 0; }
+    .new-2019 .download-catalog .block h3 {
+      font-size: 30px; }
+    .new-2019 .download-catalog .block p {
+      font-size: 20px; }
+    .new-2019 .download-catalog .block__width {
+      padding: 10px; }
+      .new-2019 .download-catalog .block__width input {
+        margin-bottom: 20px; }
+  .new-2019 .quality {
+    padding: 20px; }
+    .new-2019 .quality h2 {
+      font-size: 30px; }
+    .new-2019 .quality .row {
+      margin: 0 0 0 30px; }
+    .new-2019 .quality .quality-item {
+      padding: 0 15px; }
+      .new-2019 .quality .quality-item p {
+        font-size: 12px; }
+  .new-2019 .tour-3d, .new-2019 .door-interier {
+    padding: 15px; }
+    .new-2019 .tour-3d .btn-default, .new-2019 .door-interier .btn-default {
+      display: block;
+      width: 100%;
+      margin-bottom: 30px; }
+  .new-2019 .about-us .inner-c {
+    padding: 0 15px; }
+  .new-2019 .about-us h2 {
+    font-size: 30px; }
+  .new-2019 .about-us p {
+    font-size: 16px; }
+  .new-2019 .reviews h2 {
+    font-size: 30px; }
+  .new-2019 .reviews .review-slider .review-item {
+    width: initial;
+    height: initial; }
+    .new-2019 .reviews .review-slider .review-item p {
+      font-size: 16px; }
+  .new-2019 .feedback .form {
+    margin-top: 30px; }
+  .new-2019 .feedback .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px; }
+  .new-2019 .map .map-content {
+    position: relative;
+    width: initial;
+    left: 0;
+    top: 0;
+    transform: none; }
+  .new-2019 .footer {
+    padding: 50px 15px; }
+    .new-2019 .footer__menu li {
+      display: block;
+      float: none; }
+    .new-2019 .footer__logo img {
+      margin: 30px auto; } }
 
 /*# sourceMappingURL=new2019.css.map */
