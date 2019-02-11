@@ -19,6 +19,7 @@ elixir(function(mix) {
         './bower_components/bootstrap/dist/js/bootstrap.js',
         './bower_components/jquery-colorbox/jquery.colorbox.js',
         './resources/assets/js/plugins/slick.min.js',
+        './resources/assets/js/plugins/wow.js',
         './resources/assets/js/main.js',
         ] ,
         'public/js/all.js', '/'
@@ -33,6 +34,7 @@ elixir(function(mix) {
         './bower_components/jquery-colorbox/example1/colorbox.css',
         './resources/assets/sass/plugins/shadowbox.css',
         './resources/assets/sass/plugins/slick.css',
+        './resources/assets/sass/plugins/animate.css',
         './public/css/new2019.css',
     ], 'public/css/all-new-2019.css');
     //new-2019

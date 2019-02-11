@@ -58,7 +58,7 @@
 <body>
 
 <div class="new-2019">
-    <nav class="nav">
+    <nav class="nav wow fadeInUp">
         <div class="container">
             <div class="buttons">
                 <ul>
@@ -76,10 +76,10 @@
     <header class="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 wow fadeInUp">
                     <img src="/css/images/new2019/russdoorskz-logo.png" alt="">
                 </div>
-                <div class="col-md-6 header__address">
+                <div class="col-md-6 header__address wow fadeInUp">
                     <p>г.Алматы, ул. Райымбека 152</p>
                     <p>+7 (727) 345-01-01; +7 747 488-29-12;</p>
                     <p>+7 747 949 30 16.</p>
@@ -112,7 +112,7 @@
                 <div class="row doors-list">
                     @foreach($doors->sortBy('weight') as $index => $item)
                         @if($item->category->id == 1)
-                            <div class="col-md-3">
+                            <div class="col-md-3 wow fadeInUp">
                                 <div class="door-item">
                                     <img src="{{ $item->getSrc('doors') ? $item->getSrc('doors') : $item->images->first()->getSrc('doors') }}" class="padding-30" alt="">
                                     <h3>{{ $item->title }}</h3>
@@ -135,7 +135,7 @@
                 <div class="row doors-list">
                     @foreach($doors->sortBy('weight') as $item)
                         @if($item->category->id != 1)
-                            <div class="col-md-4">
+                            <div class="col-md-4 wow fadeInUp">
                                 <div class="door-item">
                                     <img src="{{ $item->getSrc('doors') ? $item->getSrc('doors') : $item->images->first()->getSrc('doors') }}" class="padding-30 width-100" alt="">
                                     <h3>{{ $item->title }}</h3>
@@ -153,10 +153,10 @@
     <section class="download-catalog">
         <div class="container">
             <div class="block">
-                <h3>Скачайте весь каталог дверей</h3>
-                <p>Оставьте свой email и мы пришлем Вам каталог <br> дверей</p>
+                <h3 class="wow fadeInUp">Скачайте весь каталог дверей</h3>
+                <p class="wow fadeInUp">Оставьте свой email и мы пришлем Вам каталог <br> дверей</p>
 
-                <div class="block__width">
+                <div class="block__width wow fadeInUp">
                     <div class="row">
                         <div class="col-md-8">
                             <input type="email" placeholder="Your E-mail">
@@ -210,13 +210,13 @@
     <section class="tour-3d">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 wow fadeInUp">
                     <h4>Пройдите 3D-ТУР по нашему выставочному залу</h4>
                     <h3>Оцените наш ассортимент! Прогуляйтесь по нашему магазину онлайн</h3>
                     <p>Если Вы хотите убедиться в широком ассортименте представленных моделей входных и межкомнатных дверей в нашем салоне, пройдите виртуальный 3D-тур по магазину 'Российские Двери" </p>
                     <a href="#" class="btn btn-default">ПРОЙТИ 3D ТУР</a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 wow fadeInUp">
                     <img class="img-responsive" src="/css/images/new2019/Showroom_20-1280x806.jpg" alt="">
                 </div>
             </div>
@@ -226,21 +226,21 @@
     <section class="about-us">
         <div class="container">
             <div class="inner-c">
-                <h2>Компания "Российские Двери" Алматы</h2>
+                <h2 class="wow fadeInUp">Компания "Российские Двери" Алматы</h2>
 
-                <p>ТОО «Российские двери» предлагает межкомнатные двери производства России в Алматы, в полном ценовом ассортименте, широкая гамма цветов и оттенков, от «эконом» - класса до класса «премиум» с разными видами отделки. </p>
-                <p>В наличии имеются двери в стиле классики и модерна, глухие и остеклённые. Наши двери рассчитаны для применения внутри помещений. Все модели дверей могут быть использованы как в жилых, так и в общественных помещениях с влажностью воздуха не более 65%.</p>
-                <p>Также в продаже имеются металлические двери, ламинат, плинтус, широкий выбор фурнитуры.</p>
-                <p>Ассортимент:</p>
-                <p>* двери из массива сосны, покрытие натуральный шпон</p>
-                <p>* облегчённые двери, покрытие натуральный шпон</p>
-                <p>* облегчённые двери, покрытие искусственный шпон</p>
-                <p>* облегчённые двери, лакокрасочное покрытие.</p>
-
+                <p class="wow fadeInUp">ТОО «Российские двери» предлагает межкомнатные двери производства России в Алматы, в полном ценовом ассортименте, широкая гамма цветов и оттенков, от «эконом» - класса до класса «премиум» с разными видами отделки. </p>
+                <p class="wow fadeInUp">В наличии имеются двери в стиле классики и модерна, глухие и остеклённые. Наши двери рассчитаны для применения внутри помещений. Все модели дверей могут быть использованы как в жилых, так и в общественных помещениях с влажностью воздуха не более 65%.</p>
+                <p class="wow fadeInUp">Также в продаже имеются металлические двери, ламинат, плинтус, широкий выбор фурнитуры.</p>
+                <p class="wow fadeInUp">Ассортимент:</p>
+                <p class="wow fadeInUp">* двери из массива сосны, покрытие натуральный шпон</p>
+                <p class="wow fadeInUp">* облегчённые двери, покрытие натуральный шпон</p>
+                <p class="wow fadeInUp">* облегчённые двери, покрытие искусственный шпон</p>
+                <p class="wow fadeInUp">* облегчённые двери, лакокрасочное покрытие.</p>
             </div>
-            <h3>Сертификаты и грамоты:</h3>
 
-            <div class="table-responsive">
+            <h3 class="wow fadeInUp">Сертификаты и грамоты:</h3>
+
+            <div class="table-responsive wow fadeInUp">
                 <table>
                     <tbody>
                     <tr>
@@ -260,10 +260,10 @@
     <section class="door-interier">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 wow fadeInUp">
                     <img class="img-responsive" src="/css/images/new2019/Showroom_20-1280x806.jpg" alt="">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 wow fadeInUp">
                     <h3>Пройдите 3D-ТУР по нашему выставочному залу</h3>
                     <p>Попробуйте себя в роли дизайнера интерьеров. Выбирайте любой из представленных интерьера, выбирайте дверь и оценивайте результат!</p>
                     <a href="#" class="btn btn-default">ПРОЙТИ 3D ТУР</a>
@@ -315,11 +315,11 @@
 
     <section class="feedback">
         <div class="container">
-            <h2>ЕСТЬ ВОПРОСЫ?</h2>
+            <h2 class="wow fadeInUp">ЕСТЬ ВОПРОСЫ?</h2>
 
-            <p>Закажите обратный звонок <br> Наш менеджер перезвонит Вам в течение 5 минут</p>
+            <p class="wow fadeInUp">Закажите обратный звонок <br> Наш менеджер перезвонит Вам в течение 5 минут</p>
 
-            <div class="form">
+            <div class="form wow fadeInUp">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -343,20 +343,20 @@
 
     <section class="map">
         <div class="map-content visible-xs">
-            <h3>Контакты</h3>
+            <h3 class="wow fadeInUp">Контакты</h3>
 
-            <p><b>Телефоны:</b></p>
-            <p>+7 747 9493016; +7 (747) 488-29-12;</p>
-            <p>+7 (727) 345-01-01, 379-13-52, 379-13-42.</p>
+            <p class="wow fadeInUp"><b>Телефоны:</b></p>
+            <p class="wow fadeInUp">+7 747 9493016; +7 (747) 488-29-12;</p>
+            <p class="wow fadeInUp">+7 (727) 345-01-01, 379-13-52, 379-13-42.</p>
             <br>
 
-            <p><b>Адреса:</b></p>
-            <p>г. Алматы, ул. Райымбека 152 (уг. ул. Наурызбай Батыра);</p>
+            <p class="wow fadeInUp"><b>Адреса:</b></p>
+            <p class="wow fadeInUp">г. Алматы, ул. Райымбека 152 (уг. ул. Наурызбай Батыра);</p>
             <br>
-            <p><b>Режим Работы:</b></p>
-            <p>Понедельник-Пятница : с 9:00 до 18:00</p>
-            <p>Суббота: с 9:00 до 16:00</p>
-            <p>Воскресенье: ВЫХОДНОЙ</p>
+            <p class="wow fadeInUp"><b>Режим Работы:</b></p>
+            <p class="wow fadeInUp">Понедельник-Пятница : с 9:00 до 18:00</p>
+            <p class="wow fadeInUp">Суббота: с 9:00 до 16:00</p>
+            <p class="wow fadeInUp">Воскресенье: ВЫХОДНОЙ</p>
 
             <ul class="social-links">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -366,20 +366,20 @@
         <div id="map"></div>
         <div class="container hidden-xs">
             <div class="map-content">
-                <h3>Контакты</h3>
+                <h3 class="wow fadeInUp">Контакты</h3>
 
-                <p><b>Телефоны:</b></p>
-                <p>+7 747 9493016; +7 (747) 488-29-12;</p>
-                <p>+7 (727) 345-01-01, 379-13-52, 379-13-42.</p>
+                <p class="wow fadeInUp"><b>Телефоны:</b></p>
+                <p class="wow fadeInUp">+7 747 9493016; +7 (747) 488-29-12;</p>
+                <p class="wow fadeInUp">+7 (727) 345-01-01, 379-13-52, 379-13-42.</p>
                 <br>
 
-                <p><b>Адреса:</b></p>
-                <p>г. Алматы, ул. Райымбека 152 (уг. ул. Наурызбай Батыра);</p>
+                <p class="wow fadeInUp"><b>Адреса:</b></p>
+                <p class="wow fadeInUp">г. Алматы, ул. Райымбека 152 (уг. ул. Наурызбай Батыра);</p>
                 <br>
-                <p><b>Режим Работы:</b></p>
-                <p>Понедельник-Пятница : с 9:00 до 18:00</p>
-                <p>Суббота: с 9:00 до 16:00</p>
-                <p>Воскресенье: ВЫХОДНОЙ</p>
+                <p class="wow fadeInUp"><b>Режим Работы:</b></p>
+                <p class="wow fadeInUp">Понедельник-Пятница : с 9:00 до 18:00</p>
+                <p class="wow fadeInUp">Суббота: с 9:00 до 16:00</p>
+                <p class="wow fadeInUp">Воскресенье: ВЫХОДНОЙ</p>
 
                 <ul class="social-links">
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -423,6 +423,7 @@
     $(document).ready(function () {
         $('.home-slider').slick();
         $('.review-slider').slick();
+
         ymaps.ready(init);
         function init(){
             var myMap = new ymaps.Map("map", {
@@ -449,6 +450,8 @@
             myMap.geoObjects
                 .add(myPlacemark)
         }
+
+        new WOW().init();
     })
 </script>
 </body>
