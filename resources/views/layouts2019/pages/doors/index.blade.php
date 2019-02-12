@@ -23,7 +23,7 @@
                     @foreach($doors->sortBy('weight') as $index => $item)
                         <div class="{{ $item->category->id == 1 ? 'col-md-3' : 'col-md-4' }}  wow fadeInUp">
                             <div class="door-item">
-                                <img src="{{ $item->getSrc('doors') ? $item->getSrc('doors') : $item->images->first()->getSrc('doors') }}"
+                                <img style="{{ $item->category->id != 1 ? 'height: 350px' : '' }}" src="{{ $item->images->first()->getSrc('doors') }}"
                                      class="padding-30" alt="">
                                 <h3>{{ $item->title }}</h3>
                                 <div class="price">{{ $item->price }} ₸</div>
