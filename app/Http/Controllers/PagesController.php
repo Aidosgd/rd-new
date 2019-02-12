@@ -14,7 +14,7 @@ class PagesController extends Controller
         $seo_keywords = $pageName->seo_keywords;
         $seo_description = $pageName->seo_description;
 
-        return view('pages.show', compact('pageName', 'seo_title', 'seo_keywords', 'seo_description'));
+        return view('layouts2019.pages.show', compact('pageName', 'seo_title', 'seo_keywords', 'seo_description'));
     }
 
     public function contacts($pageName)
@@ -23,7 +23,7 @@ class PagesController extends Controller
         $seo_keywords = $pageName->seo_keywords;
         $seo_description = $pageName->seo_description;
 
-        return view('newdesign.pages.contacts', compact('pageName', 'seo_title', 'seo_keywords', 'seo_description'));
+        return view('layouts2019.pages.contacts', compact('pageName', 'seo_title', 'seo_keywords', 'seo_description'));
     }
 
     public function interior()
@@ -32,7 +32,7 @@ class PagesController extends Controller
             ->where('active', 1)
             ->get();
 
-        return view('pages.interior', compact('doors'));
+        return view('layouts2019.pages.interior', compact('doors'));
     }
 
     public function allNews()

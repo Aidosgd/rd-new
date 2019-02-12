@@ -11,7 +11,7 @@ class DoorsController extends Controller
     {
         $doors = Door::where('doors_category_id', $doorCategory->id)->where('active', 1)->get();
 
-        return view('doors.index', compact('doors', 'doorCategory'));
+        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory'));
     }
 
     public function show($doorCategory, $doorSlug)
@@ -25,7 +25,7 @@ class DoorsController extends Controller
         $seo_keywords = $door->seo_keywords;
         $seo_description = $door->seo_description;
 
-        return view('doors.show', compact('door', 'doorCategory', 'seo_title', 'seo_keywords', 'seo_description'));
+        return view('layouts2019.pages.doors.show', compact('door', 'doorCategory', 'seo_title', 'seo_keywords', 'seo_description'));
     }
 
     public function manufacturer($doorCategory, $manufacturer)
@@ -43,6 +43,6 @@ class DoorsController extends Controller
 
         $doorCategory->name = $CategoryName[$manufacturer];
 
-        return view('doors.index', compact('doors', 'doorCategory', 'manufacturer'));
+        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'manufacturer'));
     }
 }

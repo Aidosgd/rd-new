@@ -16,7 +16,7 @@ Route::auth();
 Route::get('/', 'HomeController@welcome');
 Route::get('/new-home-page', function(){
     $doors = \App\Models\Door::where('main_page', 1)->where('active', 1)->get();
-    return view('layouts2019.new-home-page', compact('doors'));
+    return view('layouts2019.home', compact('doors'));
 });
 Route::get('/new-contacts', function(){
     return view('newdesign.pages.contacts');
@@ -166,8 +166,11 @@ Route::get('распродажа.php', function (){
     return view('pages.show', compact('pageName', 'seo_title', 'seo_keywords', 'seo_description'));
 });
 
+//Route::get('pages/interior_door', 'PagesController@interior');
 Route::get('pages/interior_door.php', 'PagesController@interior');
+//Route::get('pages/{pageName}', 'PagesController@show');
 Route::get('pages/{pageName}.php', 'PagesController@show');
+//Route::get('contacts/{pageName}', 'PagesController@contacts');
 Route::get('contacts/{pageName}.php', 'PagesController@contacts');
 
 View::composer('parts.header', function($view){
@@ -185,14 +188,15 @@ View::composer('parts.main_banner', function($view){
     $view->with(compact('banners'));
 });
 
-Route::post('mail', 'HomeController@mail');
+Route::post('mail/call', 'HomeController@mail');
+Route::post('mail/download', 'HomeController@download');
 
 Route::get('choco', 'HomeController@choco');
 Route::get('sale', function (){
-    return view('pages.sale');
+    return view('layouts2019.pages.sale');
 });
 Route::get('sales-doors', function (){
-    return view('pages.sales');
+    return view('layouts2019.pages.sales');
 });
 
 //Admin

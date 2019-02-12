@@ -3,3 +3,6 @@
 <br>
 <br>
 Телефон: {{ $phone }}
+<br>
+<br>
+Email: {{ $email }}
