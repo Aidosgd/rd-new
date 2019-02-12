@@ -26,7 +26,7 @@
                                 <img style="{{ $item->category->id != 1 ? 'height: 350px' : '' }}" src="{{ $item->images->first()->getSrc('doors') }}"
                                      class="padding-30" alt="">
                                 <h3>{{ $item->title }}</h3>
-                                <div class="price">{{ $item->price }} ₸</div>
+                                {{--<div class="price">{{ $item->price }} ₸</div>--}}
                                 <a href="/doors/{{ $item->category->slug }}/n/{{ $item->slug }}"
                                    class="btn btn-default">Подробнее</a>
                             </div>
