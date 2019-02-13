@@ -37,7 +37,7 @@ class HomeController extends Controller
     public function mail(Request $request, Mailer $mailer)
     {
 
-        $emails = ['denisov_sv@mail.ru', 'manager141214@mail.ru', 'gorbenko_oleg@mail.ru','aidosgd@gmail.com'];
+        $emails = ['manager141214@mail.ru', 'aidosgd@gmail.com'];
         
         $mailer->send('emails.mail', ['name' => $request->input('name'), 'phone' => $request->input('phone'), 'email' => $request->input('email')], function ($m) use ($emails) {
             $m->from('info@russdoors.kz', 'Заявка с сайта Russdoors');
@@ -52,7 +52,7 @@ class HomeController extends Controller
     public function download(Request $request, Mailer $mailer)
     {
 
-        $emails = ['denisov_sv@mail.ru', 'manager141214@mail.ru', 'gorbenko_oleg@mail.ru','aidosgd@gmail.com'];
+        $emails = ['manager141214@mail.ru', 'aidosgd@gmail.com'];
 
         $mailer->send('emails.download', ['email' => $request->input('email')], function ($m) use ($emails) {
             $m->from('info@russdoors.kz', 'Заявка с сайта Russdoors');
