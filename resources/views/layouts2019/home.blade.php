@@ -93,6 +93,7 @@
                 <div class="block__width wow fadeInUp">
                     <div class="row">
                         <form action="/mail/download" method="post" id="downloadForm">
+                            <input name="_token" type="hidden"  value="{{ csrf_token() }}" />
                             <div class="col-md-8">
                                 <input type="email" name="email" placeholder="Your E-mail">
                             </div>
