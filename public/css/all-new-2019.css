@@ -13223,8 +13223,8 @@ body {
     font-weight: 400;
     text-align: right;
     padding: 43px 50px 0 0; }
-    .new-2019 .header__address p {
-      color: #b38a54 !important;
+    .new-2019 .header__address p, .new-2019 .header__address a {
+      color: #b38a54;
       margin-bottom: 0; }
   .new-2019 .header img {
     width: 240px;
@@ -13712,8 +13712,17 @@ body {
   .new-2019 .nav ul li {
     display: block;
     float: none; }
-  .new-2019 .header__address {
-    display: none; }
+  .new-2019 .header {
+    height: auto; }
+    .new-2019 .header img {
+      left: 0;
+      top: 0;
+      padding: 30px 60px 0;
+      display: block;
+      margin: auto; }
+    .new-2019 .header__address {
+      text-align: center;
+      padding: 10px 0; }
   .new-2019 .home-slider {
     background: #0a0a0a; }
     .new-2019 .home-slider .slide {

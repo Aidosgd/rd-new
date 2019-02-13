@@ -212,8 +212,8 @@ body{
       font-weight: 400;
       text-align: right;
       padding: 43px 50px 0 0;
-      p{
-        color: #b38a54 !important;
+      p, a{
+        color: #b38a54;
         margin-bottom: 0;
       }
     }
@@ -857,8 +857,18 @@ body{
       }
     }
     .header{
+      height: auto;
+      img{
+        left: 0;
+        top: 0;
+        padding: 30px 60px 0;
+        display: block;
+        margin: auto;
+      }
       &__address{
-        display: none;
+        //display: none;
+        text-align: center;
+        padding: 10px 0;
       }
     }
     .home-slider{
