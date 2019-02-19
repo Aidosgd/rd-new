@@ -16,13 +16,13 @@
                     <form id="callForm" method="post" action="/mail/call">
                         <input name="_token" type="hidden"  value="{{ csrf_token() }}" />
                         <div class="form-group">
-                            <input type="text" name="phone" class="form-control" placeholder="Ваш телефон">
+                            <input type="text" name="phone" class="form-control" placeholder="Ваш телефон" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control" placeholder="Ваш имейл">
+                            <input type="email" name="email" class="form-control" placeholder="Ваш имейл" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                            <input type="text" name="name" class="form-control" placeholder="Ваше имя" required>
                         </div>
                         <button type="submit" class="btn btn-default btn-effects">
                             Заказать звонок
@@ -90,8 +90,8 @@
     <div class="container">
         <div class="buttons">
             <ul class="footer__menu">
-                <li><a href="/doors/mezhkomnatnye-dveri/">МЕЖКОМНАТНЫЕ ДВЕРИ</a></li>
-                <li><a href="/doors/metalicheskie-dveri/">МЕТАЛЛИЧЕСКИЕ ДВЕРИ</a></li>
+                <li><a href="/stroydetali.php">МЕЖКОМНАТНЫЕ ДВЕРИ</a></li>
+                <li><a href="/leras.php">МЕТАЛЛИЧЕСКИЕ ДВЕРИ</a></li>
                 <li><a href="/sale">АКЦИИ</a></li>
                 <li><a href="/pages/sotrudnichestvo.php">СОТРУДНИЧЕСТВО</a></li>
                 <li><a href="/contacts/almaty.php">КОНТАКТЫ</a></li>

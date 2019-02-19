@@ -95,7 +95,7 @@
                         <form action="/mail/download" method="post" id="downloadForm">
                             <input name="_token" type="hidden"  value="{{ csrf_token() }}" />
                             <div class="col-md-8">
-                                <input type="email" name="email" placeholder="Your E-mail">
+                                <input type="email" name="email" placeholder="Your E-mail" required>
                             </div>
                             <div class="col-md-4">
                                 <button type="submit" class="btn btn-default btn-effects">
