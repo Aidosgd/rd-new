@@ -749,6 +749,8 @@ body {
     height: initial; }
     .new-2019 .reviews .review-slider .review-item p {
       font-size: 16px; }
+    .new-2019 .reviews .review-slider .review-item img {
+      max-height: inherit; }
   .new-2019 .feedback .form {
     margin-top: 30px; }
   .new-2019 .feedback .btn {

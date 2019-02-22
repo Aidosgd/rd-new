@@ -157,7 +157,7 @@
                     <a href="/public/3d/output/" target="_blank" class="btn btn-default">ПРОЙТИ 3D ТУР</a>
                 </div>
                 <div class="col-md-6 wow fadeInUp">
-                    <img class="img-responsive" src="/css/images/new2019/Showroom_20-1280x806.jpg" alt="">
+                    <img class="img-responsive" src="/css/images/new2019/russdoors-3dtour.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -201,7 +201,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 wow fadeInUp">
-                    <img class="img-responsive" src="/css/images/new2019/Showroom_20-1280x806.jpg" alt="">
+                    <img class="img-responsive" src="/css/images/new2019/dveri.jpg" alt="">
                 </div>
                 <div class="col-md-6 wow fadeInUp">
                     <h3>Подберите идеальную дверь к Вашему интерьеру</h3>

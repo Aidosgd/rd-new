@@ -43,7 +43,7 @@
         <h3 class="wow fadeInUp">Контакты</h3>
 
         <p class="wow fadeInUp"><b>Телефоны:</b></p>
-        <p class="wow fadeInUp">+7 747 197 50 91; +7 (747) 488-29-12;</p>
+        <p class="wow fadeInUp">+7 707 197 50 91; +7 (747) 488-29-12;</p>
         <p class="wow fadeInUp">+7 (727) 345-01-01, 379-13-52, 379-13-42.</p>
         <br>
 
@@ -66,7 +66,7 @@
             <h3 class="wow fadeInUp">Контакты</h3>
 
             <p class="wow fadeInUp"><b>Телефоны:</b></p>
-            <p class="wow fadeInUp">+7 747 197 50 91; +7 (747) 488-29-12;</p>
+            <p class="wow fadeInUp">+7 707 197 50 91; +7 (747) 488-29-12;</p>
             <p class="wow fadeInUp">+7 (727) 345-01-01, 379-13-52, 379-13-42.</p>
             <br>
 
