@@ -17,6 +17,7 @@ class CreateReviewsTable extends Migration
             $table->string('name');
             $table->string('city');
             $table->longText('description');
+            $table->string('image');
             $table->timestamps();
         });
     }

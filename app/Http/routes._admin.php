@@ -19,6 +19,9 @@ Route::group(['prefix' => 'cp'], function($router)
     Route::model('banner', 'App\Model\Banner');
     Route::resource('banners', 'Admin\BannersController');
 
+    Route::model('review', 'App\Model\Review');
+    Route::resource('reviews', 'Admin\ReviewsController');
+
 //
 //    Route::model('product_categories', 'App\Model\ProductCategory');
 //    Route::resource('product_categories', 'Admin\ProductCategoriesController');

@@ -212,44 +212,5 @@
         </div>
     </section>
 
-    <section class="reviews">
-        <div class="container">
-            <h2>Отзывы клиентов</h2>
-
-            <div class="review-slider">
-                <div class="slide">
-                    <div class="review-item">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p class="review-text">
-                                    Долго искал металлическую дверь с прямым выходом на улицу, что бы и красиво, и недорого было! В компании "Российские двери" оказался самый приемлемый выбор и доступные цены! Отдельное спасибо за оперативную установку!
-                                </p>
-                                <p><b>Максим</b> <br>г. Алматы</p>
-                            </div>
-                            <div class="col-md-4">
-                                <img src="/css/images/new2019/reviews/russdoors-kz-otziv.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <div class="review-item">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p class="review-text">
-                                    Спасибо за мою красавицу - двухстворчатую входную дверь сделанную на заказ специально для нашей семьи! Всегда о такой мечтала!
-                                </p>
-                                <p><b>Татьяна</b> <br>г. Алматы</p>
-                            </div>
-                            <div class="col-md-4">
-                                <img src="/css/images/new2019/reviews/russdoors-kz-.jpg" alt="">
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('layouts2019.parts.reviews')
 @endsection

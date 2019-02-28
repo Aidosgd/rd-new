@@ -35,6 +35,7 @@
                     <li><a href="/cp/pages"><i class="fa fa-circle-o"></i> Cтраницы</a></li>
                     <li><a href="/cp/sliders"><i class="fa fa-circle-o"></i> Слайдер</a></li>
                     <li><a href="/cp/banners"><i class="fa fa-circle-o"></i> Баннер</a></li>
+                    <li><a href="/cp/reviews"><i class="fa fa-circle-o"></i> Отзывы</a></li>
                 </ul>
             </li>
         </ul>

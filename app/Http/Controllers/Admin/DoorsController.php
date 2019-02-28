@@ -44,7 +44,7 @@ class DoorsController extends Controller
             'door' => null,
             'breadcrumbs' => $breadcrumbs,
             'pageTitle' => $pageTitle,
-            'doors' => $doors,
+            'doors' => $doors
         ]);
     }
 

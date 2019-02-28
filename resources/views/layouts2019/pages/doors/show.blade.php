@@ -36,7 +36,7 @@
                         <div class="col-sm-3">
                             <div class="mainImage">
                                 <a data-fancybox="gallery" class="image_js hidden-xs"  href="/uploads/doors/{{ $door->images->first()->name }}">
-                                    <img style="height: 350px" src="/uploads/doors/{{ $door->images->first()->name }}" alt="" class="img-responsive">
+                                    <img src="/uploads/doors/{{ $door->images->first()->name }}" alt="" class="img-responsive">
                                 </a>
                             </div>
                             <div class="row product__thumbs" style="margin-top: 50px; padding: 0 15px;">

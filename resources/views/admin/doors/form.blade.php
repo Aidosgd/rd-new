@@ -112,7 +112,7 @@
                                 <label> Видео:</label>
                                 {{ Form::file('video', ['id' => 'files']) }}
                                 
-                                @if($door->video)
+                                @if(isset($door->video))
                                     <video width="400" src="/uploads/videos/{{ $door->video }}" controls>
                                         <source src="/uploads/videos/{{ $door->video }}" type="video/mp4">
                                         Your browser does not support HTML5 video.
