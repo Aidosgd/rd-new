@@ -13,7 +13,7 @@
                                 </p>
                                 <p><b>{{ $item->name }}</b> <br>{{ $item->city }}</p>
                             </div>
-                            <div class="col-md-4">
+                            <div  class="col-md-4">
                                 <img src="/uploads/reviews/{{ $item->image }}" alt="">
                             </div>
                         </div>

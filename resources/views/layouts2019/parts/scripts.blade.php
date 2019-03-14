@@ -2,8 +2,14 @@
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script>
     $(document).ready(function () {
-        $('.home-slider').slick();
-        $('.review-slider').slick();
+        $('.home-slider').slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+        });
+        $('.review-slider').slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+        });
 
         ymaps.ready(init);
 

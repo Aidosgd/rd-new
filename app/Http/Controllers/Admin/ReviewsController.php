@@ -52,18 +52,30 @@ class ReviewsController extends Controller
         $input  = $request->input();
         $image  = $request->file('image');
 
-        $filename = date('Y-m-d-H-i').'-' . Str::slug($image->getClientOriginalName(), "_"). ".".$image->getClientOriginalExtension();
-        $pathOriginal = public_path('uploads/reviews/'.$filename);
-        Image::make($image->getRealPath())->save($pathOriginal);
+        if($image){
+            $filename = date('Y-m-d-H-i').'-' . Str::slug($image->getClientOriginalName(), "_"). ".".$image->getClientOriginalExtension();
+            $pathOriginal = public_path('uploads/reviews/'.$filename);
+            Image::make($image->getRealPath())->save($pathOriginal);
+            $review = new Review();
 
-        $review = new Review();
+            $review->fill([
+                'image' => $filename,
+                'name' => $input['name'],
+                'city' => $input['city'],
+                'description' => $input['description'],
+            ]);
+        }else{
+            $review = new Review();
 
-        $review->fill([
-            'image' => $filename,
-            'name' => $input['name'],
-            'city' => $input['city'],
-            'description' => $input['description'],
-        ]);
+            $review->fill([
+                'image' => '',
+                'name' => $input['name'],
+                'city' => $input['city'],
+                'description' => $input['description'],
+            ]);
+        }
+
+
 
         $review->save();
 

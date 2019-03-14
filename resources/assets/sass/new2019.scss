@@ -228,7 +228,7 @@ body{
   .home-slider{
     overflow: hidden;
     .slide{
-      margin: -135px 0;
+      //margin: -135px 0;
       position: relative;
       img{
         width: 100%;
@@ -243,6 +243,11 @@ body{
           font-size: 48px;
           text-align: center;
         }
+      }
+      .position_bottom{
+        bottom: 20px;
+        top: inherit;
+        transform: translateX(-50%);
       }
       .btn-default{
         color: #422a20;

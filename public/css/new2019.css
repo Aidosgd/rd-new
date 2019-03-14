@@ -189,7 +189,6 @@ body {
 .new-2019 .home-slider {
   overflow: hidden; }
   .new-2019 .home-slider .slide {
-    margin: -135px 0;
     position: relative; }
     .new-2019 .home-slider .slide img {
       width: 100%; }
@@ -202,6 +201,10 @@ body {
         color: #ede2cc;
         font-size: 48px;
         text-align: center; }
+    .new-2019 .home-slider .slide .position_bottom {
+      bottom: 20px;
+      top: inherit;
+      transform: translateX(-50%); }
     .new-2019 .home-slider .slide .btn-default {
       color: #422a20;
       background-color: #b58f6b;

@@ -37,6 +37,7 @@ elixir(function(mix) {
         './resources/assets/sass/plugins/animate.css',
         './public/css/new2019.css',
     ], 'public/css/all-new-2019.css');
+    mix.version('public/css/all-new-2019.css');
     //new-2019
     mix.styles([
         './bower_components/font-awesome/css/font-awesome.css',
