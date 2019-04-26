@@ -13226,11 +13226,15 @@ body {
     .new-2019 .header__address p, .new-2019 .header__address a {
       color: #b38a54;
       margin-bottom: 0; }
-  .new-2019 .header img {
+  .new-2019 .header .logo {
     width: 240px;
     position: relative;
     left: 35px;
     top: 5px; }
+  .new-2019 .header .logo_kaspi {
+    position: absolute;
+    left: 0;
+    width: 180px; }
 
 .new-2019 .home-slider {
   overflow: hidden; }
@@ -13328,6 +13332,10 @@ body {
 
 .new-2019 .bestseller .doors-list .door-item {
   margin-bottom: 30px; }
+  .new-2019 .bestseller .doors-list .door-item a {
+    color: #0a0a0a; }
+  .new-2019 .bestseller .doors-list .door-item .btn-default {
+    color: #fff; }
   .new-2019 .bestseller .doors-list .door-item img {
     height: 400px;
     display: block;
@@ -13717,10 +13725,14 @@ body {
     float: none; }
   .new-2019 .header {
     height: auto; }
-    .new-2019 .header img {
+    .new-2019 .header .logo {
       left: 0;
       top: 0;
       padding: 30px 60px 0;
+      display: block;
+      margin: auto; }
+    .new-2019 .header .logo_kaspi {
+      position: relative;
       display: block;
       margin: auto; }
     .new-2019 .header__address {

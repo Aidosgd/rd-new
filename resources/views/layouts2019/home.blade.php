@@ -46,9 +46,11 @@
                         @if($item->category->id == 1)
                             <div class="col-md-3 wow fadeInUp">
                                 <div class="door-item">
-                                    <img src="{{ $item->getSrc('doors') ? $item->getSrc('doors') : $item->images->first()->getSrc('doors') }}" class="padding-30" alt="">
-                                    <h3>{{ $item->title }}</h3>
-                                    <div class="price">{{ $item->price }} ₸</div>
+                                    <a href="/doors/{{ $item->category->slug }}/n/{{ $item->slug }}">
+                                        <img src="{{ $item->getSrc('doors') ? $item->getSrc('doors') : $item->images->first()->getSrc('doors') }}" class="padding-30" alt="">
+                                        <h3>{{ $item->title }}</h3>
+                                        <div class="price">@convert($item->price) ₸</div>
+                                    </a>
                                     <a href="/doors/{{ $item->category->slug }}/n/{{ $item->slug }}" class="btn btn-default">Подробнее</a>
                                 </div>
                             </div>
@@ -69,9 +71,11 @@
                         @if($item->category->id != 1)
                             <div class="col-md-4 wow fadeInUp">
                                 <div class="door-item">
-                                    <img src="{{ $item->getSrc('doors') ? $item->getSrc('doors') : $item->images->first()->getSrc('doors') }}" class="padding-30 width-100" alt="">
-                                    <h3>{{ $item->title }}</h3>
-                                    <div class="price">{{ $item->price }} ₸</div>
+                                    <a href="/doors/{{ $item->category->slug }}/n/{{ $item->slug }}">
+                                        <img src="{{ $item->getSrc('doors') ? $item->getSrc('doors') : $item->images->first()->getSrc('doors') }}" class="padding-30 width-100" alt="">
+                                        <h3>{{ $item->title }}</h3>
+                                        <div class="price">@convert($item->price) ₸</div>
+                                    </a>
                                     <a href="/doors/{{ $item->category->slug }}/n/{{ $item->slug }}" class="btn btn-default">Подробнее</a>
                                 </div>
                             </div>

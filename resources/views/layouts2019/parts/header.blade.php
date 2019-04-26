@@ -18,10 +18,11 @@
         <div class="row">
             <div class="col-md-6 wow fadeInUp">
                 <a href="/">
-                    <img src="/css/images/new2019/russdoorskz-logo.png" alt="">
+                    <img class="logo" src="/css/images/new2019/russdoorskz-logo.png" alt="">
                 </a>
             </div>
             <div class="col-md-6 header__address wow fadeInUp">
+                <img class="logo_kaspi" src="/css/images/new2019/icons/kaspi_logo.png" alt="">
                 <p>г.Алматы, ул. Райымбека 152</p>
                 <p><a href="tel:+7 727 345 01 01">+7 (727) 345-01-01;</a></p>
                 <p><a href="tel:+7 747 488 29 12">+7 747 488-29-12;</a></p>

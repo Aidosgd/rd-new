@@ -217,11 +217,16 @@ body{
         margin-bottom: 0;
       }
     }
-    img{
+    .logo{
       width: 240px;
       position: relative;
       left: 35px;
       top: 5px;
+    }
+    .logo_kaspi{
+      position: absolute;
+      left: 0;
+      width: 180px;
     }
   }
 
@@ -368,6 +373,12 @@ body{
     .doors-list{
       .door-item{
         margin-bottom: 30px;
+        a{
+          color: #0a0a0a;
+        }
+        .btn-default{
+          color: #fff;
+        }
         img{
           height: 400px;
           display: block;
@@ -863,10 +874,15 @@ body{
     }
     .header{
       height: auto;
-      img{
+      .logo{
         left: 0;
         top: 0;
         padding: 30px 60px 0;
+        display: block;
+        margin: auto;
+      }
+      .logo_kaspi{
+        position: relative;
         display: block;
         margin: auto;
       }
