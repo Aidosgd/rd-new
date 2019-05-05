@@ -25,29 +25,11 @@
     <link rel="stylesheet" type="text/css" href="css/new-style.css">
     <!--[if IE]><link rel="stylesheet" type="text/css" href="http://russdoors.kz/assets/plugins/qm/css/ie.css" /><![endif]-->
     <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="http://russdoors.kz/assets/plugins/qm/css/ie7.css" /><![endif]-->
+    
+   
 </head>
 <body>
-    <!-- Yandex.Metrika informer -->
-<a href="https://metrika.yandex.ru/stat/?id=26941914&amp;from=informer"
-target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/26941914/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
-style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="26941914" data-lang="ru" /></a>
-<!-- /Yandex.Metrika informer -->
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(26941914, "init", {
-        id:26941914,
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/26941914" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 <div class="container">
     <ul class="new-topmenu">
         <li>
@@ -319,31 +301,7 @@ style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" tit
         ga('create', 'UA-72113909-1', 'auto');
         ga('send', 'pageview');
     </script>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function() {
-                try {
-                    w.yaCounter26941914 = new Ya.Metrika({id:26941914,
-                        webvisor:true,
-                        clickmap:true,
-                        trackLinks:true,
-                        accurateTrackBounce:true});
-                } catch(e) { }
-            });
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
-        })(document, window, "yandex_metrika_callbacks");
-    </script>
-    <noscript><div><img src="//mc.yandex.ru/watch/26941914" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
+  
     <script type="text/javascript" src="http://russdoors.kz/assets/templates/russdoors/jquery-1.11.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://russdoors.kz/assets/templates/russdoors/jMyCarousel.js"></script>
@@ -367,38 +325,6 @@ style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" tit
     <!-- {/literal} -->
     <script type="text/javascript" src="http://russdoors.kz/assets/templates/russdoors/main.js"></script>
     <!-- end footer -->
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function(d, w, c) {
-            (w[c] = w[c] || []).push(function() {
-                try {
-                    w.yaCounter34783985 = new Ya.Metrika({
-                        id: 34783985,
-                        clickmap: true,
-                        trackLinks: true,
-                        accurateTrackBounce: true
-                    });
-                } catch (e) {}
-            });
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function() {
-                    n.parentNode.insertBefore(s, n);
-                };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else {
-                f();
-            }
-        })(document, window, "yandex_metrika_callbacks");
-    </script>
-    <noscript>
-        <div><img src="https://mc.yandex.ru/watch/34783985" style="position:absolute; left:-9999px;" alt="" /></div>
-    </noscript>
-    <!-- /Yandex.Metrika counter -->
 </div>
 </body>
 </html>
