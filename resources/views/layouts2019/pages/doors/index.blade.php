@@ -24,8 +24,10 @@
                         <div class="{{ $item->category->id == 1 ? 'col-md-3' : 'col-md-4' }}  wow fadeInUp">
                             <div class="door-item">
                                 <a href="/doors/{{ $item->category->slug }}/n/{{ $item->slug }}">
-                                    <img style="{{ $item->category->id != 1 ? 'height: 350px' : '' }}" src="{{ $item->images->first()->getSrc('doors') }}"
+                                    @if(!empty($item->images))
+                                        <img style="{{ $item->category->id != 1 ? 'height: 350px' : '' }}" src="/uploads/doors/{{ $item->images->first()->name }}"
                                          class="padding-30" alt="">
+                                    @endif
                                     <h3>{{ $item->title }}</h3>
                                 </a>
                                 {{--<div class="price">{{ $item->price }} ₸</div>--}}
