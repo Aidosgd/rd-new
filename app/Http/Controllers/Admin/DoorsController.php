@@ -151,7 +151,7 @@ class DoorsController extends Controller
         if($image){
             $pathOld = public_path('uploads/doors/'.$door->main_image);
             if($door->main_image){
-                unlink($pathOld);
+//                unlink($pathOld);
             }
 
             $filename = date('Y-m-d-H-i').'-' . Str::slug($image->getClientOriginalName(), "_"). ".".$image->getClientOriginalExtension();
@@ -214,13 +214,13 @@ class DoorsController extends Controller
                     continue;
                 $item->delete();
                 $pathOriginal = public_path('uploads/doors/'.$item->name);
-                unlink($pathOriginal);
+//                unlink($pathOriginal);
             }
         else
             foreach($door->images as $item){
                 $item->delete();
                 $pathOriginal = public_path('uploads/doors/'.$item->name);
-                unlink($pathOriginal);
+//                unlink($pathOriginal);
             }
         $images = array_filter($request->file('images', []));
 
@@ -252,14 +252,14 @@ class DoorsController extends Controller
             foreach($door->images as $image){
                 $filename = $image->name;
                 $pathSmall = public_path('uploads/doors/'.$filename);
-                unlink($pathSmall);
+//                unlink($pathSmall);
                 $image->delete();
             }
         }
 
         if(!empty($door->main_image)){
             $pathM = public_path('uploads/doors/'.$door->main_image);
-            unlink($pathM);
+//            unlink($pathM);
         }
 
         $door->delete();
