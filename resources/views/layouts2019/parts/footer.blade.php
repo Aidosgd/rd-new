@@ -1,8 +1,8 @@
 <section class="feedback">
     <div class="container">
-        <h2 class="wow fadeInUp">ЕСТЬ ВОПРОСЫ?</h2>
+        <h2 class="wow fadeInUp">{{ trans('footer.feedback_title') }}</h2>
 
-        <p class="wow fadeInUp">Закажите обратный звонок <br> Наш менеджер перезвонит Вам в течение 5 минут</p>
+        <p class="wow fadeInUp">{{ trans('footer.feedback_p') }}</p>
 
         @if(session()->has('message'))
             <div class="alert alert-success">
@@ -16,16 +16,16 @@
                     <form id="callForm" method="post" action="/mail/call">
                         <input name="_token" type="hidden"  value="{{ csrf_token() }}" />
                         <div class="form-group">
-                            <input type="text" name="phone" class="form-control" placeholder="Ваш телефон" required>
+                            <input type="text" name="phone" class="form-control" placeholder="{{ trans('footer.your_phone') }}" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control" placeholder="Ваш имейл" required>
+                            <input type="email" name="email" class="form-control" placeholder="{{ trans('footer.your_email') }}" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="name" class="form-control" placeholder="Ваше имя" required>
+                            <input type="text" name="name" class="form-control" placeholder="{{ trans('footer.your_name') }}" required>
                         </div>
                         <button type="submit" class="btn btn-default btn-effects">
-                            Заказать звонок
+                            {{ trans('footer.get_call') }}
                             <div class="t-btn_effects"></div>
                         </button>
                     </form>
@@ -40,20 +40,20 @@
 
 <section class="map">
     <div class="map-content visible-xs">
-        <h3 class="wow fadeInUp">Контакты</h3>
+        <h3 class="wow fadeInUp">{{ trans('footer.contacts') }}</h3>
 
-        <p class="wow fadeInUp"><b>Телефоны:</b></p>
+        <p class="wow fadeInUp"><b>{{ trans('footer.phones') }}:</b></p>
         <p class="wow fadeInUp">+7 707 197 50 91; +7 (747) 488-29-12;</p>
         <p class="wow fadeInUp">+7 (727) 345-01-01, 379-13-52, 379-13-42.</p>
         <br>
 
-        <p class="wow fadeInUp"><b>Адреса:</b></p>
-        <p class="wow fadeInUp">г. Алматы, ул. Райымбека 152 (уг. ул. Наурызбай Батыра);</p>
+        <p class="wow fadeInUp"><b>{{ trans('footer.address') }}:</b></p>
+        <p class="wow fadeInUp">{{ trans('footer.address_1') }}</p>
         <br>
-        <p class="wow fadeInUp"><b>Режим Работы:</b></p>
-        <p class="wow fadeInUp">Понедельник-Пятница : с 9:00 до 18:00</p>
-        <p class="wow fadeInUp">Суббота: с 9:00 до 16:00</p>
-        <p class="wow fadeInUp">Воскресенье: ВЫХОДНОЙ</p>
+        <p class="wow fadeInUp"><b>{{ trans('footer.work_mode') }}:</b></p>
+        <p class="wow fadeInUp">{{ trans('footer.work_mode_1') }}</p>
+        <p class="wow fadeInUp">{{ trans('footer.work_mode_2') }}</p>
+        <p class="wow fadeInUp">{{ trans('footer.work_mode_3') }}</p>
 
         <ul class="social-links">
             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -63,20 +63,20 @@
     <div id="map"></div>
     <div class="container hidden-xs">
         <div class="map-content">
-            <h3 class="wow fadeInUp">Контакты</h3>
+            <h3 class="wow fadeInUp">{{ trans('footer.contacts') }}</h3>
 
-            <p class="wow fadeInUp"><b>Телефоны:</b></p>
+            <p class="wow fadeInUp"><b>{{ trans('footer.phones') }}:</b></p>
             <p class="wow fadeInUp">+7 707 197 50 91; +7 (747) 488-29-12;</p>
             <p class="wow fadeInUp">+7 (727) 345-01-01, 379-13-52, 379-13-42.</p>
             <br>
 
-            <p class="wow fadeInUp"><b>Адреса:</b></p>
-            <p class="wow fadeInUp">г. Алматы, ул. Райымбека 152 (уг. ул. Наурызбай Батыра);</p>
+            <p class="wow fadeInUp"><b>{{ trans('footer.address') }}:</b></p>
+            <p class="wow fadeInUp">{{ trans('footer.address_1') }}</p>
             <br>
-            <p class="wow fadeInUp"><b>Режим Работы:</b></p>
-            <p class="wow fadeInUp">Понедельник-Пятница : с 9:00 до 18:00</p>
-            <p class="wow fadeInUp">Суббота: с 9:00 до 16:00</p>
-            <p class="wow fadeInUp">Воскресенье: ВЫХОДНОЙ</p>
+            <p class="wow fadeInUp"><b>{{ trans('footer.work_mode') }}:</b></p>
+            <p class="wow fadeInUp">{{ trans('footer.work_mode_1') }}</p>
+            <p class="wow fadeInUp">{{ trans('footer.work_mode_2') }}</p>
+            <p class="wow fadeInUp">{{ trans('footer.work_mode_3') }}</p>
 
             <ul class="social-links">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -90,12 +90,12 @@
     <div class="container">
         <div class="buttons">
             <ul class="footer__menu">
-                <li><a href="/stroydetali.php">МЕЖКОМНАТНЫЕ ДВЕРИ</a></li>
-                <li><a href="/leras.php">МЕТАЛЛИЧЕСКИЕ ДВЕРИ</a></li>
-                <li><a href="/sale">АКЦИИ</a></li>
-                <li><a href="/pages/sotrudnichestvo.php">СОТРУДНИЧЕСТВО</a></li>
-                <li><a href="/contacts/almaty.php">КОНТАКТЫ</a></li>
-                <li><a href="/pages/grafik_raboty.php">РЕЖИМ РАБОТЫ</a></li>
+                <li><a href="/{{$lang}}/stroydetali.php">{{ trans('footer.interior_doors') }}</a></li>
+                <li><a href="/{{$lang}}/leras.php">{{ trans('footer.metal_doors') }}</a></li>
+                <li><a href="/{{$lang}}/sale">{{ trans('footer.promotions') }}</a></li>
+                <li><a href="/{{$lang}}/pages/sotrudnichestvo.php">{{ trans('footer.cooperation') }}</a></li>
+                <li><a href="/{{$lang}}/contacts/almaty.php">{{ trans('footer.contacts') }}</a></li>
+                <li><a href="/{{$lang}}/pages/grafik_raboty.php">{{ trans('footer.work_mode') }}</a></li>
             </ul>
         </div>
 
@@ -108,8 +108,7 @@
         </div>
 
         <div class="footer__copyright">
-            <p>© Все права защищены <br>
-                2010-2019</p>
+            <p>{{ trans('footer.copyright') }}</p>
         </div>
     </div>
 </footer>

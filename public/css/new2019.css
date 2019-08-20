@@ -147,25 +147,29 @@ body {
     position: relative;
     left: -50%;
     text-align: left; }
-  .new-2019 .nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-    left: 50%; }
-    .new-2019 .nav ul li {
-      float: left;
+    .new-2019 .nav .buttons ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
       position: relative;
-      display: inline-block;
-      font-size: 18px;
-      font-weight: 300;
-      text-transform: uppercase;
-      text-align: center;
-      padding: 0 15px; }
-      .new-2019 .nav ul li a {
-        color: #422a20; }
-        .new-2019 .nav ul li a:hover {
-          color: #0a0a0a; }
+      left: 50%; }
+      .new-2019 .nav .buttons ul li {
+        float: left;
+        position: relative;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 0 15px; }
+        .new-2019 .nav .buttons ul li a {
+          color: #422a20; }
+          .new-2019 .nav .buttons ul li a:hover {
+            color: #0a0a0a; }
+  .new-2019 .nav .dropdown {
+    position: absolute;
+    top: 20px;
+    z-index: 999; }
 
 .new-2019 .header {
   background: url("/css/images/new2019/russdoors-header.jpg") center center;
@@ -394,7 +398,8 @@ body {
       font-weight: 700;
       background-position: center center;
       border-color: transparent;
-      border-style: solid; }
+      border-style: solid;
+      text-transform: uppercase; }
     .new-2019 .quality-item p {
       color: #ede2cc;
       font-size: 16px;
@@ -639,11 +644,11 @@ body {
 .new-2019 .padding-30 {
   padding: 0 30px; }
 
-.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+.new-2019 .pagination > .active > a, .new-2019 .pagination > .active > span, .new-2019 .pagination > .active > a:hover, .new-2019 .pagination > .active > span:hover, .new-2019 .pagination > .active > a:focus, .new-2019 .pagination > .active > span:focus {
   background: #0a0a0a;
   border-color: #0a0a0a; }
 
-.pagination li a {
+.new-2019 .pagination li a {
   color: #0a0a0a; }
 
 @keyframes ripple {

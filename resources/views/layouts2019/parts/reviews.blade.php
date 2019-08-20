@@ -1,6 +1,6 @@
 <section class="reviews">
     <div class="container">
-        <h2>Отзывы клиентов</h2>
+        <h2>{{ trans('home.reviews_title') }}</h2>
 
         <div class="review-slider">
             @foreach($reviews as $item)
