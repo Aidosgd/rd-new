@@ -50,7 +50,8 @@ Route::get('leras.php', function (){
     $doorCategory = \App\Models\Category::where('slug', '=', 'metalicheskie-dveri')->first();
     $seo_title = 'Входные двери оптом и металлические двери Алматы большой выбор';
     $seo_description = 'Большой выбор входных Металлических дверей производства России в Алматы';
-    $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)->where('active', 1)->get();
+    $paginateCount = $doorCategory->id == 1 ? 8 : 6;
+    $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)->where('active', 1)->paginate($paginateCount);
     return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description'));
 });
 Route::get('shymkent.php', function (){
@@ -85,7 +86,8 @@ Route::get('stroydetali.php', function (){
     $doorCategory = \App\Models\Category::where('slug', '=', 'mezhkomnatnye-dveri')->first();
     $seo_title = 'Межкомнатные Двери Алматы. Купить двери оптом в Алматы';
     $seo_description = 'Межкомнатные Двери Алматы производства России и Белоруссии. Широкий выбор, низкие цены.';
-    $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)->where('active', 1)->get();
+    $paginateCount = $doorCategory->id == 1 ? 8 : 6;
+    $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)->where('active', 1)->paginate($paginateCount);
     return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description'));
 });
 Route::get('кызылорда.php', function (){

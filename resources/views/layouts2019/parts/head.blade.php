@@ -72,25 +72,43 @@
 
     gtag('config', 'AW-769605172');
 </script>
-<!-- Yandex.Metrika informer -->
-<!--<a href="https://metrika.yandex.ru/stat/?id=26941914&amp;from=informer"
-target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/26941914/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
-style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="26941914" data-lang="ru" /></a>-->
-<!-- /Yandex.Metrika informer -->
+<script type="text/javascript">
+var yaParams = {};
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://ip.up66.ru/', true);
+xhr.onload = function() {
+yaParams.ip = this.responseText;
+}
+xhr.send();
+</script>
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter51879767 = new Ya.Metrika({
+                    id:51879767,
+                    params:window.yaParams,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
 
-    ym(26941914, "init", {
-        id:26941914,
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-    });
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/26941914" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img src="https://mc.yandex.ru/watch/51879767" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
