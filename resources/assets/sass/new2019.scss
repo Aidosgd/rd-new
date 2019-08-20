@@ -805,20 +805,6 @@ body{
   }
 }
 
-.pagination > .active > {
-  a, span, a:hover, span:hover, a:focus, span:focus {
-    background: #0a0a0a;
-    border-color: #0a0a0a;
-  }
-}
-.pagination{
-  li{
-    a{
-      color: #0a0a0a;
-    }
-  }
-}
-
 @-webkit-keyframes ripple {
   20% {
     opacity: 0;
