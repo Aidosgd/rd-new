@@ -9,6 +9,6 @@ class Review extends Model
     protected $table = 'reviews';
 
     protected $fillable = [
-        'name', 'city', 'description', 'image'
+        'name', 'city', 'description', 'name_kk', 'city_kk', 'description_kk', 'image'
     ];
 }

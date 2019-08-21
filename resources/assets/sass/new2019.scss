@@ -204,6 +204,16 @@ body{
       position: absolute;
       top: 20px;
       z-index: 999;
+      .btn{
+        &.btn-primary{
+          background: transparent !important;
+          color: #422a20;
+          border: none;
+        }
+      }
+      .dropdown-menu{
+        min-width: auto;
+      }
     }
   }
 
@@ -885,6 +895,11 @@ body{
           display: block;
           float: none;
         }
+      }
+      .dropdown{
+        position: relative;
+        top: 0;
+        left: 3px;
       }
     }
     .header{

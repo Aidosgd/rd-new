@@ -2,7 +2,7 @@
     <div class="container">
         <h2 class="wow fadeInUp">{{ trans('footer.feedback_title') }}</h2>
 
-        <p class="wow fadeInUp">{{ trans('footer.feedback_p') }}</p>
+        <p class="wow fadeInUp">{!! trans('footer.feedback_p') !!}</p>
 
         @if(session()->has('message'))
             <div class="alert alert-success">
@@ -102,13 +102,13 @@
         <div class="clearfix"></div>
 
         <div class="footer__logo">
-            <a href="/">
+            <a href="/{{$lang}}">
                 <img src="/css/images/new2019/russdoorskz-logo.png" alt="">
             </a>
         </div>
 
         <div class="footer__copyright">
-            <p>{{ trans('footer.copyright') }}</p>
+            <p>{!! trans('footer.copyright') !!}</p>
         </div>
     </div>
 </footer>

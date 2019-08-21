@@ -59,7 +59,7 @@
                         </div>
                         <div class="col-sm-5">
                             <div class="product__details">
-                                <h4>Описание</h4>
+                                <h4>{{ trans('doors.description') }}</h4>
                                 {!! $door->description !!}
                             </div>
                         </div>

@@ -64,12 +64,24 @@
                                 {!! Form::text('name', null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
+                                <label>Имя kz</label>
+                                {!! Form::text('name_kk', null, ['class' => 'form-control']) !!}
+                            </div>
+                            <div class="form-group">
                                 <label>Город</label>
                                 {!! Form::text('city', null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
+                                <label>Город kz</label>
+                                {!! Form::text('city_kk', null, ['class' => 'form-control']) !!}
+                            </div>
+                            <div class="form-group">
                                 <label>Описание</label>
                                 {{ Form::textarea('description', null, ['class' => 'form-control']) }}
+                            </div>
+                            <div class="form-group">
+                                <label>Описание kz</label>
+                                {{ Form::textarea('description_kk', null, ['class' => 'form-control']) }}
                             </div>
                         </div>
                         <div class="box-footer">

@@ -56,9 +56,11 @@ class PagesController extends Controller
 
         $page->fill([
             'title' => $input['title'],
+            'title_kk' => $input['title_kk'],
             'slug' => Str::slug($input['title'], '_'),
             'weight' => $input['weight'],
             'description' => $input['description'],
+            'description_kk' => $input['description_kk'],
 
             'seo_title' => $input['seo_title'],
             'seo_keywords' => $input['seo_keywords'],
@@ -104,9 +106,11 @@ class PagesController extends Controller
 
         $page->fill([
             'title' => $input['title'],
+            'title_kk' => $input['title_kk'],
             'slug' => Str::slug($input['title'], '_'),
             'weight' => $input['weight'],
             'description' => $input['description'],
+            'description_kk' => $input['description_kk'],
 
             'seo_title' => $input['seo_title'],
             'seo_keywords' => $input['seo_keywords'],

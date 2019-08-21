@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <ul class="breadcrumb">
-                        <li><a href="{{ url('/') }}">Главная</a></li>
+                        <li><a href="/{{ $lang }}">{{ trans('pages.home') }}</a></li>
                         <li>{{ $pageName->title }}</li>
                     </ul>
                 </div>
@@ -13,26 +13,23 @@
             <div class="row">
                 @if($pageName->seo_keywords == 'articles')
                     <div class="col-md-3">
-                        <h1 class="sidebar-head">Полезные статьи</h1>
+                        <h1 class="sidebar-head">{{ trans('pages.useful_articles') }}</h1>
                         <ul class="sidebar">
-                            <li><a href="/pages/vybor_mezhkomnatnykh_dverey_massiv_shpon_ili_laminat.php ">Выбор межкомнатных дверей: массив, шпон или ламинат? </a></li>
-                            <li><a href="/pages/pravilnaya_ustanovka_vkhodnykh_i_mezhkomnatnykh_dverey_osnovnye_etapy_i_sposoby.php ">Установка входных и межкомнатных дверей</a></li>
-                            <li><a href="/pages/dveri_kupe_razdvizhnye_dveri_v_almaty.php ">Двери-купе - раздвижные
-                                    двери</a></li>
-                            <li><a href="/pages/chto_takoe_shpon.php ">Что такое шпон</a></li>
-                            <li><a href="/pages/metallicheskie_dveri_v_almaty.php ">Металлические двери в
-                                    Алматы</a></li>
-                            <li><a href="/pages/metallicheskie_dveri_kak_vybirat.php ">Металлические
-                                    двери- как выбирать</a></li>
-                            <li><a href="/pages/mezhkomnatnye_dveri_v_almaty.php ">Межкомнатные двери в Алматы</a></li>
-                            <li><a href="/pages/kak_ustanovit_mezhkomnatnye_dveri.php ">Как установить межкомнатные двери </a></li>
-                            <li><a href="/pages/razdvizhnye_dveri.php ">Раздвижные двери</a></li>
-                            <li><a href="/pages/vkhodnye_dveri.php ">Входные двери</a></li>
-                            <li><a href="/pages/chasto_voznikayushchie_voprosy.php ">Часто возникающие вопросы</a></li>
-                            <li><a href="/pages/dvernye_izdeliya_v_almaty.php ">Дверные изделия</a></li>
-                            <li><a href="/pages/ekologicheski_chistye_dveri_ekoshpon_po_dostupnoy_tsene.php ">Экологически чистые двери экошпон по доступной цене</a></li>
-                            <li><a href="/pages/vysokokachestvennye_dveri_v_kredit_vygodnaya_stavka.php ">Высококачественные двери в кредит выгодная ставка</a></li>
-                            <li><a href="/pages/bolshie_skidki_na_dveri_almaty_aktsii_na_dveri_almaty_vygodno.php ">Большие скидки на двери Алматы, акции на двери Алматы выгодно</a></li>
+                            <li><a href="/{{ $lang }}/pages/vybor_mezhkomnatnykh_dverey_massiv_shpon_ili_laminat.php ">{{ trans('pages.vybor_mezhkomnatnykh_dverey_massiv_shpon_ili_laminat') }}</a></li>
+                            <li><a href="/{{ $lang }}/pages/pravilnaya_ustanovka_vkhodnykh_i_mezhkomnatnykh_dverey_osnovnye_etapy_i_sposoby.php ">{{ trans('pages.pravilnaya_ustanovka_vkhodnykh_i_mezhkomnatnykh_dverey_osnovnye_etapy_i_sposoby') }}</a></li>
+                            <li><a href="/{{ $lang }}/pages/dveri_kupe_razdvizhnye_dveri_v_almaty.php ">{{ trans('pages.dveri_kupe_razdvizhnye_dveri_v_almaty') }}</a></li>
+                            <li><a href="/{{ $lang }}/pages/chto_takoe_shpon.php ">{{ trans('pages.chto_takoe_shpon') }}</a></li>
+                            <li><a href="/{{ $lang }}/pages/metallicheskie_dveri_v_almaty.php ">{{ trans('pages.metallicheskie_dveri_v_almaty') }}</a></li>
+                            <li><a href="/{{ $lang }}/pages/metallicheskie_dveri_kak_vybirat.php ">{{ trans('pages.metallicheskie_dveri_kak_vybirat') }}</a></li>
+                            <li><a href="/{{ $lang }}/pages/mezhkomnatnye_dveri_v_almaty.php ">{{ trans('pages.mezhkomnatnye_dveri_v_almaty') }}</a></li>
+                            <li><a href="/{{ $lang }}/pages/kak_ustanovit_mezhkomnatnye_dveri.php ">{{ trans('pages.kak_ustanovit_mezhkomnatnye_dveri') }}</a></li>
+                            <li><a href="/{{ $lang }}/pages/razdvizhnye_dveri.php ">{{ trans('pages.razdvizhnye_dveri') }}</a></li>
+                            <li><a href="/{{ $lang }}/pages/vkhodnye_dveri.php ">{{ trans('pages.vkhodnye_dveri') }}</a></li>
+                            <li><a href="/{{ $lang }}/pages/chasto_voznikayushchie_voprosy.php ">{{ trans('pages.chasto_voznikayushchie_voprosy') }}</a></li>
+                            <li><a href="/{{ $lang }}/pages/dvernye_izdeliya_v_almaty.php ">{{ trans('pages.dvernye_izdeliya_v_almaty') }}</a></li>
+                            <li><a href="/{{ $lang }}/pages/ekologicheski_chistye_dveri_ekoshpon_po_dostupnoy_tsene.php ">{{ trans('pages.ekologicheski_chistye_dveri_ekoshpon_po_dostupnoy_tsene') }}</a></li>
+                            <li><a href="/{{ $lang }}/pages/vysokokachestvennye_dveri_v_kredit_vygodnaya_stavka.php ">{{ trans('pages.vysokokachestvennye_dveri_v_kredit_vygodnaya_stavka') }}</a></li>
+                            <li><a href="/{{ $lang }}/pages/bolshie_skidki_na_dveri_almaty_aktsii_na_dveri_almaty_vygodno.php ">{{ trans('pages.bolshie_skidki_na_dveri_almaty_aktsii_na_dveri_almaty_vygodno') }}</a></li>
                         </ul>
                     </div>
                 @endif

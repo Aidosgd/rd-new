@@ -9,12 +9,12 @@
     <div style="background: #f2ede6">
         <div class="container" style="padding: 40px 0">
             <div class="row">
-                <h1 class="text-center" style="padding-bottom: 30px">Двери в интерьере</h1>
+                <h1 class="text-center" style="padding-bottom: 30px">{{ trans('interior.title') }}</h1>
                 <div id="text-page" class="col-md-12">
                     <div style="width: 1000px; margin: auto">
                         <div class="door__js">
                             <div class="interiero">
-                                <div id="fabHead">Выберите интерьер из списка:
+                                <div id="fabHead">{{ trans('interior.choice_interior_in_list') }}:
                                 </div>
                                 <div id="intWarp">
                                     <img class="uploadInter" src="/images/interior/images/interier/10.jpg">
@@ -58,15 +58,13 @@
                                     <div class="transformable-handle-scale transformable-handle ui-icon ui-icon-search" title="Scale" style="left: 1px; top: 1px; position: absolute; z-index: 2000;"></div></div>
                                 <img class="confaImg magictime" src="/images/interior/images/options.png">
                                 <div class="confa magictime">
-                                    <div class="optTop">Настройки отображения<img class="closeImg" src="/images/interior/images/close.png"></div>
+                                    <div class="optTop">{{ trans('interior.display_settings') }}<img class="closeImg" src="/images/interior/images/close.png"></div>
                                     <div class="optMain">
                                         <div class="wrapper-demo">
                                             <ul class="dropdown">
-                                                <li><input type="checkbox" id="el-1" name="el-1" value="shadow_o"><label for="el-1">Включить
-                                                        тень у двери</label></li>
-                                                <li><input type="checkbox" id="el-3" name="el-3" value="flip_o"><label for="el-1">Отразить фон
-                                                        горизонтально</label></li>
-                                                <li class="rangers"><label>Изменить яркость фона</label>
+                                                <li><input type="checkbox" id="el-1" name="el-1" value="shadow_o"><label for="el-1">{{ trans('interior.turn_on_the_shadow_at_the_door') }}</label></li>
+                                                <li><input type="checkbox" id="el-3" name="el-3" value="flip_o"><label for="el-1">{{ trans('interior.flip_background_horizontally') }}</label></li>
+                                                <li class="rangers"><label>{{ trans('interior.change_background_brightness') }}</label>
                                                     <div id="slider-bright" class="noUi-target noUi-ltr noUi-horizontal noUi-connect">
                                                         <div class="noUi-base">
                                                             <div class="noUi-origin noUi-background" style="left: 50%;">
@@ -75,7 +73,7 @@
                                                         </div>
                                                         <div class="noUi-base"><div class="noUi-origin noUi-background" style="left: 50%;"><div class="noUi-handle noUi-handle-lower"></div></div></div></div>
                                                 </li>
-                                                <li class="rangers"><label>Изменить контрастность фона</label>
+                                                <li class="rangers"><label>{{ trans('interior.change_background_contrast') }}</label>
                                                     <div id="slider-contra" class="noUi-target noUi-ltr noUi-horizontal noUi-connect">
                                                         <div class="noUi-base">
                                                             <div class="noUi-origin noUi-background" style="left: 50%;">
@@ -84,7 +82,7 @@
                                                         </div>
                                                         <div class="noUi-base"><div class="noUi-origin noUi-background" style="left: 50%;"><div class="noUi-handle noUi-handle-lower"></div></div></div></div>
                                                 </li>
-                                                <li class="rangers"><label>Изменить насыщенность фона</label>
+                                                <li class="rangers"><label>{{ trans('interior.change_background_saturation') }}</label>
                                                     <div id="slider-satur" class="noUi-target noUi-ltr noUi-horizontal noUi-connect">
                                                         <div class="noUi-base">
                                                             <div class="noUi-origin noUi-background" style="left: 50%;">
@@ -93,7 +91,7 @@
                                                         </div>
                                                         <div class="noUi-base"><div class="noUi-origin noUi-background" style="left: 50%;"><div class="noUi-handle noUi-handle-lower"></div></div></div></div>
                                                 </li>
-                                                <li class="rangers"><label>Изменить прозрачность фона</label>
+                                                <li class="rangers"><label>{{ trans('interior.change_background_transparency') }}</label>
                                                     <div id="slider-opac" class="noUi-target noUi-ltr noUi-horizontal noUi-connect">
                                                         <div class="noUi-base">
                                                             <div class="noUi-origin noUi-background noUi-stacking" style="left: 100%;">
@@ -102,7 +100,7 @@
                                                         </div>
                                                         <div class="noUi-base"><div class="noUi-origin noUi-background noUi-stacking" style="left: 100%;"><div class="noUi-handle noUi-handle-lower"></div></div></div></div>
                                                 </li>
-                                                <li class="rangers"><label>Изменить размытие фона</label>
+                                                <li class="rangers"><label>{{ trans('interior.change_background_blur') }}</label>
                                                     <div id="slider-blur" class="noUi-target noUi-ltr noUi-horizontal noUi-connect">
                                                         <div class="noUi-base">
                                                             <div class="noUi-origin noUi-background" style="left: 0%;">
@@ -112,14 +110,14 @@
                                                         <div class="noUi-base"><div class="noUi-origin noUi-background" style="left: 0%;"><div class="noUi-handle noUi-handle-lower"></div></div></div></div>
                                                 </li>
                                             </ul>
-                                            <div class="clearOpt">Сбросить настройки</div>
+                                            <div class="clearOpt">{{ trans('interior.reset_settings') }}</div>
                                             &#8203;
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="fabinfo">Вы выбрали двери: <a href="http://russdoors.kz/doors/mezhkomnatnye-dveri/n/palermo">Палермо</a></div>
+                        <div class="fabinfo">{{ trans('interior.you_have_chosen_the_door') }}: <a href="http://russdoors.kz/doors/mezhkomnatnye-dveri/n/palermo">Палермо</a></div>
                         <center>
                             <div id="existingImges">
                                 @foreach($doors as $door)

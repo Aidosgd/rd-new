@@ -56,6 +56,7 @@ class DoorsController extends Controller
 
         $door->fill([
             'title' => $input['title'],
+            'title_kk' => $input['title_kk'],
             'price' => $input['price'],
             'slug' => Str::slug($input['title'], '_'),
             'weight' => $input['weight'],
@@ -64,6 +65,7 @@ class DoorsController extends Controller
             'doors_category_id' => $input['doors_category_id'],
             'manufacturer' => $input['manufacturer'],
             'description' => $input['description'],
+            'description_kk' => $input['description_kk'],
 
             'seo_title' => $input['seo_title'],
             'seo_keywords' => $input['seo_keywords'],
@@ -160,6 +162,7 @@ class DoorsController extends Controller
 
             $door->fill([
                 'title' => $input['title'],
+                'title_kk' => $input['title_kk'],
                 'price' => $input['price'],
                 'slug' => Str::slug($input['title'], '_'),
                 'weight' => $input['weight'],
@@ -169,6 +172,7 @@ class DoorsController extends Controller
                 'doors_category_id' => $input['doors_category_id'],
                 'manufacturer' => $input['manufacturer'],
                 'description' => $input['description'],
+                'description_kk' => $input['description_kk'],
 
                 'seo_title' => $input['seo_title'],
                 'seo_keywords' => $input['seo_keywords'],
@@ -177,6 +181,7 @@ class DoorsController extends Controller
         }else{
             $door->fill([
                 'title' => $input['title'],
+                'title_kk' => $input['title_kk'],
                 'price' => $input['price'],
                 'slug' => Str::slug($input['title'], '_'),
                 'weight' => $input['weight'],
@@ -185,6 +190,7 @@ class DoorsController extends Controller
                 'doors_category_id' => $input['doors_category_id'],
                 'manufacturer' => $input['manufacturer'],
                 'description' => $input['description'],
+                'description_kk' => $input['description_kk'],
 
                 'seo_title' => $input['seo_title'],
                 'seo_keywords' => $input['seo_keywords'],

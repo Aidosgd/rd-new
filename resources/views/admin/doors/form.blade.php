@@ -51,6 +51,10 @@
                                 {!! Form::text('title', null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
+                                <label for="exampleInputEmail1">Название двери kz</label>
+                                {!! Form::text('title_kk', null, ['class' => 'form-control']) !!}
+                            </div>
+                            <div class="form-group">
                                 <label>Цена</label>
                                 {!! Form::text('price', null, ['class' => 'form-control']) !!}
                             </div>
@@ -76,6 +80,10 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Описание</label>
                                 {{ Form::textarea('description', null, ['class' => 'form-control']) }}
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Описание kz</label>
+                                {{ Form::textarea('description_kk', null, ['class' => 'form-control']) }}
                             </div>
                             <?php
                             $url = Route::getFacadeRoot()->current()->uri();

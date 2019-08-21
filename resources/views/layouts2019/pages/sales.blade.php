@@ -3,7 +3,7 @@
 @section('content')
     <div style="background: #f2ede6">
         <div class="container">
-            <h1 style="padding-bottom: 30px; text-align: center">РАСПРОДАЖА</h1>
+            <h1 style="padding-bottom: 30px; text-align: center">{{ trans('pages.sell_out') }}</h1>
 
             <div class="row doors">
                 {{--Альтаир--}}

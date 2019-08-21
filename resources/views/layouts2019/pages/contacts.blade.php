@@ -87,36 +87,36 @@
                 <div class="row">
                     <div class="col-md-3 hidden-xs">
                         <ul class="contacts-menu">
-                            <li><a href="/contacts/almaty.php">Алматы</a></li>
-                            <li><a href="/contacts/astana.php">Астана</a></li>
-                            <li><a href="/contacts/aktobe.php">Актобе</a></li>
-                            <li><a href="/contacts/aktau.php">Актау</a></li>
-                            <li><a href="/contacts/balkhash.php">Балхаш</a></li>
-                            <li><a href="/contacts/karaganda.php">Караганда</a></li>
-                            <li><a href="/contacts/taldykurgan.php">Талдыкурган</a></li>
-                            <li><a href="/contacts/taraz.php">Тараз</a></li>
-                            <li><a href="/contacts/ust_kamenogorsk.php">Усть-Каменогорск</a></li>
-                            <li><a href="/contacts/shymkent.php">Шымкент</a></li>
-                            <li><a href="/contacts/kyzylorda.php">Кызылорда</a></li>
+                            <li><a href="/{{$lang}}/contacts/almaty.php">{{ trans('contacts.almaty') }}</a></li>
+                            <li><a href="/{{$lang}}/contacts/astana.php">{{ trans('contacts.astana') }}</a></li>
+                            <li><a href="/{{$lang}}/contacts/aktobe.php">{{ trans('contacts.aktobe') }}</a></li>
+                            <li><a href="/{{$lang}}/contacts/aktau.php">{{ trans('contacts.aktau') }}</a></li>
+                            <li><a href="/{{$lang}}/contacts/balkhash.php">{{ trans('contacts.balkhash') }}</a></li>
+                            <li><a href="/{{$lang}}/contacts/karaganda.php">{{ trans('contacts.karaganda') }}</a></li>
+                            <li><a href="/{{$lang}}/contacts/taldykurgan.php">{{ trans('contacts.taldykurgan') }}</a></li>
+                            <li><a href="/{{$lang}}/contacts/taraz.php">{{ trans('contacts.taraz') }}</a></li>
+                            <li><a href="/{{$lang}}/contacts/ust_kamenogorsk.php">{{ trans('contacts.ust_kamenogorsk') }}</a></li>
+                            <li><a href="/{{$lang}}/contacts/shymkent.php">{{ trans('contacts.shymkent') }}</a></li>
+                            <li><a href="/{{$lang}}/contacts/kyzylorda.php">{{ trans('contacts.kyzylorda') }}</a></li>
                         </ul>
                     </div>
                     <div class="col-md-9">
                         <div class="visible-xs">
-                            <button class="btn btn-contact" data-toggle="collapse" data-target="#demo">Список городов</button>
+                            <button class="btn btn-contact" data-toggle="collapse" data-target="#demo">{{ trans('contacts.city_list') }}</button>
 
                             <div id="demo" class="collapse">
                                 <ul class="contacts-menu">
-                                    <li><a href="/contacts/almaty.php">Алматы</a></li>
-                                    <li><a href="/contacts/astana.php">Астана</a></li>
-                                    <li><a href="/contacts/aktobe.php">Актобе</a></li>
-                                    <li><a href="/contacts/aktau.php">Актау</a></li>
-                                    <li><a href="/contacts/balkhash.php">Балхаш</a></li>
-                                    <li><a href="/contacts/karaganda.php">Караганда</a></li>
-                                    <li><a href="/contacts/taldykurgan.php">Талдыкурган</a></li>
-                                    <li><a href="/contacts/taraz.php">Тараз</a></li>
-                                    <li><a href="/contacts/ust_kamenogorsk.php">Усть-Каменогорск</a></li>
-                                    <li><a href="/contacts/shymkent.php">Шымкент</a></li>
-                                    <li><a href="/contacts/kyzylorda.php">Кызылорда</a></li>
+                                    <li><a href="/{{$lang}}/contacts/almaty.php">{{ trans('contacts.almaty') }}</a></li>
+                                    <li><a href="/{{$lang}}/contacts/astana.php">{{ trans('contacts.astana') }}</a></li>
+                                    <li><a href="/{{$lang}}/contacts/aktobe.php">{{ trans('contacts.aktobe') }}</a></li>
+                                    <li><a href="/{{$lang}}/contacts/aktau.php">{{ trans('contacts.aktau') }}</a></li>
+                                    <li><a href="/{{$lang}}/contacts/balkhash.php">{{ trans('contacts.balkhash') }}</a></li>
+                                    <li><a href="/{{$lang}}/contacts/karaganda.php">{{ trans('contacts.karaganda') }}</a></li>
+                                    <li><a href="/{{$lang}}/contacts/taldykurgan.php">{{ trans('contacts.taldykurgan') }}</a></li>
+                                    <li><a href="/{{$lang}}/contacts/taraz.php">{{ trans('contacts.taraz') }}</a></li>
+                                    <li><a href="/{{$lang}}/contacts/ust_kamenogorsk.php">{{ trans('contacts.ust_kamenogorsk') }}</a></li>
+                                    <li><a href="/{{$lang}}/contacts/shymkent.php">{{ trans('contacts.shymkent') }}</a></li>
+                                    <li><a href="/{{$lang}}/contacts/kyzylorda.php">{{ trans('contacts.kyzylorda') }}</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -126,28 +126,28 @@
             </div>
             <div class="tab-contact hidden">
                 <div class="tab">
-                    <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Алматы')">Алматы</button>
-                    <button class="tablinks" onclick="openCity(event, 'Астана')">Астана</button>
-                    <button class="tablinks" onclick="openCity(event, 'Актобе')">Актобе</button>
-                    <button class="tablinks" onclick="openCity(event, 'Актау')">Актау</button>
-                    <button class="tablinks" onclick="openCity(event, 'Балхаш')">Балхаш</button>
-                    <button class="tablinks" onclick="openCity(event, 'Караганда')">Караганда</button>
-                    <button class="tablinks" onclick="openCity(event, 'Талдыкурган')">Талдыкурган</button>
-                    <button class="tablinks" onclick="openCity(event, 'Тараз')">Тараз</button>
-                    <button class="tablinks" onclick="openCity(event, 'Усть-Каменогорск')">Усть-Каменогорск</button>
-                    <button class="tablinks" onclick="openCity(event, 'Шымкент')">Шымкент</button>
-                    <button class="tablinks" onclick="openCity(event, 'Кызылорда')">`Кызылорда</button>
+                    <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Алматы')">{{ trans('contacts.almaty') }}</button>
+                    <button class="tablinks" onclick="openCity(event, 'Астана')">{{ trans('contacts.astana') }}</button>
+                    <button class="tablinks" onclick="openCity(event, 'Актобе')">{{ trans('contacts.aktobe') }}</button>
+                    <button class="tablinks" onclick="openCity(event, 'Актау')">{{ trans('contacts.aktau') }}</button>
+                    <button class="tablinks" onclick="openCity(event, 'Балхаш')">{{ trans('contacts.balkhash') }}</button>
+                    <button class="tablinks" onclick="openCity(event, 'Караганда')">{{ trans('contacts.karaganda') }}</button>
+                    <button class="tablinks" onclick="openCity(event, 'Талдыкурган')">{{ trans('contacts.taldykurgan') }}</button>
+                    <button class="tablinks" onclick="openCity(event, 'Тараз')">{{ trans('contacts.taraz') }}</button>
+                    <button class="tablinks" onclick="openCity(event, 'Усть-Каменогорск')">{{ trans('contacts.ust_kamenogorsk') }}</button>
+                    <button class="tablinks" onclick="openCity(event, 'Шымкент')">{{ trans('contacts.shymkent') }}</button>
+                    <button class="tablinks" onclick="openCity(event, 'Кызылорда')">{{ trans('contacts.kyzylorda') }}</button>
                 </div>
 
                 <div class="tabcontent" id="Алматы">
                     <div class="row">
                         <div class="col-md-6">
-                            <h1>Алматы</h1>
-                            <h2>Главный адрес:</h2>
-                            <p>г. Алматы, ул. Райымбека 152 (уг. ул. Наурызбай Батыра);</p>
+                            <h1>{{ trans('contacts.almaty') }}</h1>
+                            <h2>{{ trans('contacts.main_address') }}:</h2>
+                            <p>{{ trans('contacts.main_address_p') }}</p>
                             <hr>
 
-                            <h2>Телефоны для справок:</h2>
+                            <h2>{{ trans('contacts.help_phones') }}:</h2>
                             <p>8 (727)&nbsp;345-01-01;</p>
                             <p>8 (747) 488-29-12:</p>
                             <hr>
@@ -156,30 +156,27 @@
                             <p>Skype: dionis_0001</p>
                             <hr>
 
-                            <h2>Режим работы:</h2>
-                            <p>Понедельник-пятница - 9:00 - 18:00<br>Суббота - 9:00 - 16:00<br>Воскресенье - 11:00 -15:00</p>
+                            <h2>{{ trans('contacts.work_mode') }}:</h2>
+                            <p>{!! trans('contacts.work_mode_p') !!}</p>
 
                             <h2></h2>
-                            <h2>Торговые точки:</h2>
-                            <p>
-                                Ул.Бокейханова 47а<br>сот.+77027266949<br>
-                                Понедельник- пятница с 9.00-18.00. Суббота с 9.00-16.00. Воскресенье выходной
-                            </p>
-                            <p>Ул. Кабдолова 1, ТД «Армада» (бутик 1021)&nbsp;<br>Телефон: 227 30 39&nbsp;<br>Без выходных</p>
+                            <h2>{{ trans('contacts.outlets') }}:</h2>
+                            <p>{!! trans('contacts.outlets_p') !!}</p>
+                            <p>{!! trans('contacts.outlets_p_1') !!}</p>
                         </div>
                         <div class="col-md-6">
                             <div class="map">
                                 <a class="dg-widget-link" href="http://2gis.kz/almaty/firm/9429940000799887/center/76.9346594810486,43.269956206904/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">
-                                    Посмотреть на карте Алматы
+                                    {{ trans('contacts.view_map_almaty') }}
                                 </a>
                                 <div class="dg-widget-link">
                                     <a href="http://2gis.kz/almaty/firm/9429940000799887/photos/9429940000799887/center/76.9346594810486,43.269956206904/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">
-                                        Фотографии компании
+                                        {{ trans('contacts.company_photo') }}
                                     </a>
                                 </div>
                                 <div class="dg-widget-link">
                                     <a href="http://2gis.kz/almaty/center/76.93465,43.269378/zoom/16/routeTab/rsType/bus/to/76.93465,43.269378╎Российские двери, торговая компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">
-                                        Найти проезд до Российские двери, торговая компания
+                                        {{ trans('contacts.find_directions_company') }}
                                     </a>
                                 </div>
                                 <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
@@ -203,12 +200,8 @@
                 <div class="tabcontent" id="Астана">
                     <div class="row">
                         <div class="col-md-6">
-                            <h1>Астана</h1>
-                            <p>
-                                пр.Богембай батыра 16&nbsp;<br><br>тел.:&nbsp;+7 778&nbsp;919 37 73<br><br>
-                                e-mail:vahidjan_29mail.ru<br><br>
-                                сайт: astdoors.kz
-                            </p>
+                            <h1>{{ trans('contacts.astana') }}</h1>
+                            <p>{!! trans('contacts.astana_address') !!}</p>
                         </div>
                         <div class="col-md-6">
 
@@ -216,19 +209,12 @@
                     </div>
                 </div>
                 <div class="tabcontent" id="Актобе">
-                    <h1>Актобе</h1>
-                    проспект Алии Молдагуловой 56Г <br>
-                    2 этаж <br>
-                    тел:+77078587428
+                    <h1>{{ trans('contacts.aktobe') }}</h1>
+                    <p>{!! trans('contacts.aktobe_address') !!}</p>
                 </div>
                 <div class="tabcontent" id="Актау">
-                    <h1>Актау</h1>
-
-                    <p>Строительный рынок САК<br>
-                        22 бутик<br>
-                        тел:<a href="tel:+77053068349" target="_blank">+77053068349</a><br>
-                        тел:<a href="tel:+77751023270" target="_blank">+77751023270</a></p>
-
+                    <h1>{{ trans('contacts.aktau') }}</h1>
+                    <p>{{ trans('contacts.aktau_address') }}</p>
                     <div class="spoiler hidden">
                         <p>&nbsp;</p>
 
@@ -257,13 +243,13 @@
                         <p>Ждём Вас в Актау!</p>
                     </div>
                 </div>
-                <div class="tabcontent" id="Балхаш">Балхаш</div>
-                <div class="tabcontent" id="Караганда">Караганда</div>
-                <div class="tabcontent" id="Талдыкурган">Талдыкурган</div>
-                <div class="tabcontent" id="Тараз">Тараз</div>
-                <div class="tabcontent" id="Усть-Каменогорск">Усть-Каменогорск</div>
-                <div class="tabcontent" id="Шымкент">Шымкент</div>
-                <div class="tabcontent" id="Кызылорда">`Кызылорда</div>
+                <div class="tabcontent" id="Балхаш">{{ trans('contacts.balkhash') }}</div>
+                <div class="tabcontent" id="Караганда">{{ trans('contacts.karaganda') }}</div>
+                <div class="tabcontent" id="Талдыкурган">{{ trans('contacts.taldykurgan') }}</div>
+                <div class="tabcontent" id="Тараз">{{ trans('contacts.taraz') }}</div>
+                <div class="tabcontent" id="Усть-Каменогорск">{{ trans('contacts.ust_kamenogorsk') }}</div>
+                <div class="tabcontent" id="Шымкент">{{ trans('contacts.shymkent') }}</div>
+                <div class="tabcontent" id="Кызылорда">{{ trans('contacts.kyzylorda') }}</div>
             </div>
             <div class="clearfix"></div>
         </div>

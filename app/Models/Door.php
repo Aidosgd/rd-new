@@ -14,7 +14,7 @@ class Door extends Authenticatable
     protected $table = 'doors';
 
     protected $fillable = [
-        'title', 'price', 'slug', 'weight', 'description', 'doors_category_id', 'manufacturer',
+        'title', 'title_kk', 'price', 'slug', 'weight', 'description', 'description_kk', 'doors_category_id', 'manufacturer',
         'main_page', 'main_image', 'video', 'active',
         'seo_title', 'seo_keywords', 'seo_description'
     ];

@@ -23,6 +23,11 @@ class DoorsController extends Controller
             ->where('active', 1)
             ->first();
 
+        if(app()->getLocale() == 'kk'){
+            $door->title = $door->title_kk;
+            $door->description = $door->description_kk;
+        }
+
         $seo_title = $door->seo_title;
         $seo_keywords = $door->seo_keywords;
         $seo_description = $door->seo_description;

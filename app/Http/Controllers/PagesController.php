@@ -10,6 +10,11 @@ class PagesController extends Controller
 {
     public function show($pageName)
     {
+        if(app()->getLocale() == 'kk'){
+            $pageName->title = $pageName->title_kk;
+            $pageName->description = $pageName->description_kk;
+        }
+
         $seo_title = $pageName->seo_title;
         $seo_keywords = $pageName->seo_keywords;
         $seo_description = $pageName->seo_description;
@@ -19,6 +24,10 @@ class PagesController extends Controller
 
     public function contacts($pageName)
     {
+        if(app()->getLocale() == 'kk'){
+            $pageName->title = $pageName->title_kk;
+            $pageName->description = $pageName->description_kk;
+        }
         $seo_title = $pageName->seo_title;
         $seo_keywords = $pageName->seo_keywords;
         $seo_description = $pageName->seo_description;

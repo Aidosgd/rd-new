@@ -172,9 +172,9 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
 //Route::get('pages/interior_door', 'PagesController@interior');
     Route::get('pages/interior_door.php', 'PagesController@interior');
-//Route::get('pages/{pageName}', 'PagesController@show');
+//    Route::get('pages/{pageName}', 'PagesController@show');
     Route::get('pages/{pageName}.php', 'PagesController@show');
-//Route::get('contacts/{pageName}', 'PagesController@contacts');
+//    Route::get('contacts/{pageName}', 'PagesController@contacts');
     Route::get('contacts/{pageName}.php', 'PagesController@contacts');
 
     View::composer('parts.header', function($view){

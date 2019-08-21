@@ -61,8 +61,11 @@ class ReviewsController extends Controller
             $review->fill([
                 'image' => $filename,
                 'name' => $input['name'],
+                'name_kk' => $input['name_kk'],
                 'city' => $input['city'],
+                'city_kk' => $input['city_kk'],
                 'description' => $input['description'],
+                'description_kk' => $input['description_kk'],
             ]);
         }else{
             $review = new Review();
@@ -70,8 +73,11 @@ class ReviewsController extends Controller
             $review->fill([
                 'image' => '',
                 'name' => $input['name'],
+                'name_kk' => $input['name_kk'],
                 'city' => $input['city'],
+                'city_kk' => $input['city_kk'],
                 'description' => $input['description'],
+                'description_kk' => $input['description_kk'],
             ]);
         }
 
@@ -124,14 +130,20 @@ class ReviewsController extends Controller
             $review->fill([
                 'image' => $filename,
                 'name' => $input['name'],
+                'name_kk' => $input['name_kk'],
                 'city' => $input['city'],
+                'city_kk' => $input['city_kk'],
                 'description' => $input['description'],
+                'description_kk' => $input['description_kk'],
             ]);
         }else{
             $review->fill([
                 'name' => $input['name'],
+                'name_kk' => $input['name_kk'],
                 'city' => $input['city'],
+                'city_kk' => $input['city_kk'],
                 'description' => $input['description'],
+                'description_kk' => $input['description_kk'],
             ]);
         }
 

@@ -76,7 +76,7 @@
                                         <h3>{{ $item->title }}</h3>
                                         <div class="price">@convert($item->price) ₸</div>
                                     </a>
-                                    <a href="/doors/{{ $item->category->slug }}/n/{{ $item->slug }}" class="btn btn-default">{{ trans('home.more_details') }}</a>
+                                    <a href="/{{ $lang }}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}" class="btn btn-default">{{ trans('home.more_details') }}</a>
                                 </div>
                             </div>
                         @endif
@@ -100,7 +100,7 @@
 
                 <div class="block__width wow fadeInUp">
                     <div class="row">
-                        <form action="/mail/download" method="post" id="downloadForm">
+                        <form action="/{{$lang}}/mail/download" method="post" id="downloadForm">
                             <input name="_token" type="hidden"  value="{{ csrf_token() }}" />
                             <div class="col-md-8">
                                 <input type="email" name="email" placeholder="{{ trans('home.your_email') }}" required>
@@ -213,7 +213,7 @@
                 <div class="col-md-6 wow fadeInUp">
                     <h3>{{ trans('home.door_interier_h3') }}</h3>
                     <p>{{ trans('home.door_interier_p') }}</p>
-                    <a href="/pages/interior_door.php" class="btn btn-default">{{ trans('home.door_interier_a') }}</a>
+                    <a href="/{{ $lang }}/pages/interior_door.php" class="btn btn-default">{{ trans('home.door_interier_a') }}</a>
                 </div>
             </div>
         </div>
