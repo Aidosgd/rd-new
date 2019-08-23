@@ -2,12 +2,12 @@
     <div class="container">
         <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                {{ $lang }}
+                {{ $langs[$lang]['name'] }}
                 <span class="caret"></span></button>
             <ul class="dropdown-menu">
                 @foreach($langs as $key => $itemLang)
                     @if($lang != $key)
-                        <li><a href="/{{ $key }}">{{ $key }}</a></li>
+                        <li><a href="/{{ $key }}">{{ $itemLang['name'] }}</a></li>
                     @endif
                 @endforeach
             </ul>
