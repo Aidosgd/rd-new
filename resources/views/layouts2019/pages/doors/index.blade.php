@@ -20,7 +20,7 @@
                     </svg>
                 </div>
                 <div class="row doors-list">
-                    @foreach($doors->sortBy('weight') as $index => $item)
+                    @foreach($doors as $index => $item)
                         <div class="{{ $item->category->id == 1 ? 'col-md-3' : 'col-md-4' }}  wow fadeInUp">
                             <div class="door-item">
                                 <a href="/{{$lang}}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}">

@@ -10,8 +10,12 @@ class DoorsController extends Controller
     public function index($doorCategory)
     {
         $paginateCount = $doorCategory->id == 1 ? 8 : 6;
-        
-        $doors = Door::where('doors_category_id', $doorCategory->id)->where('active', 1)->paginate($paginateCount);
+
+        $doors = Door::where('doors_category_id', $doorCategory->id)
+            ->where('active', 1)
+            ->orderBy('weight')
+            ->paginate($paginateCount);
+
 
         return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory'));
     }

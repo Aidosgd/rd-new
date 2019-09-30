@@ -31,7 +31,9 @@
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="/cp/menus"><i class="fa fa-circle-o"></i> Меню</a></li>
-                    <li><a href="/cp/doors"><i class="fa fa-circle-o"></i> Двери</a></li>
+                    <li><a href="/cp/doors/1"><i class="fa fa-circle-o"></i> Межкомнатные двери</a></li>
+                    <li><a href="/cp/doors/2"><i class="fa fa-circle-o"></i> Металлические двери</a></li>
+                    <li><a href="/cp/doors/3"><i class="fa fa-circle-o"></i> Фурнитура</a></li>
                     <li><a href="/cp/pages"><i class="fa fa-circle-o"></i> Cтраницы</a></li>
                     <li><a href="/cp/sliders"><i class="fa fa-circle-o"></i> Слайдер</a></li>
                     <li><a href="/cp/banners"><i class="fa fa-circle-o"></i> Баннер</a></li>

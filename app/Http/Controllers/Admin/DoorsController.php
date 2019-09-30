@@ -27,6 +27,20 @@ class DoorsController extends Controller
         return view('admin.doors.index', compact('door', 'breadcrumbs', 'pageTitle'));
     }
 
+    public function show($id)
+    {
+        $breadcrumbs = [
+            'Главная' => '/cp',
+            'Меню' => '',
+        ];
+
+        $pageTitle = 'Все объявления';
+
+        $door = Door::where('doors_category_id', $id)->get();
+
+        return view('admin.doors.index', compact('door', 'breadcrumbs', 'pageTitle'));
+    }
+
     public function create()
     {
         $breadcrumbs = [
