@@ -1,17 +1,5 @@
 <nav class="nav wow fadeInUp">
     <div class="container">
-        <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                {{ $langs[$lang]['name'] }}
-                <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-                @foreach($langs as $key => $itemLang)
-                    @if($lang != $key)
-                        <li><a href="/{{ $key }}">{{ $itemLang['name'] }}</a></li>
-                    @endif
-                @endforeach
-            </ul>
-        </div>
         <div class="buttons">
             <ul>
                 <li><a href="/{{ $lang }}/stroydetali.php">{{ trans('header.interior_doors') }}</a></li>
@@ -33,6 +21,18 @@
                 </a>
             </div>
             <div class="col-md-6 header__address wow fadeInUp">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                        {{ $langs[$lang]['name'] }}
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        @foreach($langs as $key => $itemLang)
+                            @if($lang != $key)
+                                <li><a href="/{{ $key }}">{{ $itemLang['name'] }}</a></li>
+                            @endif
+                        @endforeach
+                    </ul>
+                </div>
                 <img class="logo_kaspi" src="/css/images/new2019/icons/kaspi_logo.png" alt="">
                 <p>{{ trans('header.address') }}</p>
                 <p><a href="tel:+7 727 345 01 01">+7 (727) 345-01-01;</a></p>

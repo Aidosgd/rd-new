@@ -200,27 +200,18 @@ body{
         }
       }
     }
-    .dropdown{
-      position: absolute;
-      top: 20px;
-      z-index: 999;
-      .btn{
-        &.btn-primary{
-          background: transparent !important;
-          color: #422a20;
-          border: none;
-        }
-      }
-      .dropdown-menu{
-        min-width: auto;
-      }
-    }
   }
 
   .header{
     background: url("/css/images/new2019/russdoors-header.jpg") center center;
     width: 100%;
     height: 240px;
+    .dropdown{
+      display: inline-block;
+      .dropdown-menu{
+        min-width: auto;
+      }
+    }
     &__address{
       font-size: 23px;
       line-height: 1.4;
@@ -895,11 +886,6 @@ body{
           display: block;
           float: none;
         }
-      }
-      .dropdown{
-        position: relative;
-        top: 0;
-        left: 3px;
       }
     }
     .header{
