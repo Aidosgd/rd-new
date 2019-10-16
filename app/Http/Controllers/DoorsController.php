@@ -13,7 +13,7 @@ class DoorsController extends Controller
 
         $doors = Door::where('doors_category_id', $doorCategory->id)
             ->where('active', 1)
-            ->orderBy('weight')
+            ->orderBy('id', 'desc')
             ->paginate($paginateCount);
 
 
