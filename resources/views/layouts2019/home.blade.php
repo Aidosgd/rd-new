@@ -3,6 +3,10 @@
 @section('content')
     <div class="home-slider">
         <div class="slide">
+            <img class="hidden-xs" src="/css/images/new2019/home_slider/black_friday.jpg" alt="">
+            <img class="visible-xs" src="/css/images/new2019/home_slider/black_friday_mobile.png" alt="">
+        </div>
+        <div class="slide">
             <img class="hidden-xs" src="/css/images/new2019/ustanovka-dverei-v-p.jpg" alt="">
             <img class="visible-xs" src="/css/images/new2019/slide1.jpg" alt="">
             <div class="slide__content position_bottom">
