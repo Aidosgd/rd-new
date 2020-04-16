@@ -2,17 +2,17 @@
 
 @section('content')
     <div class="home-slider">
-        <div class="slide">
-            <img class="hidden-xs" src="/css/images/new2019/ustanovka-dverei-v-p.jpg" alt="">
-            <img class="visible-xs" src="/css/images/new2019/slide1.jpg" alt="">
-            <div class="slide__content position_bottom">
-                {{--<p>Большой выбор межкомнатных и металлических дверей по самым выгодным ценам от производителя</p>--}}
-                <a href="#callForm" class="btn btn-default btn-effects animate-btn" style="margin-top: 440px;">
-                    {{ trans('home.request_a_call_back') }}
-                    <div class="t-btn_effects"></div>
-                </a>
-            </div>
-        </div>
+{{--        <div class="slide">--}}
+{{--            <img class="hidden-xs" src="/css/images/new2019/ustanovka-dverei-v-p.jpg" alt="">--}}
+{{--            <img class="visible-xs" src="/css/images/new2019/slide1.jpg" alt="">--}}
+{{--            <div class="slide__content position_bottom">--}}
+{{--                --}}{{--<p>Большой выбор межкомнатных и металлических дверей по самым выгодным ценам от производителя</p>--}}
+{{--                <a href="#callForm" class="btn btn-default btn-effects animate-btn" style="margin-top: 440px;">--}}
+{{--                    {{ trans('home.request_a_call_back') }}--}}
+{{--                    <div class="t-btn_effects"></div>--}}
+{{--                </a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
         <div class="slide">
             <img src="/css/images/new2019/rossiiskie-dveri-ban.jpg" alt="">
             <div class="slide__content">
