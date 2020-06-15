@@ -18,7 +18,7 @@ class LocalesRedirect {
 		if ($segment != 'imagecache' && $segment != '_debugbar' && $segment != 'cp' && $segment != 'img' && $segment != 'images' && $segment != 'css' && $segment != 'js')
 		{
 			if (!in_array($segment, config('app.locales')))
-				return redirect('/' . app()->getLocale() . '/' . app()['request']->path());
+				return redirect('/' . app()->getLocale() . '/' . app()['request']->path(), 301);
 		}
 		else{
 			app()->setLocale('ru');

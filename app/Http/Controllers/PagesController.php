@@ -14,7 +14,7 @@ class PagesController extends Controller
             $pageName->title = $pageName->title_kk;
             $pageName->description = $pageName->description_kk;
         }
-
+        
         $seo_title = $pageName->seo_title;
         $seo_keywords = $pageName->seo_keywords;
         $seo_description = $pageName->seo_description;

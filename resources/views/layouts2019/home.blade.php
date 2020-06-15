@@ -23,10 +23,10 @@
                 </a>
             </div>
         </div>
-        <div class="slide">
+  <!--       <div class="slide">
             <img class="hidden-xs" src="/css/images/new2019/home_slider/sale.jpg" alt="">
             <img class="visible-xs" src="/css/images/new2019/home_slider/sale-mobile.jpg" alt="">
-        </div>
+        </div> -->
     </div>
 
     <section class="bestseller">
