@@ -2,31 +2,18 @@
 
 @section('content')
     <div class="home-slider">
-{{--        <div class="slide">--}}
-{{--            <img class="hidden-xs" src="/css/images/new2019/ustanovka-dverei-v-p.jpg" alt="">--}}
-{{--            <img class="visible-xs" src="/css/images/new2019/slide1.jpg" alt="">--}}
-{{--            <div class="slide__content position_bottom">--}}
-{{--                --}}{{--<p>Большой выбор межкомнатных и металлических дверей по самым выгодным ценам от производителя</p>--}}
-{{--                <a href="#callForm" class="btn btn-default btn-effects animate-btn" style="margin-top: 440px;">--}}
-{{--                    {{ trans('home.request_a_call_back') }}--}}
-{{--                    <div class="t-btn_effects"></div>--}}
-{{--                </a>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-        <div class="slide">
-            <img src="/css/images/new2019/rossiiskie-dveri-ban.jpg" alt="">
-            <div class="slide__content">
-                <p class="catalog-text">{{ trans('home.slider2_text') }}</p>
-                <a href="#downloadForm" class="btn btn-default btn-effects animate-btn">
-                    {{ trans('home.download_catalog') }}
-                    <div class="t-btn_effects"></div>
-                </a>
+        @foreach($slider as $slide)
+            <div class="slide">
+                <img src="/uploads/slider/{{$slide->name}}" alt="">
+                <div class="slide__content">
+                    <p class="catalog-text">{{ strip_tags($slide['description_'.app()->getLocale()])  }}</p>
+                    <a href="{{$slide->link}}" @if($slide->blank) target="_blank" @endif class="btn btn-default btn-effects animate-btn">
+                        {{ $slide['text_'.app()->getLocale()] }}
+                        <div class="t-btn_effects"></div>
+                    </a>
+                </div>
             </div>
-        </div>
-  <!--       <div class="slide">
-            <img class="hidden-xs" src="/css/images/new2019/home_slider/sale.jpg" alt="">
-            <img class="visible-xs" src="/css/images/new2019/home_slider/sale-mobile.jpg" alt="">
-        </div> -->
+        @endforeach
     </div>
 
     <section class="bestseller">

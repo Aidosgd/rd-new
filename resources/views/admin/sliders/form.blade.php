@@ -60,12 +60,32 @@
                                 <output id="list"></output>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Ссылка</label>
+                                <label>Ссылка</label>
                                 {!! Form::text('link', null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Порядок</label>
+                                <label>Текст кнопки ру</label>
+                                {!! Form::text('text_ru', null, ['class' => 'form-control']) !!}
+                            </div>
+                            <div class="form-group">
+                                <label>Текст кнопки кз</label>
+                                {!! Form::text('text_kk', null, ['class' => 'form-control']) !!}
+                            </div>
+                            <div class="form-group">
+                                <label>Текст ру</label>
+                                {!! Form::textarea('description_ru', null, ['class' => 'form-control']) !!}
+                            </div>
+                            <div class="form-group">
+                                <label>Текст кз</label>
+                                {!! Form::textarea('description_kk', null, ['class' => 'form-control']) !!}
+                            </div>
+                            <div class="form-group">
+                                <label>Порядок</label>
                                 {!! Form::text('weight', null, ['class' => 'form-control']) !!}
+                            </div>
+                            <div class="form-group">
+                                <label>В новом окне</label>
+                                {!! Form::select('blank', [false => 'В этом окне', true => 'В новом'], ['class' => 'form-control']) !!}
                             </div>
                         </div>
                         <div class="box-footer">

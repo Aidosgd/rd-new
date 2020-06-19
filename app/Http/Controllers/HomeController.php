@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use App\Models\Door;
 use App\Models\Review;
+use App\Models\Slider;
 use Illuminate\Http\Request;
 use Illuminate\Mail\Mailer;
 use Mail;
@@ -34,7 +35,9 @@ class HomeController extends Controller
 
         $reviews = Review::all();
 
-        return view('layouts2019.home', compact('doors', 'reviews'));
+        $slider = Slider::all();
+
+        return view('layouts2019.home', compact('doors', 'reviews', 'slider'));
     }
 
     public function mail(Request $request, Mailer $mailer)

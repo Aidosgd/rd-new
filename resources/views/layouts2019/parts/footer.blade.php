@@ -90,12 +90,9 @@
     <div class="container">
         <div class="buttons">
             <ul class="footer__menu">
-                <li><a href="/{{$lang}}/stroydetali.php">{{ trans('footer.interior_doors') }}</a></li>
-                <li><a href="/{{$lang}}/leras.php">{{ trans('footer.metal_doors') }}</a></li>
-                <li><a href="/{{$lang}}/sale">{{ trans('footer.promotions') }}</a></li>
-                <li><a href="/{{$lang}}/pages/sotrudnichestvo.php">{{ trans('footer.cooperation') }}</a></li>
-                <li><a href="/{{$lang}}/contacts/almaty.php">{{ trans('footer.contacts') }}</a></li>
-                <li><a href="/{{$lang}}/pages/grafik_raboty.php">{{ trans('footer.work_mode') }}</a></li>
+                @foreach($bottomMenu[0]->children as $item)
+                    <li><a href="/{{$lang}}{{$item->link}}">{{$item->title}}</a></li>
+                @endforeach
             </ul>
         </div>
 

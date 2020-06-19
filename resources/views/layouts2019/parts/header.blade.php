@@ -2,12 +2,9 @@
     <div class="container">
         <div class="buttons">
             <ul>
-                <li><a href="/{{ $lang }}/stroydetali.php">{{ trans('header.interior_doors') }}</a></li>
-                <li><a href="/{{ $lang }}/leras.php">{{ trans('header.metal_doors') }}</a></li>
-                <li><a href="/{{ $lang }}/doors/fittings">{{ trans('header.accessories') }}</a></li>
-                <li><a href="/{{ $lang }}/sale">{{ trans('header.promotions') }}</a></li>
-                <li><a href="/{{ $lang }}/pages/sotrudnichestvo.php">{{ trans('header.cooperation') }}</a></li>
-                <li><a href="/{{ $lang }}/contacts/almaty.php">{{ trans('header.contacts') }}</a></li>
+                @foreach($topMenu[0]->children as $item)
+                    <li><a href="/{{ $lang }}{{$item->link}}">{{ $item->title }}</a></li>
+                @endforeach
             </ul>
         </div>
     </div>

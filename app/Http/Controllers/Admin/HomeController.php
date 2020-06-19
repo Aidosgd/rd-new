@@ -29,6 +29,6 @@ class HomeController extends Controller
 
         $pageTitle = 'Главная';
 
-        return view('admin.home', compact('breadcrumbs', 'pageTitle', 'offers', 'users'));
+        return view('admin.home', compact('breadcrumbs', 'pageTitle'));
     }
 }
