@@ -40,7 +40,7 @@
 
 <section class="map">
     <div class="map-content visible-xs">
-        <h3 class="wow fadeInUp">{{ trans('footer.contacts') }}</h3>
+        <h3 class="wow fadeInUp"><a href="/{{$lang}}//contacts/almaty.php">{{ trans('footer.contacts') }}</a></h3>
 
         <p class="wow fadeInUp"><b>{{ trans('footer.phones') }}:</b></p>
         <p class="wow fadeInUp">+7 707 197 50 91; +7 (747) 488-29-12;</p>
@@ -63,7 +63,7 @@
     <div id="map"></div>
     <div class="container hidden-xs">
         <div class="map-content">
-            <h3 class="wow fadeInUp">{{ trans('footer.contacts') }}</h3>
+            <h3 class="wow fadeInUp"><a href="/{{$lang}}//contacts/almaty.php">{{ trans('footer.contacts') }}</a></h3>
 
             <p class="wow fadeInUp"><b>{{ trans('footer.phones') }}:</b></p>
             <p class="wow fadeInUp">+7 707 197 50 91; +7 (747) 488-29-12;</p>

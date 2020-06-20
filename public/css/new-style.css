@@ -4,6 +4,9 @@
 .new-2019 .header__address {
   margin-top: 35px;
 }
+.new-2019 .map h3 a {
+  color: #333333;
+}
 .new-2019 .footer__copyright a {
   color: #b58f6b;
   font-size: 10px;
