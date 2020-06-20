@@ -7,10 +7,12 @@
                 <img src="/uploads/slider/{{$slide->name}}" alt="">
                 <div class="slide__content">
                     <p class="catalog-text">{{ strip_tags($slide['description_'.app()->getLocale()])  }}</p>
-                    <a href="{{$slide->link}}" @if($slide->blank) target="_blank" @endif class="btn btn-default btn-effects animate-btn">
-                        {{ $slide['text_'.app()->getLocale()] }}
-                        <div class="t-btn_effects"></div>
-                    </a>
+                    @if($slide['text_'.app()->getLocale()])
+                        <a href="{{$slide->link}}" @if($slide->blank) target="_blank" @endif class="btn btn-default btn-effects animate-btn">
+                            {{ $slide['text_'.app()->getLocale()] }}
+                            <div class="t-btn_effects"></div>
+                        </a>
+                    @endif
                 </div>
             </div>
         @endforeach
