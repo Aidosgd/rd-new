@@ -40,6 +40,7 @@
 <!-- Bootstrap and Font Awesome css-->
 <!-- we use cdn but you can also include local files located in css directory-->
 <link rel="stylesheet" href="{{ elixir('css/all-new-2019.css') }}">
+<link rel="stylesheet" href="/css/new-style.css">
 <link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 <!-- Favicon-->
 <link rel="shortcut icon" href="/favicon.ico">

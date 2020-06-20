@@ -1,0 +1,64 @@
+.new-2019{
+  .header{
+    .logo_kaspi{
+      top: 0px;
+    }
+    &__address{
+      margin-top: 35px;
+    }
+  }
+}
+.locale{
+  position: absolute;
+  top: 0;
+  right: 55px;
+  ul{
+    padding: 0;
+    margin: 0;
+    li{
+      display: inline-block;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      background: #2b1f1d;
+      margin: 0 -3px;
+      a{
+        color: #928471;
+      }
+      &.active{
+        background: #a27a39;
+        a{
+          color: #dbc79a;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .new-2019{
+    .header{
+      .logo{
+        left: 0;
+        top: 20px;
+        margin: inherit;
+        padding: 0;
+        width: 100px;
+      }
+      .logo_kaspi{
+        position: absolute;
+        left: 100%;
+        width: 110px;
+        top: -110px;
+        transform: translateX(-110%);
+      }
+      &__address{
+        padding-top: 55px;
+      }
+    }
+  }
+  .locale{
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
