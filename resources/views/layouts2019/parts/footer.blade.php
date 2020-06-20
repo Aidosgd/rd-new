@@ -106,6 +106,7 @@
 
         <div class="footer__copyright">
             <p>{!! trans('footer.copyright') !!}</p>
+            <a style="" href="/pages/politika_konfidentsialnosti_i_obrabotki_dannykh">Политика конфиденциальности и обработки данных</a>
         </div>
     </div>
 </footer>

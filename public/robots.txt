@@ -1,2 +1,2 @@
 User-agent: *
-Disallow:
+Disallow: /pages/politika_konfidentsialnosti_i_obrabotki_dannykh
