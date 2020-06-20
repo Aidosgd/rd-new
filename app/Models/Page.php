@@ -14,7 +14,8 @@ class Page extends Authenticatable
     protected $table = 'pages';
 
     protected $fillable = [
-        'title', 'title_kk', 'slug', 'weight', 'description', 'description_kk', 'seo_title', 'seo_keywords', 'seo_description'
+        'title', 'title_kk', 'slug', 'weight', 'description', 'description_kk', 'seo_title', 'seo_keywords', 'seo_description',
+        'category'
     ];
 
 }
