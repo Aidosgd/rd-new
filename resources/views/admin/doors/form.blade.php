@@ -64,7 +64,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Категория</label>
-                                {!! Form::select('doors_category_id', [ 1 => 'Межкомнатный', 2 => 'Металические', 3 => 'Фурнитура'], null, ['class' => 'form-control']) !!}
+                                {!! Form::select('doors_category_id', [ 1 => 'Межкомнатный', 2 => 'Металические', 3 => 'Фурнитура', 4 => 'Скидки'], null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
                                 <label>Производитель</label>

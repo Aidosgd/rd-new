@@ -261,7 +261,7 @@ class DoorsController extends Controller
         Session::flash('message', 'Меню отредактирован');
         Session::flash('alert-class', 'alert-success');
 
-        return redirect('/cp/doors');
+        return redirect('/cp/doors/'.$input['doors_category_id']);
     }
 
     public function destroy($id)

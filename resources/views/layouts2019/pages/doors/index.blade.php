@@ -2,7 +2,7 @@
 @section('content')
     <section class="bestseller">
         <div class="bg-s">
-            <h2 class="text-center">{{ $doorCategory->id == 1 ? trans('doors.interior_doors') : trans('doors.metal_doors') }}</h2>
+            <h2 class="text-center" style="text-transform: uppercase">{{ $doorCategory->name }}</h2>
             <div class="container">
                 @if($doorCategory->id == 1)
                     <ul class="custom hidden">

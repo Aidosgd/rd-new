@@ -35,6 +35,63 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
     Route::get('doors/{doorCategory}/m/{manufacturer}', 'DoorsController@manufacturer');
     Route::get('doors/{doorCategory}/n/{doorSlug}', 'DoorsController@show');
 
+    Route::get('leras.php', function (){
+        $doorCategory = \App\Models\Category::where('slug', '=', 'metalicheskie-dveri')->first();
+        $seo_title = 'Входные двери оптом и металлические двери Алматы большой выбор';
+        $seo_description = 'Большой выбор входных Металлических дверей производства России в Алматы';
+        $paginateCount = $doorCategory->id == 1 ? 8 : 6;
+        $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)
+            ->where('active', 1)
+            ->orderBy('id', 'desc')
+            ->paginate($paginateCount);
+        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description'));
+    });
+    Route::get('metalicheskie-dveri.php', function (){
+        $doorCategory = \App\Models\Category::where('slug', '=', 'metalicheskie-dveri')->first();
+        $seo_title = 'Входные двери оптом и металлические двери Алматы большой выбор';
+        $seo_description = 'Большой выбор входных Металлических дверей производства России в Алматы';
+        $paginateCount = $doorCategory->id == 1 ? 8 : 6;
+        $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)
+            ->where('active', 1)
+            ->orderBy('id', 'desc')
+            ->paginate($paginateCount);
+        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description'));
+    });
+    Route::get('stroydetali.php', function (){
+        $doorCategory = \App\Models\Category::where('slug', '=', 'mezhkomnatnye-dveri')->first();
+        $seo_title = 'Межкомнатные Двери Алматы. Купить двери оптом в Алматы';
+        $seo_description = 'Межкомнатные Двери Алматы производства России и Белоруссии. Широкий выбор, низкие цены.';
+        $paginateCount = $doorCategory->id == 1 ? 8 : 6;
+        $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)
+            ->where('active', 1)
+            ->orderBy('id', 'desc')
+            ->paginate($paginateCount);
+        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description'));
+    });
+    Route::get('mezhkomnatnie-dveri.php', function (){
+        $doorCategory = \App\Models\Category::where('slug', '=', 'mezhkomnatnye-dveri')->first();
+        $seo_title = 'Межкомнатные Двери Алматы. Купить двери оптом в Алматы';
+        $seo_description = 'Межкомнатные Двери Алматы производства России и Белоруссии. Широкий выбор, низкие цены.';
+        $paginateCount = $doorCategory->id == 1 ? 8 : 6;
+        $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)
+            ->where('active', 1)
+            ->orderBy('id', 'desc')
+            ->paginate($paginateCount);
+        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description'));
+    });
+
+    Route::get('door-sale.php', function (){
+        $doorCategory = \App\Models\Category::where('slug', '=', 'door-sale')->first();
+        $seo_title = 'Межкомнатные Двери Алматы. Купить двери оптом в Алматы';
+        $seo_description = 'Межкомнатные Двери Алматы производства России и Белоруссии. Широкий выбор, низкие цены.';
+        $paginateCount = 8;
+        $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)
+            ->where('active', 1)
+            ->orderBy('id', 'desc')
+            ->paginate($paginateCount);
+        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description'));
+    });
+
 // PAGES
     Route::bind('pageName', function($value){
         return \App\Models\Page::where('slug', '=', $value)->first();
@@ -47,17 +104,6 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         $seo_keywords = $pageName->seo_keywords;
         $seo_description = $pageName->seo_description;
         return view('pages.show', compact('pageName', 'seo_title', 'seo_keywords', 'seo_description'));
-    });
-    Route::get('leras.php', function (){
-        $doorCategory = \App\Models\Category::where('slug', '=', 'metalicheskie-dveri')->first();
-        $seo_title = 'Входные двери оптом и металлические двери Алматы большой выбор';
-        $seo_description = 'Большой выбор входных Металлических дверей производства России в Алматы';
-        $paginateCount = $doorCategory->id == 1 ? 8 : 6;
-        $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)
-            ->where('active', 1)
-            ->orderBy('id', 'desc')
-            ->paginate($paginateCount);
-        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description'));
     });
     Route::get('shymkent.php', function (){
         $pageName = \App\Models\Page::find(11);
@@ -86,17 +132,6 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         $seo_keywords = $pageName->seo_keywords;
         $seo_description = $pageName->seo_description;
         return view('pages.show', compact('pageName', 'seo_title', 'seo_keywords', 'seo_description'));
-    });
-    Route::get('stroydetali.php', function (){
-        $doorCategory = \App\Models\Category::where('slug', '=', 'mezhkomnatnye-dveri')->first();
-        $seo_title = 'Межкомнатные Двери Алматы. Купить двери оптом в Алматы';
-        $seo_description = 'Межкомнатные Двери Алматы производства России и Белоруссии. Широкий выбор, низкие цены.';
-        $paginateCount = $doorCategory->id == 1 ? 8 : 6;
-        $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)
-            ->where('active', 1)
-            ->orderBy('id', 'desc')
-            ->paginate($paginateCount);
-        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description'));
     });
     Route::get('кызылорда.php', function (){
         $pageName = \App\Models\Page::find(12);
