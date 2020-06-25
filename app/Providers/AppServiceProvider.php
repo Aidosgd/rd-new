@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Menu;
+use App\Models\Page;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -26,8 +27,10 @@ class AppServiceProvider extends ServiceProvider
         $topMenu = Menu::with('children')->where('id', 5)->get();
         $bottomMenu = Menu::with('children')->where('id', 12)->get();
 
-        $view->composer(['*'], function($view) use($langs, $lang, $topMenu, $bottomMenu){
-            $view->with(compact('langs', 'lang', 'topMenu', 'bottomMenu'));
+        $form2 = Page::find(46);
+
+        $view->composer(['*'], function($view) use($langs, $lang, $topMenu, $bottomMenu, $form2){
+            $view->with(compact('langs', 'lang', 'topMenu', 'bottomMenu', 'form2'));
         });
     }
 

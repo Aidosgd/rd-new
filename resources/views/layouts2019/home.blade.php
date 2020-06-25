@@ -31,7 +31,8 @@
                 </div>
 
                 <div class="row doors-list">
-                    @foreach($doors->sortBy('weight') as $index => $item)
+                    <?php $count = 1 ?>
+                    @foreach($doors as $index => $item)
                         @if($item->category->id == 1)
                             <div class="col-md-3 wow fadeInUp">
                                 <div class="door-item">
@@ -43,9 +44,10 @@
                                     <a href="/{{ $lang }}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}" class="btn btn-default">{{ trans('home.more_details') }}</a>
                                 </div>
                             </div>
-                            @if($item->weight % 4 === 0)
+                            @if($count%4 === 0)
                                 <div class="clearfix"></div>
                             @endif
+                            <?php $count++ ?>
                         @endif
                     @endforeach
                 </div>
@@ -68,6 +70,9 @@
                                     <a href="/{{ $lang }}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}" class="btn btn-default">{{ trans('home.more_details') }}</a>
                                 </div>
                             </div>
+                            @if($item->weight % 4 === 0)
+                                <div class="clearfix"></div>
+                            @endif
                         @endif
                     @endforeach
                 </div>
@@ -78,8 +83,8 @@
     <section class="download-catalog">
         <div class="container">
             <div class="block">
-                <h3 class="wow fadeInUp">{{ trans('home.download_the_entire_door_catalog') }}</h3>
-                <p class="wow fadeInUp">{!! trans('home.download_the_entire_door_catalog_email') !!}</p>
+                <h3 class="wow fadeInUp">{{ $form1['title'] }}</h3>
+                <p class="wow fadeInUp">{!! $form1['description'] !!}</p>
 
                 @if(session()->has('message'))
                     <div class="alert alert-success">

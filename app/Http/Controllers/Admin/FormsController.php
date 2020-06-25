@@ -20,7 +20,7 @@ class FormsController extends Controller
 
         $pageTitle = 'Все формы';
 
-        $page = Page::where('category', 1)->get();
+        $page = Page::where('category', 1)->orderBy('weight', 'asc')->get();
 
         return view('admin.forms.index', compact('page', 'breadcrumbs', 'pageTitle'));
     }

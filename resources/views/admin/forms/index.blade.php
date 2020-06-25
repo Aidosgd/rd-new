@@ -33,7 +33,7 @@
                                 <th>Описание</th>
                                 <th>Действия</th>
                             </tr>
-                            @foreach($page->sortByDesc('created_at') as $item)
+                            @foreach($page as $item)
                                 <tr>
                                     <td>{{ $item->id }}</td>
                                     <td>{{ $item->title }}</td>

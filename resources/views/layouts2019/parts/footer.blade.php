@@ -1,8 +1,8 @@
 <section class="feedback">
     <div class="container">
-        <h2 class="wow fadeInUp">{{ trans('footer.feedback_title') }}</h2>
+        <h2 class="wow fadeInUp">{{ $form2['title'] }}</h2>
 
-        <p class="wow fadeInUp">{!! trans('footer.feedback_p') !!}</p>
+        <p class="wow fadeInUp">{!! $form2['description'] !!}</p>
 
         @if(session()->has('message'))
             <div class="alert alert-success">
