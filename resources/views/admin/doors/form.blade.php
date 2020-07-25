@@ -59,6 +59,14 @@
                                 {!! Form::text('price', null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
+                                <label>Цвет</label>
+                                {!! Form::select('doors_category_id', [ 1 => 'Межкомнатный', 2 => 'Металические', 3 => 'Фурнитура', 4 => 'Скидки'], null, ['class' => 'form-control']) !!}
+                            </div>
+                            <div class="form-group">
+                                <label>Тип</label>
+                                {!! Form::select('doors_category_id', [ 1 => 'Межкомнатный', 2 => 'Металические', 3 => 'Фурнитура', 4 => 'Скидки'], null, ['class' => 'form-control']) !!}
+                            </div>
+                            <div class="form-group">
                                 <label for="exampleInputPassword1">Порядок</label>
                                 {!! Form::text('weight', null, ['class' => 'form-control']) !!}
                             </div>

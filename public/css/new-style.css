@@ -56,6 +56,9 @@
   .new-2019 .header__address {
     padding-top: 55px;
   }
+  .new-2019 .home-slider .slide {
+    height: initial;
+  }
 
   .locale {
     top: 0;

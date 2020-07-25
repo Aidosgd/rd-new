@@ -74,9 +74,12 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         $seo_description = 'Межкомнатные Двери Алматы производства России и Белоруссии. Широкий выбор, низкие цены.';
         $paginateCount = $doorCategory->id == 1 ? 8 : 6;
         $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)
+            ->with('images')
             ->where('active', 1)
             ->orderBy('id', 'desc')
             ->paginate($paginateCount);
+
+//        dd($doors);
         return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description'));
     });
 

@@ -28,9 +28,10 @@ class AppServiceProvider extends ServiceProvider
         $bottomMenu = Menu::with('children')->where('id', 12)->get();
 
         $form2 = Page::find(46);
+        $form3 = Page::find(47);
 
-        $view->composer(['*'], function($view) use($langs, $lang, $topMenu, $bottomMenu, $form2){
-            $view->with(compact('langs', 'lang', 'topMenu', 'bottomMenu', 'form2'));
+        $view->composer(['*'], function($view) use($langs, $lang, $topMenu, $bottomMenu, $form2, $form3){
+            $view->with(compact('langs', 'lang', 'topMenu', 'bottomMenu', 'form2', 'form3'));
         });
     }
 

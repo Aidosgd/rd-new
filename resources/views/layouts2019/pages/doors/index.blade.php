@@ -24,9 +24,11 @@
                         <div class="{{ $item->category->id == 1 ? 'col-md-3' : 'col-md-4' }}  wow fadeInUp">
                             <div class="door-item">
                                 <a href="/{{$lang}}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}">
-                                    @if(!empty($item->images))
-                                        <img style="{{ $item->category->id != 1 ? 'height: 350px' : '' }}" src="/uploads/doors/{{ $item->images->first()->name }}"
-                                         class="padding-30" alt="">
+                                    @if(!empty($item->images->first()))
+                                        <img style="{{ $item->category->id != 1 ? 'height: 350px' : '' }}"
+                                             src="/uploads/doors/{{ $item->images->first()->name }}"
+                                             class="padding-30"
+                                             alt="">
                                     @endif
                                     <h3>{{ $item->title }}</h3>
                                 </a>
