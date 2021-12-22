@@ -25,8 +25,6 @@
                     <div class="row page-top">
                         <div class="col-sm-6 col-sm-offset-3">
                             <h1 class="product__heading">{{ $door->title }}</h1>
-                            <h4>{{ $door->price }} тенге</h4>
-                            @if($door->second_price)<h4>{{ $door->second_price }} тенге за комплект</h4>@endif
                         </div>
                     </div>
                 </div>
@@ -62,6 +60,10 @@
                             <div class="product__details">
                                 <h4>{{ trans('doors.description') }}</h4>
                                 {!! $door->description !!}
+
+                                <h4>Цена:</h4>
+                                <h4>{{ $door->price }} тенге</h4>
+                                @if($door->second_price)<h4>{{ $door->second_price }} тенге за комплект</h4>@endif
                             </div>
                         </div>
                     </div>
