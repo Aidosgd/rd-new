@@ -5,7 +5,7 @@ return [
     'request_a_call_back' => 'Кері қоңырауды сұрау',
     'slider2_text' => 'Өндірушіден ең жақсы бағамен ішкі және металл есіктердің үлкен таңдауы',
     'download_catalog' => 'Каталогты жүктеу',
-    'bestsellers' => 'Бестселлерлер',
+    'bestsellers' => 'Ең танымал есіктер',
     'more_details' => 'Толығырақ',
     'download_the_entire_door_catalog' => 'Барлық есіктер каталогын жүктеп алыңыз',
     'download_the_entire_door_catalog_email' => 'Электрондық поштаңызды қалдырыңыз, біз сізге есіктер <br> каталогын жібереміз',
@@ -48,8 +48,8 @@ return [
 
     'reviews_title' => 'Клиенттердің пікірлері',
 
-    'interior_doors' => 'ІШКІ ЕСІКТЕР',
-    'metal_doors' => 'МЕТАЛДЫ ЕСІКТЕР',
+    'interior_doors' => '<a href="https://russdoors.kz/ru/mezhkomnatnie-dveri.php">БАРЛЫҚ ІШКІ ЕСІКТЕР</a>',
+    'metal_doors' => '<a href="https://russdoors.kz/ru/metalicheskie-dveri.php">БАРЛЫҚ МЕТАЛДЫ ЕСІКТЕР</a>',
     'accessories' => 'Аксессуарлар',
     'promotions' => 'НҰСҚАУЛАР',
     'cooperation' => 'ЫНТЫМАҚТАСТЫҚ',

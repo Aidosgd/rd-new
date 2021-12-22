@@ -45,11 +45,12 @@
                 </div>
 
                 @if($doorCategory->id == 1)
-                    <p>{{ trans('doors.category_p') }}</p>
-                    <p>{{ trans('doors.category_p1') }}</p>
-                    <p>{{ trans('doors.category_p2') }}</p>
-                    <p>{{ trans('doors.category_p3') }}</p>
-                @endif
+					<h2>{{ trans ('doors.category_h') }}</h2>
+                    <p>{!! trans('doors.category_p') !!}</p>
+                @elseif ($doorCategory->id == 2)
+					<h2>{{ trans ('doors.category_hm') }}</h2>
+                    <p>{!! trans('doors.category_pm') !!}</p>
+				@endif
             </div>
         </div>
     </section>

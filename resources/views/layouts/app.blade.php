@@ -25,7 +25,7 @@
     <link rel="stylesheet" type="text/css" href="css/new-style.css">
     <!--[if IE]><link rel="stylesheet" type="text/css" href="http://russdoors.kz/assets/plugins/qm/css/ie.css" /><![endif]-->
     <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="http://russdoors.kz/assets/plugins/qm/css/ie7.css" /><![endif]-->
-    
+    123
    
 </head>
 <body>

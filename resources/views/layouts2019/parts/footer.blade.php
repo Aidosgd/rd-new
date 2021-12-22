@@ -13,8 +13,8 @@
         <div class="form wow fadeInUp">
             <div class="row">
                 <div class="col-md-6">
-                    <form id="callForm" method="post" action="/mail/call">
-                        <input name="_token" type="hidden"  value="{{ csrf_token() }}" />
+{{--                    <form id="callForm" method="post" action="/mail/call">--}}
+{{--                        <input name="_token" type="hidden"  value="{{ csrf_token() }}" />--}}
 {{--                        <div class="form-group">--}}
 {{--                            <input type="text" name="phone" class="form-control" placeholder="{{ trans('footer.your_phone') }}" required>--}}
 {{--                        </div>--}}
@@ -24,11 +24,11 @@
 {{--                        <div class="form-group">--}}
 {{--                            <input type="text" name="name" class="form-control" placeholder="{{ trans('footer.your_name') }}" required>--}}
 {{--                        </div>--}}
-                        <button type="submit" class="btn btn-default btn-effects">
-                            {{ trans('footer.get_call') }}
+                        <a href="https://api.whatsapp.com/send?phone=77071975091" target="_blank" class="btn btn-default btn-effects" style="line-height: 50px;">
+                            написать в Whatsapp
                             <div class="t-btn_effects"></div>
-                        </button>
-                    </form>
+                        </a>
+{{--                    </form>--}}
                 </div>
                 <div class="col-md-6">
                     <img src="/css/images/new2019/milan-door-russdoors.png" alt="">

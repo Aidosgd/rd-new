@@ -19,4 +19,5 @@ return [
     'vysokokachestvennye_dveri_v_kredit_vygodnaya_stavka' => 'Высококачественные двери в кредит выгодная ставка',
     'bolshie_skidki_na_dveri_almaty_aktsii_na_dveri_almaty_vygodno' => 'Большие скидки на двери Алматы, акции на двери Алматы выгодно',
     'sell_out' => 'РАСПРОДАЖА',
+	'no_sell' => 'На данный момент предложения отсутствуют',
 ];

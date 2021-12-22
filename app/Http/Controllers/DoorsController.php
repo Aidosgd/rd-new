@@ -27,14 +27,18 @@ class DoorsController extends Controller
             ->where('active', 1)
             ->first();
 
-        if(app()->getLocale() == 'kk'){
-            $door->title = $door->title_kk;
-            $door->description = $door->description_kk;
-        }
-
         $seo_title = $door->seo_title;
         $seo_keywords = $door->seo_keywords;
         $seo_description = $door->seo_description;
+
+        if(app()->getLocale() == 'kk'){
+            $door->title = $door->title_kk;
+            $door->description = $door->description_kk;
+
+            $seo_title = $door->seo_title_kz ? $door->seo_title_kz : $door->seo_title;
+            $seo_description = $door->seo_description_kz ? $door->seo_description_kz : $door->seo_description;
+            $seo_keywords = $door->seo_keywords_kz ? $door->seo_keywords_kz : $door->seo_keywords;
+        }
 
         return view('layouts2019.pages.doors.show', compact('door', 'doorCategory', 'seo_title', 'seo_keywords', 'seo_description'));
     }

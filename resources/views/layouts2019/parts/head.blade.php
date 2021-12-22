@@ -7,34 +7,66 @@
 <title>
     @if (isset($seo_title))
         {{ $seo_title }}
-    @elseif ($_SERVER['REQUEST_URI'] == '/doors/mezhkomnatnye-dveri/m/2')
-        ✓ Белорусские Двери ✓ Алматы
-    @elseif ($_SERVER['REQUEST_URI'] == '/doors/mezhkomnatnye-dveri/m/1')
-        ✓ Межкомнатные ✓ Российские Двери ✓ Алматы
-    @elseif ($_SERVER['REQUEST_URI'] == '/doors/mezhkomnatnye-dveri/m/3')
-        ✓ Межкомнатные ✓ Элитные Двери ✓ Алматы
-    @elseif ($_SERVER['REQUEST_URI'] == '/doors/fittings')
-        ✓ Фурнитура ✓ Ручки ✓ Для Дверей ✓ Алматы
-    @else
-        ✓ Двери Алматы ✓ Md ✓ Двери Максмид ✓ Российские Двери со Склада
+    @elseif ($_SERVER['REQUEST_URI'] == '/ru/sale')
+        Распродажа Дверей Успей Приобрести по Выгодной Цене
+    @elseif ($_SERVER['REQUEST_URI'] == '/kk/sale')
+        Есіктерді Сату Тиімді Бағамен Сатып Алынады
+    @elseif ($_SERVER['REQUEST_URI'] == '/ru/doors/fittings')
+        Фурнитура на Межкомнатные и Входные (Металлические) Двери Купить
+    @elseif ($_SERVER['REQUEST_URI'] == '/kk/doors/fittings')
+        Ішкі және Кіреберіс (Металл) Есіктерді Сатып Алуға Арналған Арматура
+    @elseif ($_SERVER['REQUEST_URI'] == '/ru/pages/interior_door.php')
+        Подобрать Дверь под Интерьер: к Полу, по Цвету, По Размеру
+    @elseif ($_SERVER['REQUEST_URI'] == '/kk/pages/interior_door.php')
+        Интерьерге Арналған Есікті Таңдаңыз: Еден, Түс, Өлшем
+    @elseif ($_SERVER['REQUEST_URI'] == '/kk')
+        Алматыдағы Қоймадан Көтерме және Бөлшек Есіктер Беларуссия Есіктерін Сатып Алыңыз
+	@else
+        Двери оптом и в розницу | Купить белорусские двери со склада в Алматы
     @endif
 </title>
 <meta name="description" content="
   @if (isset($seo_description) )
 {{ $seo_description }}
-@elseif ($_SERVER['REQUEST_URI'] == '/doors/mezhkomnatnye-dveri/m/2')
-        Белорусские двери ШИРОКОГО выбора! Межкомнатные двери ВЫСОГО КАЧЕСТВА! ✔ Со склада ✔ Оптом ✔ АКЦИИ и СКИДКИ! ➜ ЗАХОДИ
-@elseif ($_SERVER['REQUEST_URI'] == '/doors/mezhkomnatnye-dveri/m/1')
-        Отличный выбор российских межкомнатных дверей! Межкомнатные двери ВЫСОГО КАЧЕСТВА! ✔ Со склада ✔ Оптом ✔ АКЦИИ и СКИДКИ! ➜ ЗАХОДИ
-@elseif ($_SERVER['REQUEST_URI'] == '/doors/mezhkomnatnye-dveri/m/3')
-        Элитные межкомнатные двери ЛУЧШЕГО качества по СУПЕР цене! ✔ Со склада ✔ Оптом ✔ АКЦИИ и СКИДКИ! ➜ ЗАХОДИ
-@elseif ($_SERVER['REQUEST_URI'] == '/doors/fittings')
-        Фурнитура для дверей ВЫСОКОГО качества. Ручки для дверей, кнопки и замки! ✔ Со склада ✔ Оптом ✔ АКЦИИ и СКИДКИ! ➜ ЗАХОДИ
+@elseif ($_SERVER['REQUEST_URI'] == '/ru/sale')
+        Распродажа дверей в Алматы ☝Скидываем цену до -70% ⭐Выгодные предложения от Russdoors ➜ЗАХОДИ!
+@elseif ($_SERVER['REQUEST_URI'] == '/kk/sale')
+        Алматыда есіктерді сату ☝Біз бағаны -70%-ға дейін арзандаттық ⭐Russdoors ұсынған қолайлы ұсыныстар ➜Кіріңіз!
+@elseif ($_SERVER['REQUEST_URI'] == '/ru/doors/fittings')
+        Широкий выбор фурнитуры ✔️для Межкомнатных и Входных дверей ✔️Оптом и в Розницу ☝Лучшая цена на дверную фурнитуру ➜ЗАХОДИ!
+@elseif ($_SERVER['REQUEST_URI'] == '/kk/doors/fittings')
+        Аппараттық құралдардың кең таңдауы ✔️Интерьер және кіреберіс есіктері үшін ✔️Сауда және бөлшек сауда ☝Ешкі жабдықтарына арналған ең жақсы баға ➜Кіріңіз!
+@elseif ($_SERVER['REQUEST_URI'] == '/ru/pages/interior_door.php')
+        Удобный конструктор для подбора двери под подходящий интерьер ✔️по Цвету и Размеру ✔️под Пол и Ламинат ➜ Заходи и примеряй дверь!
+@elseif ($_SERVER['REQUEST_URI'] == '/kk/pages/interior_door.php')
+        Ыңғайлы интерьерге есік таңдауға ыңғайлы дизайнер ✔️Сары және өлшемі ✔️Еден мен ламинаттан ➜ Кіріп, есікті көріңіз!
+@elseif ($_SERVER['REQUEST_URI'] == '/kk')
+        Алматыдағы орыс және беларусь есіктері ✔️Көтерме және бөлшек сауда ✔️Қойма және тапсырыс беруші ☝Ең жақсы бағамен есік сатып алғыңыз келе ме? ➜Кіріңіз!
 @else
-        ШИРОКИЙ выбор дверей: Межкомнатные двери, Металлические двери. ✓ Md ✓ Двери Максмид ✔ Со склада ✔ Оптом ✔ АКЦИИ и СКИДКИ! ➜ ЗАХОДИ
+        ✔️ Российские и белорусские двери в Алматы | Оптом и в розницу | Со склада и под заказ Хотите купить двери по лучшей цене?
 @endif
         ">
-<meta name="keywords" content="{{ isset($seo_keywords) ? $seo_keywords : 'интернет, магазин, дверей, в, Алматы' }}">
+
+@if (isset($_GET['page']) && 
+    (parse_url($_SERVER['REQUEST_URI'])['path'] == '/ru/mezhkomnatnie-dveri.php' || 
+        parse_url($_SERVER['REQUEST_URI'])['path'] == '/ru/metalicheskie-dveri.php' ||
+        parse_url($_SERVER['REQUEST_URI'])['path'] == '/ru/doors/fittings' ||
+		parse_url($_SERVER['REQUEST_URI'])['path'] == '/ru/door-sale.php' ||
+		parse_url($_SERVER['REQUEST_URI'])['path'] == '/kk/mezhkomnatnie-dveri.php' ||
+		parse_url($_SERVER['REQUEST_URI'])['path'] == '/kk/metalicheskie-dveri.php' ||
+		parse_url($_SERVER['REQUEST_URI'])['path'] == '/kk/doors/fittings' ||
+		parse_url($_SERVER['REQUEST_URI'])['path'] == '/kk/door-sale.php'
+		
+	)
+)
+    
+    @php $a = parse_url($_SERVER['REQUEST_URI'])['path'] @endphp
+    
+    <link rel="canonical" href="https://russdoors.kz{{$a}}" />
+
+@endif
+
+<meta name="keywords" content="{{ isset($seo_keywords) ? $seo_keywords : 'двери, белорусские двери, двери оптом, купить двери оптом' }}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
 <!-- Bootstrap and Font Awesome css-->

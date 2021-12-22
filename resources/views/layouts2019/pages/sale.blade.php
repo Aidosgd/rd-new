@@ -3,7 +3,7 @@
     <div style="background: #f2ede6">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <a href="/{{$lang}}/sales-doors">
                         <img src="/newdesign/images/header/sale1.JPG" class="img-responsive" alt="">
                     </a>

@@ -84,6 +84,9 @@ class DoorsController extends Controller
             'seo_title' => $input['seo_title'],
             'seo_keywords' => $input['seo_keywords'],
             'seo_description' => $input['seo_description'],
+            'seo_title_kz' => $input['seo_title_kz'],
+            'seo_description_kz' => $input['seo_description_kz'],
+            'seo_keywords_kz' => $input['seo_keywords_kz'],
         ]);
 
         // Main Image
@@ -191,6 +194,9 @@ class DoorsController extends Controller
                 'seo_title' => $input['seo_title'],
                 'seo_keywords' => $input['seo_keywords'],
                 'seo_description' => $input['seo_description'],
+                'seo_title_kz' => $input['seo_title_kz'],
+                'seo_description_kz' => $input['seo_description_kz'],
+                'seo_keywords_kz' => $input['seo_keywords_kz'],
             ]);
         }else{
             $door->fill([
@@ -209,6 +215,9 @@ class DoorsController extends Controller
                 'seo_title' => $input['seo_title'],
                 'seo_keywords' => $input['seo_keywords'],
                 'seo_description' => $input['seo_description'],
+                'seo_title_kz' => $input['seo_title_kz'],
+                'seo_description_kz' => $input['seo_description_kz'],
+                'seo_keywords_kz' => $input['seo_keywords_kz'],
             ]);
         }
 
