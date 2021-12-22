@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddFieldsToDoorsTable extends Migration
+class AddSecondPrice extends Migration
 {
     /**
      * Run the migrations.
@@ -14,8 +14,7 @@ class AddFieldsToDoorsTable extends Migration
     {
         Schema::table('doors', function(Blueprint $table)
         {
-            $table->string('color')->nullable();
-            $table->string('type')->nullable();
+            $table->integer('second_price');
         });
     }
 
@@ -28,8 +27,7 @@ class AddFieldsToDoorsTable extends Migration
     {
         Schema::table('doors', function(Blueprint $table)
         {
-            $table->dropColumn('color');
-            $table->dropColumn('type');
+            $table->dropColumn('second_price');
         });
     }
 }

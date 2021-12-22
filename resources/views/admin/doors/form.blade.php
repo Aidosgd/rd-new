@@ -59,13 +59,17 @@
                                 {!! Form::text('price', null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
-                                <label>Цвет</label>
-                                {!! Form::select('doors_category_id', [ 1 => 'Межкомнатный', 2 => 'Металические', 3 => 'Фурнитура', 4 => 'Скидки'], null, ['class' => 'form-control']) !!}
+                                <label>Цена за комплект</label>
+                                {!! Form::text('second_price', null, ['class' => 'form-control']) !!}
                             </div>
-                            <div class="form-group">
-                                <label>Тип</label>
-                                {!! Form::select('doors_category_id', [ 1 => 'Межкомнатный', 2 => 'Металические', 3 => 'Фурнитура', 4 => 'Скидки'], null, ['class' => 'form-control']) !!}
-                            </div>
+{{--                            <div class="form-group">--}}
+{{--                                <label>Цвет</label>--}}
+{{--                                {!! Form::select('doors_category_id', [ 1 => 'Межкомнатный', 2 => 'Металические', 3 => 'Фурнитура', 4 => 'Скидки'], null, ['class' => 'form-control']) !!}--}}
+{{--                            </div>--}}
+{{--                            <div class="form-group">--}}
+{{--                                <label>Тип</label>--}}
+{{--                                {!! Form::select('doors_category_id', [ 1 => 'Межкомнатный', 2 => 'Металические', 3 => 'Фурнитура', 4 => 'Скидки'], null, ['class' => 'form-control']) !!}--}}
+{{--                            </div>--}}
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Порядок</label>
                                 {!! Form::text('weight', null, ['class' => 'form-control']) !!}
@@ -156,12 +160,24 @@
                                 {!! Form::text('seo_title', null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
+                                <label for="exampleInputEmail1">seo title</label>
+                                {!! Form::text('seo_title_kz', null, ['class' => 'form-control']) !!}
+                            </div>
+                            <div class="form-group">
                                 <label for="exampleInputEmail1">seo keywords</label>
                                 {!! Form::text('seo_keywords', null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
+                                <label for="exampleInputEmail1">seo keywords</label>
+                                {!! Form::text('seo_keywords_kz', null, ['class' => 'form-control']) !!}
+                            </div>
+                            <div class="form-group">
                                 <label for="exampleInputEmail1">seo description</label>
                                 {!! Form::text('seo_description', null, ['class' => 'form-control']) !!}
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">seo description</label>
+                                {!! Form::text('seo_description_kz', null, ['class' => 'form-control']) !!}
                             </div>
                         </div>
                         <div class="box-footer">

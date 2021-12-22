@@ -33,6 +33,7 @@
                                     <h3>{{ $item->title }}</h3>
                                 </a>
                                 <div class="price">{{ $item->price }} ₸</div>
+                                <div class="price">@if($item->second_price){{ $item->second_price }} ₸ за комплект@endif&nbsp;</div>
                                 <a href="/{{$lang}}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}"
                                    class="btn btn-default">{{ trans('doors.more_details') }}</a>
                             </div>
