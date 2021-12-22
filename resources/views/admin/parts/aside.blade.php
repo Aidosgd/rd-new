@@ -40,6 +40,7 @@
                     <li><a href="/cp/banners"><i class="fa fa-circle-o"></i> Баннер</a></li>
                     <li><a href="/cp/reviews"><i class="fa fa-circle-o"></i> Отзывы</a></li>
                     <li><a href="/cp/forms"><i class="fa fa-circle-o"></i> Формы</a></li>
+                    <li><a href="/cp/certificates"><i class="fa fa-circle-o"></i> Сертификаты</a></li>
                 </ul>
             </li>
         </ul>

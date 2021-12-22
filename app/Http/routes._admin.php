@@ -25,6 +25,9 @@ Route::group(['prefix' => 'cp'], function($router)
     Route::model('review', 'App\Model\Review');
     Route::resource('reviews', 'Admin\ReviewsController');
 
+    Route::model('certificate', 'App\Model\Certificate');
+    Route::resource('certificates', 'Admin\CertificatesController');
+
 //
 //    Route::model('product_categories', 'App\Model\ProductCategory');
 //    Route::resource('product_categories', 'Admin\ProductCategoriesController');
