@@ -1,2 +1,6 @@
 User-agent: *
+Disallow: /cp
 Disallow: /pages/politika_konfidentsialnosti_i_obrabotki_dannykh
+
+host: https://russdoors.kz/
+sitemap: https://russdoors.kz/sitemap.xml
