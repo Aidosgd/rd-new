@@ -70,9 +70,9 @@
                                     <a href="/{{ $lang }}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}" class="btn btn-default">{{ trans('home.more_details') }}</a>
                                 </div>
                             </div>
-                            @if($item->weight % 4 === 0)
-                                <div class="clearfix"></div>
-                            @endif
+{{--                            @if($item->weight % 4 === 0)--}}
+{{--                                <div class="clearfix"></div>--}}
+{{--                            @endif--}}
                         @endif
                     @endforeach
                 </div>

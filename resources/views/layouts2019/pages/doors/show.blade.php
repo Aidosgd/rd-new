@@ -25,7 +25,7 @@
                     <div class="row page-top">
                         <div class="col-sm-6 col-sm-offset-3">
                             <h1 class="product__heading">{{ $door->title }}</h1>
-                            {{--<h4>{{ $door->price }} тенге</h4>--}}
+                            <h4>{{ $door->price }} тенге</h4>
                         </div>
                     </div>
                 </div>
