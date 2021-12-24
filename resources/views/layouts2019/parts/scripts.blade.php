@@ -15,11 +15,11 @@
 
         function init() {
             var myMap = new ymaps.Map("map", {
-                center: [43.269270, 76.925565],
+                center: [{{ $city === 'almaty' ? '43.269270, 76.925565' : '51.191898, 71.389835' }}],
                 zoom: 15
             });
 
-            myPlacemark = new ymaps.Placemark([43.269267, 76.934868], {
+            myPlacemark = new ymaps.Placemark([{{ $city === 'almaty' ? '43.269267, 76.934868' : '51.191433, 71.399680' }}], {
                 hintContent: 'Собственный значок метки',
                 balloonContent: 'Это красивая метка'
             }, {

@@ -43,10 +43,14 @@
                 </div>
                 <div class="clearfix"></div>
                 <img class="logo_kaspi" src="/css/images/new2019/icons/kaspi_logo.png" alt="">
-                <p>{{ trans('header.address') }}</p>
-                <p><a href="tel:+7 727 345 01 01">+7 (727) 345-01-01;</a></p>
-                <p><a href="tel:+7 747 488 29 12">+7 747 488-29-12;</a></p>
-                <p><a href="tel:+7 747 197 50 91">+7 707 197 50 91.</a></p>
+                <p>{{ $city === 'almaty' ? trans('header.address') : 'ул. Мухамедханова, 19' }}</p>
+                @if($city === 'almaty')
+                    <p><a href="tel:+7 727 345 01 01">+7 (727) 345-01-01;</a></p>
+                    <p><a href="tel:+7 747 488 29 12">+7 747 488-29-12;</a></p>
+                    <p><a href="tel:+7 747 197 50 91">+7 707 197 50 91.</a></p>
+                @else
+                    <p><a href="tel:+7 (701) 750-98-60">+7 (701) 750-98-60</a></p>
+                @endif
             </div>
         </div>
     </div>

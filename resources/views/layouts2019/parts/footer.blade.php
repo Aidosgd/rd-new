@@ -40,12 +40,12 @@
 
 <section class="map">
     <div class="map-content visible-xs">
-        {!! $form3['description'] !!}
+        {!! $city === 'almaty' ? $form3['description'] : $contactsNurSultan['description'] !!}
     </div>
     <div id="map"></div>
     <div class="container hidden-xs">
         <div class="map-content">
-            {!! $form3['description'] !!}
+            {!! $city === 'almaty' ? $form3['description'] : $contactsNurSultan['description'] !!}
         </div>
     </div>
 </section>
