@@ -1,11 +1,27 @@
 <nav class="nav wow fadeInUp">
     <div class="container">
-        <div class="buttons">
-            <ul>
-                @foreach($topMenu[0]->children as $item)
-                    <li><a href="/{{ $lang }}{{$item->link}}">{{ $item->title }}</a></li>
-                @endforeach
-            </ul>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="buttons">
+                    <ul>
+                        @foreach($topMenu[0]->children as $item)
+                            <li style="font-size: 16px;"><a href="/{{ $lang }}{{$item->link}}">{{ $item->title }}</a></li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="locale position-relative">
+                    <ul>
+                        <li class="{{ $city === 'almaty' ? 'active' : '' }}">
+                            <a href="{{url()->current()}}">Алматы</a>
+                        </li>
+                        <li class="{{ $city === 'nur-sultan' ? 'active' : '' }}">
+                            <a href="{{url()->current()}}?city=nur-sultan">Нур-Султан</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </nav>

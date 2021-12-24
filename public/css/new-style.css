@@ -59,15 +59,36 @@
   .new-2019 .home-slider .slide {
     height: initial;
   }
-
-  .locale {
+  .new-2019 .nav .buttons {
+    float: none;
+    left: inherit;
+  }
+  .new-2019 .nav .buttons ul {
+    left: inherit;
+  }
+  .new-2019 .nav .buttons ul li {
+    display: block;
+    float: none;
+  }
+  .new-2019 .nav .locale {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    text-align: center;
+  }
+  .new-2019 .nav .locale ul li {
+    display: inline-block;
   }
 }
 .new-2019 .bestseller .doors-list .door-item img.width-100 {
   min-height: 350px;
+}
+
+.position-relative {
+  position: relative;
+  top: inherit;
+  right: inherit;
+  text-align: right;
 }
 
 /*# sourceMappingURL=new-style.css.map */

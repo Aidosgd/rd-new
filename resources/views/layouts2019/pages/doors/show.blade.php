@@ -62,7 +62,7 @@
                                 {!! $door->description !!}
 
                                 <h4>Цена:</h4>
-                                <h4>{{ $door->price }} тенге</h4>
+                                <h4>{{ $door->price }} тенге {{$door->category->id == 1 ? 'цена за полотно' : ''}}</h4>
                                 @if($door->second_price)<h4>{{ $door->second_price }} тенге за комплект</h4>@endif
                             </div>
                         </div>

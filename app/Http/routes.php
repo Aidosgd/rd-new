@@ -44,7 +44,9 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
             ->where('active', 1)
             ->orderBy('id', 'desc')
             ->paginate($paginateCount);
-        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description'));
+        $pageInfo = \App\Models\Page::find(49);
+
+        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo'));
     });
     Route::get('metalicheskie-dveri.php', function (){
         $doorCategory = \App\Models\Category::where('slug', '=', 'metalicheskie-dveri')->first();
@@ -55,7 +57,9 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
             ->where('active', 1)
             ->orderBy('id', 'desc')
             ->paginate($paginateCount);
-        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description'));
+        $pageInfo = \App\Models\Page::find(49);
+
+        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo'));
     });
     Route::get('stroydetali.php', function (){
         $doorCategory = \App\Models\Category::where('slug', '=', 'mezhkomnatnye-dveri')->first();
@@ -66,7 +70,10 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
             ->where('active', 1)
             ->orderBy('id', 'desc')
             ->paginate($paginateCount);
-        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description'));
+
+        $pageInfo = \App\Models\Page::find(48);
+
+        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo'));
     });
     Route::get('mezhkomnatnie-dveri.php', function (){
         $doorCategory = \App\Models\Category::where('slug', '=', 'mezhkomnatnye-dveri')->first();
@@ -79,8 +86,10 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
             ->orderBy('id', 'desc')
             ->paginate($paginateCount);
 
+        $pageInfo = \App\Models\Page::find(48);
+
 //        dd($doors);
-        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description'));
+        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo'));
     });
 
     Route::get('door-sale.php', function (){
@@ -92,7 +101,10 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
             ->where('active', 1)
             ->orderBy('id', 'desc')
             ->paginate($paginateCount);
-        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description'));
+
+        $pageInfo = \App\Models\Page::find(48);
+
+        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo'));
     });
 
 // PAGES

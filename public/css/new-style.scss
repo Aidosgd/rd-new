@@ -75,14 +75,40 @@
         height: initial;
       }
     }
-  }
-  .locale{
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    .nav{
+      .buttons{
+        float: none;
+        left: inherit;
+        ul {
+          left: inherit;
+          li{
+            display: block;
+            float: none;
+          }
+        }
+      }
+      .locale{
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        ul {
+          li{
+            display: inline-block;
+          }
+        }
+      }
+    }
   }
 }
 
 .new-2019 .bestseller .doors-list .door-item img.width-100{
   min-height: 350px;
+}
+
+.position-relative{
+  position: relative;
+  top: inherit;
+  right: inherit;
+  text-align: right;
 }

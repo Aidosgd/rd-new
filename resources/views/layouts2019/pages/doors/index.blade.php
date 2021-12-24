@@ -32,7 +32,7 @@
                                     @endif
                                     <h3>{{ $item->title }}</h3>
                                 </a>
-                                <div class="price">{{ $item->price }} ₸</div>
+                                <div class="price">{{ $item->price }} ₸ {{$item->category->id == 1 ? 'цена за полотно' : ''}}</div>
 {{--                                <div class="price">@if($item->second_price){{ $item->second_price }} ₸ за комплект@endif&nbsp;</div>--}}
                                 <a href="/{{$lang}}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}"
                                    class="btn btn-default">{{ trans('doors.more_details') }}</a>
@@ -45,13 +45,8 @@
                     {{ $doors->links() }}
                 </div>
 
-                @if($doorCategory->id == 1)
-					<h2>{{ trans ('doors.category_h') }}</h2>
-                    <p>{!! trans('doors.category_p') !!}</p>
-                @elseif ($doorCategory->id == 2)
-					<h2>{{ trans ('doors.category_hm') }}</h2>
-                    <p>{!! trans('doors.category_pm') !!}</p>
-				@endif
+                <h2>{{$pageInfo[$lang === 'ru' ? 'title' : 'title_kk']}}</h2>
+                <p>{!! $pageInfo[$lang === 'ru' ? 'description' : 'description_kk'] !!}</p>
             </div>
         </div>
     </section>

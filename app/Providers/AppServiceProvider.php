@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Http\Request;
 use App\Models\Menu;
 use App\Models\Page;
 use Illuminate\Support\Facades\Blade;
@@ -16,7 +17,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot(Factory $view)
+    public function boot(Factory $view, Request $request)
     {
         Blade::directive('convert', function ($money) {
             return "<?php echo number_format($money, 0, ',', ' '); ?>";
@@ -30,9 +31,12 @@ class AppServiceProvider extends ServiceProvider
         $form2 = Page::find(46);
         $form3 = Page::find(47);
 
-        $view->composer(['*'], function($view) use($langs, $lang, $topMenu, $bottomMenu, $form2, $form3){
-            $view->with(compact('langs', 'lang', 'topMenu', 'bottomMenu', 'form2', 'form3'));
+        $city = $request->input('city') ? $request->input('city') : 'almaty';
+
+        $view->composer(['*'], function($view) use($langs, $lang, $topMenu, $bottomMenu, $form2, $form3, $city){
+            $view->with(compact('langs', 'lang', 'topMenu', 'bottomMenu', 'form2', 'form3', 'city'));
         });
+
     }
 
     /**

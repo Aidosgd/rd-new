@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use App\Models\Door;
+use App\Models\Page;
 
 class DoorsController extends Controller
 {
@@ -16,8 +17,9 @@ class DoorsController extends Controller
             ->orderBy('id', 'desc')
             ->paginate($paginateCount);
 
+        $pageInfo = Page::find($doorCategory->id == 1 ? 48 : 49);
 
-        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory'));
+        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'pageInfo'));
     }
 
     public function show($doorCategory, $doorSlug)
@@ -45,10 +47,12 @@ class DoorsController extends Controller
 
     public function manufacturer($doorCategory, $manufacturer)
     {
+        $paginateCount = $doorCategory->id == 1 ? 8 : 6;
+
         $doors = Door::where('doors_category_id', $doorCategory->id)
             ->where('active', 1)
             ->where('manufacturer', $manufacturer)
-            ->get();
+            ->paginate($paginateCount);
 
         $CategoryName = [
             1 => 'Российские',
@@ -58,6 +62,8 @@ class DoorsController extends Controller
 
         $doorCategory->name = $CategoryName[$manufacturer];
 
-        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'manufacturer'));
+        $pageInfo = \App\Models\Page::find($doorCategory->id == 1 ? 48 : 49);
+
+        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'manufacturer', 'pageInfo'));
     }
 }

@@ -39,7 +39,7 @@
                                     <a href="/{{ $lang }}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}">
                                         <img src="{{ $item->getSrc('doors') ? $item->getSrc('doors') : $item->images->first()->getSrc('doors') }}" class="padding-30" alt="">
                                         <h3>{{ $item->title }}</h3>
-                                        <div class="price">@convert($item->price) ₸</div>
+                                        <div class="price">@convert($item->price) ₸ цена за полотно</div>
                                     </a>
                                     <a href="/{{ $lang }}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}" class="btn btn-default">{{ trans('home.more_details') }}</a>
                                 </div>
