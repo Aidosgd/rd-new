@@ -5,19 +5,19 @@
                 <div class="buttons">
                     <ul>
                         @foreach($topMenu[0]->children as $item)
-                            <li style="font-size: 16px;"><a href="/{{ $lang }}{{$item->link}}">{{ $item->title }}</a></li>
+                            <li style="font-size: 16px;"><a href="/{{ $lang }}{{$item->link}}?city={{$city}}">{{ $item->title }}</a></li>
                         @endforeach
                     </ul>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="locale position-relative">
+                <div class="locale position-relative cities-block">
                     <ul>
                         <li class="{{ $city === 'almaty' ? 'active' : '' }}">
-                            <a href="{{url()->current()}}">Алматы</a>
+                            <a data-val="almaty" href="{{url()->current()}}">Алматы</a>
                         </li>
                         <li class="{{ $city === 'nur-sultan' ? 'active' : '' }}">
-                            <a href="{{url()->current()}}?city=nur-sultan">Нур-Султан</a>
+                            <a data-val="nur-sultan" href="{{url()->current()}}?city=nur-sultan">Нур-Султан</a>
                         </li>
                     </ul>
                 </div>
@@ -29,7 +29,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 wow fadeInUp">
-                <a href="/{{ $lang }}">
+                <a href="/{{ $lang }}?city={{$city}}">
                     <img class="logo" src="/css/images/new2019/russdoorskz-logo.png" alt="">
                 </a>
             </div>

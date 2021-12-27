@@ -23,7 +23,7 @@
                     @foreach($doors as $index => $item)
                         <div class="{{ $item->category->id == 1 ? 'col-md-3' : 'col-md-4' }}  wow fadeInUp">
                             <div class="door-item">
-                                <a href="/{{$lang}}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}">
+                                <a href="/{{$lang}}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}?city={{$city}}">
                                     @if(!empty($item->images->first()))
                                         <img style="{{ $item->category->id != 1 ? 'height: 350px' : '' }}"
                                              src="/uploads/doors/{{ $item->images->first()->name }}"
@@ -32,9 +32,9 @@
                                     @endif
                                     <h3>{{ $item->title }}</h3>
                                 </a>
-                                <div class="price">{{ $item->price }} ₸ {{$item->category->id == 1 ? 'цена за полотно' : ''}}</div>
+                                <div class="price">{{ $city === 'almaty' ? $item->price : $item->price_nur_sultan }} ₸ {{$item->category->id == 1 ? 'цена за полотно' : ''}}</div>
 {{--                                <div class="price">@if($item->second_price){{ $item->second_price }} ₸ за комплект@endif&nbsp;</div>--}}
-                                <a href="/{{$lang}}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}"
+                                <a href="/{{$lang}}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}?city={{$city}}"
                                    class="btn btn-default">{{ trans('doors.more_details') }}</a>
                             </div>
                         </div>

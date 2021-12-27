@@ -15,8 +15,8 @@ class Door extends Authenticatable
 
     protected $fillable = [
         'title', 'title_kk',
-        'price', 'second_price', 'slug', 'weight',
-        'description', 'description_kk',
+        'price', 'second_price', 'price_nur_sultan', 'second_price_nur_sultan',
+        'slug', 'weight', 'description', 'description_kk',
         'doors_category_id', 'manufacturer',
         'main_page', 'main_image', 'video', 'active',
         'seo_title', 'seo_keywords', 'seo_description',

@@ -62,6 +62,14 @@
                                 <label>Цена за комплект</label>
                                 {!! Form::text('second_price', null, ['class' => 'form-control']) !!}
                             </div>
+                            <div class="form-group">
+                                <label>Цена Нур-султан</label>
+                                {!! Form::text('price_nur_sultan', null, ['class' => 'form-control']) !!}
+                            </div>
+                            <div class="form-group">
+                                <label>Цена за комплект Нур-султан</label>
+                                {!! Form::text('second_price_nur_sultan', null, ['class' => 'form-control']) !!}
+                            </div>
 {{--                            <div class="form-group">--}}
 {{--                                <label>Цвет</label>--}}
 {{--                                {!! Form::select('doors_category_id', [ 1 => 'Межкомнатный', 2 => 'Металические', 3 => 'Фурнитура', 4 => 'Скидки'], null, ['class' => 'form-control']) !!}--}}

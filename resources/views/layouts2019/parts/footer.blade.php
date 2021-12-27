@@ -55,7 +55,7 @@
         <div class="buttons">
             <ul class="footer__menu">
                 @foreach($bottomMenu[0]->children as $item)
-                    <li><a href="/{{$lang}}{{$item->link}}">{{$item->title}}</a></li>
+                    <li><a href="/{{$lang}}{{$item->link}}?city={{$city}}">{{$item->title}}</a></li>
                 @endforeach
             </ul>
         </div>
@@ -63,7 +63,7 @@
         <div class="clearfix"></div>
 
         <div class="footer__logo">
-            <a href="/{{$lang}}">
+            <a href="/{{$lang}}?city={{$city}}">
                 <img src="/css/images/new2019/russdoorskz-logo.png" alt="">
             </a>
         </div>

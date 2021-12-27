@@ -36,12 +36,12 @@
                         @if($item->category->id == 1)
                             <div class="col-md-3 wow fadeInUp">
                                 <div class="door-item">
-                                    <a href="/{{ $lang }}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}">
+                                    <a href="/{{ $lang }}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}?city={{$city}}">
                                         <img src="{{ $item->getSrc('doors') ? $item->getSrc('doors') : $item->images->first()->getSrc('doors') }}" class="padding-30" alt="">
                                         <h3>{{ $item->title }}</h3>
                                         <div class="price">@convert($item->price) ₸ цена за полотно</div>
                                     </a>
-                                    <a href="/{{ $lang }}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}" class="btn btn-default">{{ trans('home.more_details') }}</a>
+                                    <a href="/{{ $lang }}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}?city={{$city}}" class="btn btn-default">{{ trans('home.more_details') }}</a>
                                 </div>
                             </div>
                             @if($count%4 === 0)
@@ -62,12 +62,12 @@
                         @if($item->category->id != 1)
                             <div class="col-md-4 wow fadeInUp">
                                 <div class="door-item">
-                                    <a href="/{{ $lang }}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}">
+                                    <a href="/{{ $lang }}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}?city={{$city}}">
                                         <img src="{{ $item->getSrc('doors') ? $item->getSrc('doors') : $item->images->first()->getSrc('doors') }}" class="padding-30 width-100" alt="">
                                         <h3>{{ $item->title }}</h3>
                                         <div class="price">@convert($item->price) ₸</div>
                                     </a>
-                                    <a href="/{{ $lang }}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}" class="btn btn-default">{{ trans('home.more_details') }}</a>
+                                    <a href="/{{ $lang }}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}?city={{$city}}" class="btn btn-default">{{ trans('home.more_details') }}</a>
                                 </div>
                             </div>
 {{--                            @if($item->weight % 4 === 0)--}}
@@ -207,7 +207,7 @@
                 <div class="col-md-6 wow fadeInUp">
                     <h3>{{ trans('home.door_interier_h3') }}</h3>
                     <p>{{ trans('home.door_interier_p') }}</p>
-                    <a href="/{{ $lang }}/pages/interior_door.php" class="btn btn-default">{{ trans('home.door_interier_a') }}</a>
+                    <a href="/{{ $lang }}/pages/interior_door.php?city={{$city}}" class="btn btn-default">{{ trans('home.door_interier_a') }}</a>
                 </div>
             </div>
         </div>

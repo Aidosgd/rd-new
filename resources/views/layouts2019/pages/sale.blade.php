@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="/{{$lang}}/sales-doors">
+                    <a href="/{{$lang}}/sales-doors?city={{$city}}">
                         <img src="/newdesign/images/header/sale1.JPG" class="img-responsive" alt="">
                     </a>
                 </div>

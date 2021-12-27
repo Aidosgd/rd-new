@@ -47,6 +47,13 @@
                 scrollTop: $(id).offset().top - 200
             }, 2000);
         });
+
+        // $('.cities-block a').on('click', function (e) {
+        //     e.preventDefault();
+        //     var val = $(e.target).data('val');
+        //     localStorage.setItem('city', val);
+        //     location.reload()
+        // });
     })
 </script>
 @yield('scripts')
