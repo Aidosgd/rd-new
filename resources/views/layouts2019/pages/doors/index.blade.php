@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="text-center wow fadeInUp">
-                    {{ $doors->links() }}
+                    {{ $doors->appends(['city' => $city])->links() }}
                 </div>
 
                 <h2>{{$pageInfo[$lang === 'ru' ? 'title' : 'title_kk']}}</h2>

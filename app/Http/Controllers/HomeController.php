@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
+use App\Models\Certificate;
 use App\Models\Door;
 use App\Models\Page;
 use App\Models\Review;
@@ -40,7 +41,9 @@ class HomeController extends Controller
 
         $form1 = Page::find(45);
 
-        return view('layouts2019.home', compact('doors', 'reviews', 'slider', 'form1'));
+        $certificates = Certificate::all();
+
+        return view('layouts2019.home', compact('doors', 'reviews', 'slider', 'form1', 'certificates'));
     }
 
     public function mail(Request $request, Mailer $mailer)

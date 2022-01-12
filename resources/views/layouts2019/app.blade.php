@@ -14,5 +14,7 @@
 </div>
 
 @include('layouts2019.parts.scripts')
+
+@include('layouts2019.parts.modals')
 </body>
 </html>

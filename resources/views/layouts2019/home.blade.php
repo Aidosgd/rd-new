@@ -80,37 +80,37 @@
         </div>
     </section>
 
-    <section class="download-catalog">
-        <div class="container">
-            <div class="block">
-                <h3 class="wow fadeInUp">{{ $form1['title'] }}</h3>
-                <p class="wow fadeInUp">{!! $form1['description'] !!}</p>
+{{--    <section class="download-catalog">--}}
+{{--        <div class="container">--}}
+{{--            <div class="block">--}}
+{{--                <h3 class="wow fadeInUp">{{ $form1['title'] }}</h3>--}}
+{{--                <p class="wow fadeInUp">{!! $form1['description'] !!}</p>--}}
 
-                @if(session()->has('message'))
-                    <div class="alert alert-success">
-                        <h1>{{ session()->get('message') }}</h1>
-                    </div>
-                @endif
+{{--                @if(session()->has('message'))--}}
+{{--                    <div class="alert alert-success">--}}
+{{--                        <h1>{{ session()->get('message') }}</h1>--}}
+{{--                    </div>--}}
+{{--                @endif--}}
 
-                <div class="block__width wow fadeInUp">
-                    <div class="row">
-                        <form action="/{{$lang}}/mail/download" method="post" id="downloadForm">
-                            <input name="_token" type="hidden"  value="{{ csrf_token() }}" />
-                            <div class="col-md-8">
-                                <input type="email" name="email" placeholder="{{ trans('home.your_email') }}" required>
-                            </div>
-                            <div class="col-md-4">
-                                <button type="submit" class="btn btn-default btn-effects">
-                                    {{ trans('home.get_catalog') }}
-                                    <div class="t-btn_effects"></div>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+{{--                <div class="block__width wow fadeInUp">--}}
+{{--                    <div class="row">--}}
+{{--                        <form action="/{{$lang}}/mail/download" method="post" id="downloadForm">--}}
+{{--                            <input name="_token" type="hidden"  value="{{ csrf_token() }}" />--}}
+{{--                            <div class="col-md-8">--}}
+{{--                                <input type="email" name="email" placeholder="{{ trans('home.your_email') }}" required>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-md-4">--}}
+{{--                                <button type="submit" class="btn btn-default btn-effects">--}}
+{{--                                    {{ trans('home.get_catalog') }}--}}
+{{--                                    <div class="t-btn_effects"></div>--}}
+{{--                                </button>--}}
+{{--                            </div>--}}
+{{--                        </form>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
 
     <section class="quality">
         <div class="container">
@@ -185,12 +185,9 @@
                 <table>
                     <tbody>
                     <tr>
-                        <td><img src="/css/images/new2019/cert/1.png" alt=""></td>
-                        <td><img src="/css/images/new2019/cert/__1.png" alt=""></td>
-                        <td><img src="/css/images/new2019/cert/__001.jpg" alt=""></td>
-                        <td><img src="/css/images/new2019/cert/_MD_002.jpg" alt=""></td>
-                        <td><img src="/css/images/new2019/cert/Screenshot_2.png" alt=""></td>
-                        <td><img src="/css/images/new2019/cert/sertificate-russdoor.jpg" alt=""></td>
+                        @foreach($certificates as $item)
+                            <td><img src="/uploads/certificates/{{ $item->name }}" alt=""></td>
+                        @endforeach
                     </tr>
                     </tbody>
                 </table>
