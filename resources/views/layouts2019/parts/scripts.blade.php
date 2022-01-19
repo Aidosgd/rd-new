@@ -157,8 +157,8 @@
         100% { bottom: 100px; -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg); } }
 
     </style>
-    <a href="https://api.whatsapp.com/send?phone={{$city === 'almaty' ? '77071975091' : '77017509860'}} " class="btn-whatsupp" target="_blank"><img src="/images/whatsapp.svg" alt=""></a>
-    <a href="tel:+7 747 488 29 12"><div class="trubka-mobile" style="z-index:100;"><div class="icon tricon" id="tricon"></div></div></a>
+    <a href="https://api.whatsapp.com/send?phone={{$city === 'almaty' ? '77071975091' : '77017509860'}}" class="btn-whatsupp" target="_blank"><img src="/images/whatsapp.svg" alt=""></a>
+    <a href="tel:{{$city === 'almaty' ? '+77474882912' : '77017509860'}}"><div class="trubka-mobile" style="z-index:100;"><div class="icon tricon" id="tricon"></div></div></a>
 
 <!-- Yandex.Metrika informer -->
 <a href="https://metrika.yandex.ru/stat/?id=26941914&amp;from=informer"
