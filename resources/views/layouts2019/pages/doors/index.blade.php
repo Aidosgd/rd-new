@@ -2,6 +2,15 @@
 @section('content')
     <section class="bestseller">
         <div class="bg-s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="{{$banners->link}}">
+                            <img style="width: 100%" src="/uploads/banner/{{$banners->name}}" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
             <h2 class="text-center" style="text-transform: uppercase">{{ $doorCategory->name }}</h2>
             <div class="container">
                 @if($doorCategory->id == 1)

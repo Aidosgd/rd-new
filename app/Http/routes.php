@@ -11,6 +11,8 @@
 |
 */
 
+use App\Models\Banner;
+
 Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 {
     Route::auth();
@@ -46,7 +48,10 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
             ->paginate($paginateCount);
         $pageInfo = \App\Models\Page::find(49);
 
-        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo'));
+        $banners = \App\Models\Banner::find(5);
+
+        return view('layouts2019.pages.doors.index',
+            compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo', 'banners'));
     });
     Route::get('metalicheskie-dveri.php', function (){
         $doorCategory = \App\Models\Category::where('slug', '=', 'metalicheskie-dveri')->first();
@@ -59,7 +64,10 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
             ->paginate($paginateCount);
         $pageInfo = \App\Models\Page::find(49);
 
-        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo'));
+        $banners = Banner::find($doorCategory->id == 1 ? 5 : 4);
+
+        return view('layouts2019.pages.doors.index',
+            compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo', 'banners'));
     });
     Route::get('stroydetali.php', function (){
         $doorCategory = \App\Models\Category::where('slug', '=', 'mezhkomnatnye-dveri')->first();
@@ -73,7 +81,10 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
         $pageInfo = \App\Models\Page::find(48);
 
-        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo'));
+        $banners = Banner::find($doorCategory->id == 1 ? 5 : 4);
+
+        return view('layouts2019.pages.doors.index',
+            compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo', 'banners'));
     });
     Route::get('mezhkomnatnie-dveri.php', function (){
         $doorCategory = \App\Models\Category::where('slug', '=', 'mezhkomnatnye-dveri')->first();
@@ -88,8 +99,10 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
         $pageInfo = \App\Models\Page::find(48);
 
-//        dd($doors);
-        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo'));
+        $banners = Banner::find($doorCategory->id == 1 ? 5 : 4);
+
+        return view('layouts2019.pages.doors.index',
+            compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo', 'banners'));
     });
 
     Route::get('door-sale.php', function (){
@@ -103,6 +116,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
             ->paginate($paginateCount);
 
         $pageInfo = \App\Models\Page::find(48);
+
+        $banners = Banner::find($doorCategory->id == 1 ? 5 : 4);
 
         return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo'));
     });
@@ -253,7 +268,11 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
     Route::get('choco', 'HomeController@choco');
     Route::get('sale', function (){
-        return view('layouts2019.pages.sale');
+        $pageName = \App\Models\Page::find(32);
+        $seo_title = $pageName->seo_title;
+        $seo_keywords = $pageName->seo_keywords;
+        $seo_description = $pageName->seo_description;
+        return view('layouts2019.pages.show', compact('pageName', 'seo_title', 'seo_keywords', 'seo_description'));
     });
     Route::get('sales-doors', function (){
         return view('layouts2019.pages.sales');

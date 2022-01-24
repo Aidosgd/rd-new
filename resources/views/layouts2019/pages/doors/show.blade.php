@@ -13,7 +13,7 @@
     </style>
 @endsection
 @section('content')
-    <div style="background: #f2ede6">
+    <div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">

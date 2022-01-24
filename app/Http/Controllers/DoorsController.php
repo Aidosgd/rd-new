@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
+use App\Models\Banner;
 use App\Models\Door;
 use App\Models\Page;
 
@@ -19,7 +20,9 @@ class DoorsController extends Controller
 
         $pageInfo = Page::find($doorCategory->id == 1 ? 48 : 49);
 
-        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'pageInfo'));
+        $banners = Banner::find($doorCategory->id == 1 ? 5 : 4);
+
+        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'pageInfo', 'banners'));
     }
 
     public function show($doorCategory, $doorSlug)
@@ -64,6 +67,8 @@ class DoorsController extends Controller
 
         $pageInfo = \App\Models\Page::find($doorCategory->id == 1 ? 48 : 49);
 
-        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'manufacturer', 'pageInfo'));
+        $banners = Banner::find(5);
+
+        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'manufacturer', 'pageInfo', 'banners'));
     }
 }

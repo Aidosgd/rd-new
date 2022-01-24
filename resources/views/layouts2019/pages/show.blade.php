@@ -1,6 +1,6 @@
 @extends('layouts2019.app')
 @section('content')
-    <div style="background: #f2ede6">
+    <div>
         <div class="container" style="padding: 40px 0">
             <div class="row">
                 <div class="col-md-12">
