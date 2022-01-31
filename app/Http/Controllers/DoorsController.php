@@ -23,7 +23,9 @@ class DoorsController extends Controller
 
         $city = $request->input('city') ? $request->input('city') : 'almaty';
 
-        $id = $city === 'almaty' ? $doorCategory->id == 1 ? 5 : 4 : 8 ;
+        $id = $city === 'almaty'
+            ? $doorCategory->id == 1 ? 5 : 4
+            : $doorCategory->id == 1 ? 8 : 9 ;
 
         $banners = Banner::find($id);
 
