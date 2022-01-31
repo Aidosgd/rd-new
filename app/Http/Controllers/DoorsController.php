@@ -6,10 +6,11 @@ use App\Http\Requests;
 use App\Models\Banner;
 use App\Models\Door;
 use App\Models\Page;
+use Illuminate\Http\Request;
 
 class DoorsController extends Controller
 {
-    public function index($doorCategory)
+    public function index($doorCategory, Request $request)
     {
         $paginateCount = $doorCategory->id == 1 ? 8 : 6;
 
@@ -20,7 +21,11 @@ class DoorsController extends Controller
 
         $pageInfo = Page::find($doorCategory->id == 1 ? 48 : 49);
 
-        $banners = Banner::find($doorCategory->id == 1 ? 5 : 4);
+        $city = $request->input('city') ? $request->input('city') : 'almaty';
+
+        $id = $city === 'almaty' ? $doorCategory->id == 1 ? 5 : 4 : 8 ;
+
+        $banners = Banner::find($id);
 
         return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'pageInfo', 'banners'));
     }

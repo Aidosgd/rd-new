@@ -37,7 +37,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
     Route::get('doors/{doorCategory}/m/{manufacturer}', 'DoorsController@manufacturer');
     Route::get('doors/{doorCategory}/n/{doorSlug}', 'DoorsController@show');
 
-    Route::get('leras.php', function (){
+    Route::get('leras.php', function (\Illuminate\Http\Request $request){
         $doorCategory = \App\Models\Category::where('slug', '=', 'metalicheskie-dveri')->first();
         $seo_title = 'Входные двери оптом и металлические двери Алматы большой выбор';
         $seo_description = 'Большой выбор входных Металлических дверей производства России в Алматы';
@@ -48,12 +48,16 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
             ->paginate($paginateCount);
         $pageInfo = \App\Models\Page::find(49);
 
-        $banners = \App\Models\Banner::find(5);
+        $city = $request->input('city') ? $request->input('city') : 'almaty';
+
+        $id = $city === 'almaty' ? $doorCategory->id == 1 ? 5 : 4 : 8 ;
+
+        $banners = Banner::find($id);
 
         return view('layouts2019.pages.doors.index',
             compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo', 'banners'));
     });
-    Route::get('metalicheskie-dveri.php', function (){
+    Route::get('metalicheskie-dveri.php', function (\Illuminate\Http\Request $request){
         $doorCategory = \App\Models\Category::where('slug', '=', 'metalicheskie-dveri')->first();
         $seo_title = 'Входные двери оптом и металлические двери Алматы большой выбор';
         $seo_description = 'Большой выбор входных Металлических дверей производства России в Алматы';
@@ -64,12 +68,16 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
             ->paginate($paginateCount);
         $pageInfo = \App\Models\Page::find(49);
 
-        $banners = Banner::find($doorCategory->id == 1 ? 5 : 4);
+        $city = $request->input('city') ? $request->input('city') : 'almaty';
+
+        $id = $city === 'almaty' ? $doorCategory->id == 1 ? 5 : 4 : 8 ;
+
+        $banners = Banner::find($id);
 
         return view('layouts2019.pages.doors.index',
             compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo', 'banners'));
     });
-    Route::get('stroydetali.php', function (){
+    Route::get('stroydetali.php', function (\Illuminate\Http\Request $request){
         $doorCategory = \App\Models\Category::where('slug', '=', 'mezhkomnatnye-dveri')->first();
         $seo_title = 'Межкомнатные Двери Алматы. Купить двери оптом в Алматы';
         $seo_description = 'Межкомнатные Двери Алматы производства России и Белоруссии. Широкий выбор, низкие цены.';
@@ -81,12 +89,16 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
         $pageInfo = \App\Models\Page::find(48);
 
-        $banners = Banner::find($doorCategory->id == 1 ? 5 : 4);
+        $city = $request->input('city') ? $request->input('city') : 'almaty';
+
+        $id = $city === 'almaty' ? $doorCategory->id == 1 ? 5 : 4 : 8 ;
+
+        $banners = Banner::find($id);
 
         return view('layouts2019.pages.doors.index',
             compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo', 'banners'));
     });
-    Route::get('mezhkomnatnie-dveri.php', function (){
+    Route::get('mezhkomnatnie-dveri.php', function (\Illuminate\Http\Request $request){
         $doorCategory = \App\Models\Category::where('slug', '=', 'mezhkomnatnye-dveri')->first();
         $seo_title = 'Межкомнатные Двери Алматы. Купить двери оптом в Алматы';
         $seo_description = 'Межкомнатные Двери Алматы производства России и Белоруссии. Широкий выбор, низкие цены.';
@@ -99,13 +111,17 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
         $pageInfo = \App\Models\Page::find(48);
 
-        $banners = Banner::find($doorCategory->id == 1 ? 5 : 4);
+        $city = $request->input('city') ? $request->input('city') : 'almaty';
+
+        $id = $city === 'almaty' ? $doorCategory->id == 1 ? 5 : 4 : 8 ;
+
+        $banners = Banner::find($id);
 
         return view('layouts2019.pages.doors.index',
             compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo', 'banners'));
     });
 
-    Route::get('door-sale.php', function (){
+    Route::get('door-sale.php', function (\Illuminate\Http\Request $request){
         $doorCategory = \App\Models\Category::where('slug', '=', 'door-sale')->first();
         $seo_title = 'Межкомнатные Двери Алматы. Купить двери оптом в Алматы';
         $seo_description = 'Межкомнатные Двери Алматы производства России и Белоруссии. Широкий выбор, низкие цены.';
@@ -117,9 +133,13 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
         $pageInfo = \App\Models\Page::find(48);
 
-        $banners = Banner::find($doorCategory->id == 1 ? 5 : 4);
+        $city = $request->input('city') ? $request->input('city') : 'almaty';
 
-        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo'));
+        $id = $city === 'almaty' ? $doorCategory->id == 1 ? 5 : 4 : 8 ;
+
+        $banners = Banner::find($id);
+
+        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description', 'pageInfo', 'banners'));
     });
 
 // PAGES

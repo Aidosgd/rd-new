@@ -102,7 +102,7 @@ class BannersController extends Controller
         $image  = $request->file('image');
         if($image){
             $pathOld = public_path('uploads/banner/'.$banner->name);
-            unlink($pathOld);
+//            unlink($pathOld);
 
             $filename = date('Y-m-d-H-i').'-' . Str::slug($image->getClientOriginalName(), "_"). ".".$image->getClientOriginalExtension();
             $pathOriginal = public_path('uploads/banner/'.$filename);
