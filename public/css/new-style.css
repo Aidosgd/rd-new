@@ -14,6 +14,23 @@
 .new-2019 .bestseller .bg-s {
   background: #ffffff;
 }
+@media (max-width: 768px) {
+  .new-2019 .bestseller .doors-list.-new {
+    display: block;
+    overflow-x: auto;
+  }
+}
+@media (max-width: 768px) {
+  .new-2019 .bestseller .doors-list.-new .door-item {
+    min-height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .new-2019 .bestseller .doors-list.-new .door-item img {
+    height: auto !important;
+    width: 100%;
+  }
+}
 
 .locale {
   position: absolute;

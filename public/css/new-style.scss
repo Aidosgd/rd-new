@@ -26,6 +26,25 @@
     .bg-s{
       background: #ffffff;
     }
+    .doors-list{
+      &.-new{
+        @media (max-width: 768px) {
+          display: block;
+          overflow-x: auto;
+        }
+        .door-item{
+          @media (max-width: 768px) {
+            min-height: 400px;
+          }
+          img{
+            @media (max-width: 768px) {
+              height: auto !important;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 .locale{
