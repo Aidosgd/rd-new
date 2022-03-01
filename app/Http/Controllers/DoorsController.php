@@ -16,7 +16,7 @@ class DoorsController extends Controller
 
         $doors = Door::where('doors_category_id', $doorCategory->id)
             ->where('active', 1)
-            ->orderBy('id', 'desc')
+            ->orderBy('weight', 'asc')
             ->paginate($paginateCount);
 
         $pageInfo = Page::find($doorCategory->id == 1 ? 48 : 49);
