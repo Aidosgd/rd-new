@@ -99,6 +99,12 @@
   .new-2019 .nav .locale ul li {
     display: inline-block;
   }
+  .new-2019 .bestseller .doors-list.-new .door-item img {
+    max-height: 190px;
+  }
+  .new-2019 .bestseller h3 {
+    font-size: 12px;
+  }
 }
 .new-2019 .bestseller .doors-list .door-item img.width-100 {
   min-height: 350px;

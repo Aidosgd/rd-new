@@ -123,6 +123,24 @@
         }
       }
     }
+    .bestseller{
+      .doors-list{
+        a{
+          //display: block;
+          //min-height: 250px;
+        }
+        &.-new{
+          .door-item{
+            img{
+              max-height: 190px;
+            }
+          }
+        }
+      }
+      h3{
+        font-size: 12px;
+      }
+    }
   }
 }
 
