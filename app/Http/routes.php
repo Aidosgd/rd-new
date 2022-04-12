@@ -51,7 +51,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         $city = $request->input('city') ? $request->input('city') : 'almaty';
 
         if($city === 'almaty'){
-            $id = $doorCategory->id == 1 ? 5 : 4;
+            $id = $doorCategory->id == 1 ? 5 : 10;
         }else{
             $id = $doorCategory->id == 1 ? 8 : 9;
         }
@@ -75,7 +75,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         $city = $request->input('city') ? $request->input('city') : 'almaty';
 
         if($city === 'almaty'){
-            $id = $doorCategory->id == 1 ? 5 : 4;
+            $id = $doorCategory->id == 1 ? 5 : 10;
         }else{
             $id = $doorCategory->id == 1 ? 8 : 9;
         }
@@ -100,7 +100,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         $city = $request->input('city') ? $request->input('city') : 'almaty';
 
         if($city === 'almaty'){
-            $id = $doorCategory->id == 1 ? 5 : 4;
+            $id = $doorCategory->id == 1 ? 5 : 10;
         }else{
             $id = $doorCategory->id == 1 ? 8 : 9;
         }
@@ -126,7 +126,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         $city = $request->input('city') ? $request->input('city') : 'almaty';
 
         if($city === 'almaty'){
-            $id = $doorCategory->id == 1 ? 5 : 4;
+            $id = $doorCategory->id == 1 ? 5 : 10;
         }else{
             $id = $doorCategory->id == 1 ? 8 : 9;
         }
@@ -152,7 +152,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         $city = $request->input('city') ? $request->input('city') : 'almaty';
 
         if($city === 'almaty'){
-            $id = $doorCategory->id == 1 ? 5 : 4;
+            $id = $doorCategory->id == 1 ? 5 : 10;
         }else{
             $id = $doorCategory->id == 1 ? 8 : 9;
         }

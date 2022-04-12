@@ -24,7 +24,7 @@ class DoorsController extends Controller
         $city = $request->input('city') ? $request->input('city') : 'almaty';
 
         if($city === 'almaty'){
-            $id = $doorCategory->id == 1 ? 5 : 4;
+            $id = $doorCategory->id == 1 ? 5 : 10;
         }else{
             $id = $doorCategory->id == 1 ? 8 : 9;
         }
