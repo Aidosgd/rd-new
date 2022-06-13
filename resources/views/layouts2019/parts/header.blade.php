@@ -47,7 +47,7 @@
                 @if($city === 'almaty')
                     <p><a href="tel:+7 727 345 01 01">+7 (727) 345-01-01;</a></p>
                     <p><a href="tel:+7 747 488 29 12">+7 747 488-29-12;</a></p>
-                    <p><a href="tel:+7 747 197 50 91">+7 707 197 50 91.</a></p>
+                    <p><a target="_blank" href="https://api.whatsapp.com/send?phone=77071975091">+7 707 197 50 91.</a></p>
                 @else
                     <p><a href="tel:+7 (701) 750-98-60">+7 (701) 750-98-60</a></p>
                 @endif
