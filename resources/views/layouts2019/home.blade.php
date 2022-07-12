@@ -59,7 +59,7 @@
                 </div>
                 <div class="row doors-list">
                     @foreach($doors->sortBy('weight') as $item)
-                        @if($item->category->id != 1)
+                        @if($item->category->id === 2)
                             <div class="col-md-4 wow fadeInUp">
                                 <div class="door-item">
                                     <a href="/{{ $lang }}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}?city={{$city}}">
@@ -70,9 +70,30 @@
                                     <a href="/{{ $lang }}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}?city={{$city}}" class="btn btn-default">{{ trans('home.more_details') }}</a>
                                 </div>
                             </div>
-{{--                            @if($item->weight % 4 === 0)--}}
-{{--                                <div class="clearfix"></div>--}}
-{{--                            @endif--}}
+                        @endif
+                    @endforeach
+                </div>
+
+
+                <h2>{!! trans('home.sale_doors') !!}</h2>
+
+                <div class="visible-xs scroll-icon-wrap">
+                    <svg class="scroll-icon" style="width:22px;fill:#bebebe;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"> <path d="M97.2 298.2S56.1 225 38.8 193.3c-23-42.2-26.8-60-10.9-68.8 9.9-5.5 23.6-3.2 32 11.4l19.6 31.2V44.8s-1.2-32.3 21.8-32.3c24.5 0 22.4 32.3 22.4 32.3v59.4s12.9-9.3 28-5.1c7.7 2.1 16.7 5.8 21.5 18 0 0 30.7-14.9 46 16.8 0 0 35.4-7 35.4 29.7s-44.2 134.6-44.2 134.6H97.2zM249.9.5l-10.6 10.6 24.1 23.8H158.5v15h105l-24.2 23.9 10.6 10.6 42.5-42z" class="st0"></path> </svg>
+                </div>
+
+                <div class="row doors-list">
+                    @foreach($doors->sortBy('weight') as $item)
+                        @if($item->category->id === 4)
+                            <div class="col-md-4 wow fadeInUp">
+                                <div class="door-item">
+                                    <a href="/{{ $lang }}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}?city={{$city}}">
+                                        <img src="{{ $item->getSrc('doors') ? $item->getSrc('doors') : $item->images->first()->getSrc('doors') }}" class="padding-30 h-300" alt="">
+                                        <h3>{{ $item->title }}</h3>
+                                        <div class="price">@convert($item->price) ₸</div>
+                                    </a>
+                                    <a href="/{{ $lang }}/doors/{{ $item->category->slug }}/n/{{ $item->slug }}?city={{$city}}" class="btn btn-default">{{ trans('home.more_details') }}</a>
+                                </div>
+                            </div>
                         @endif
                     @endforeach
                 </div>

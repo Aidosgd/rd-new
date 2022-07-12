@@ -50,6 +50,7 @@ return [
 
     'interior_doors' => '<a href="https://russdoors.kz/ru/mezhkomnatnie-dveri.php">БАРЛЫҚ ІШКІ ЕСІКТЕР</a>',
     'metal_doors' => '<a href="https://russdoors.kz/ru/metalicheskie-dveri.php">БАРЛЫҚ МЕТАЛДЫ ЕСІКТЕР</a>',
+    'sale_doors' => '<a href="https://russdoors.kz/ru/door-sale.php">БАРЛЫҚ ЖЕҢІЛДІКТЕР</a>',
     'accessories' => 'Аксессуарлар',
     'promotions' => 'НҰСҚАУЛАР',
     'cooperation' => 'ЫНТЫМАҚТАСТЫҚ',

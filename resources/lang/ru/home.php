@@ -50,6 +50,7 @@ return [
 
     'interior_doors' => '<a href="https://russdoors.kz/ru/mezhkomnatnie-dveri.php">ПОСМОТРЕТЬ ВСЕ МЕЖКОМНАТНЫЕ ДВЕРИ</a>',
     'metal_doors' => '<a href="https://russdoors.kz/ru/metalicheskie-dveri.php">ПОСМОТРЕТЬ ВСЕ МЕТАЛЛИЧЕСКИЕ ДВЕРИ</a>',
+    'sale_doors' => '<a href="https://russdoors.kz/ru/door-sale.php">ПОСМОТРЕТЬ ВСЕ СКИДКИ</a>',
     'accessories' => 'ФУРНИТУРА',
     'promotions' => 'АКЦИИ',
     'cooperation' => 'СОТРУДНИЧЕСТВО',
