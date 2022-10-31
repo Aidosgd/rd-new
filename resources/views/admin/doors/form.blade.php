@@ -63,11 +63,11 @@
                                 {!! Form::text('second_price', null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
-                                <label>Цена Нур-султан</label>
+                                <label>Цена Астана</label>
                                 {!! Form::text('price_nur_sultan', null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
-                                <label>Цена за комплект Нур-султан</label>
+                                <label>Цена за комплект Астана</label>
                                 {!! Form::text('second_price_nur_sultan', null, ['class' => 'form-control']) !!}
                             </div>
 {{--                            <div class="form-group">--}}

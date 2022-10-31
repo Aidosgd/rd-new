@@ -15,7 +15,7 @@
                             <a data-val="almaty" href="{{url()->current()}}">Алматы</a>
                         </li>
                         <li class="{{ $city === 'nur-sultan' ? 'active' : '' }}">
-                            <a data-val="nur-sultan" href="{{url()->current()}}?city=nur-sultan">Нур-Султан</a>
+                            <a data-val="nur-sultan" href="{{url()->current()}}?city=nur-sultan">Астана</a>
                         </li>
                     </ul>
                 </div>
