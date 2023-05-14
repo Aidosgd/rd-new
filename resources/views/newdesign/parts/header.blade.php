@@ -19,7 +19,7 @@
             <br style="clear: both">
             <div class="phones" style="text-align: left; padding: 10px 15px; color: #fff;">
                 <i class="fa fa-phone" style="font-size: 18px;"></i> <a href="tel:+77474882912" style="color: #fff;">+7 (747) 488-29-12</a><br>
-                <i class="fa fa-whatsapp" style="font-size: 18px;"></i> <a target="_blank" href="https://api.whatsapp.com/send?phone=77071975091" style="color: #fff;">+7 (707) 197-50-91</a>
+                <i class="fa fa-whatsapp" style="font-size: 18px;"></i> <a target="_blank" href="https://api.whatsapp.com/send?phone=77478423843" style="color: #fff;">+7 747 842 38 43</a>
             </div>
         </div>
 

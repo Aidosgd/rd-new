@@ -24,7 +24,7 @@
 {{--                        <div class="form-group">--}}
 {{--                            <input type="text" name="name" class="form-control" placeholder="{{ trans('footer.your_name') }}" required>--}}
 {{--                        </div>--}}
-                        <a href="https://api.whatsapp.com/send?phone=77071975091" target="_blank" class="btn btn-default btn-effects" style="line-height: 50px;">
+                        <a href="https://api.whatsapp.com/send?phone=77478423843" target="_blank" class="btn btn-default btn-effects" style="line-height: 50px;">
                             написать в Whatsapp
                             <div class="t-btn_effects"></div>
                         </a>
