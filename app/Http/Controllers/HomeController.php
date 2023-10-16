@@ -33,7 +33,7 @@ class HomeController extends Controller
 
     public function welcome()
     {
-        $doors = Door::where('main_page', 1)->where('active', 1)->orderBy('weight', 'asc')->get();
+        $doors = Door::where('main_page', 1)->where('active', 1)->orderBy('created_at', 'desc')->get();
 
         $reviews = Review::all();
 

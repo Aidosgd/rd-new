@@ -58,7 +58,7 @@
                     <svg class="scroll-icon" style="width:22px;fill:#bebebe;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"> <path d="M97.2 298.2S56.1 225 38.8 193.3c-23-42.2-26.8-60-10.9-68.8 9.9-5.5 23.6-3.2 32 11.4l19.6 31.2V44.8s-1.2-32.3 21.8-32.3c24.5 0 22.4 32.3 22.4 32.3v59.4s12.9-9.3 28-5.1c7.7 2.1 16.7 5.8 21.5 18 0 0 30.7-14.9 46 16.8 0 0 35.4-7 35.4 29.7s-44.2 134.6-44.2 134.6H97.2zM249.9.5l-10.6 10.6 24.1 23.8H158.5v15h105l-24.2 23.9 10.6 10.6 42.5-42z" class="st0"></path> </svg>
                 </div>
                 <div class="row doors-list">
-                    @foreach($doors->sortBy('weight') as $item)
+                    @foreach($doors as $item)
                         @if($item->category->id === 2)
                             <div class="col-md-4 wow fadeInUp">
                                 <div class="door-item">
@@ -82,7 +82,7 @@
                 </div>
 
                 <div class="row doors-list">
-                    @foreach($doors->sortBy('weight') as $item)
+                    @foreach($doors as $item)
                         @if($item->category->id === 4)
                             <div class="col-md-4 wow fadeInUp">
                                 <div class="door-item">
@@ -169,21 +169,21 @@
 
     </section>
 
-    <section class="tour-3d">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 wow fadeInUp">
-                    <h4>{{ trans('home.3d_tour_h4') }}</h4>
-                    <h3>{{ trans('home.3d_tour_h3') }}</h3>
-                    <p>{{ trans('home.3d_tour_p') }}</p>
-                    <a href="/public/3d/output/" target="_blank" class="btn btn-default">{{ trans('home.3d_tour_a') }}</a>
-                </div>
-                <div class="col-md-6 wow fadeInUp">
-                    <img class="img-responsive" src="/css/images/new2019/russdoors-3dtour.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
+{{--    <section class="tour-3d">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-md-6 wow fadeInUp">--}}
+{{--                    <h4>{{ trans('home.3d_tour_h4') }}</h4>--}}
+{{--                    <h3>{{ trans('home.3d_tour_h3') }}</h3>--}}
+{{--                    <p>{{ trans('home.3d_tour_p') }}</p>--}}
+{{--                    <a href="/public/3d/output/" target="_blank" class="btn btn-default">{{ trans('home.3d_tour_a') }}</a>--}}
+{{--                </div>--}}
+{{--                <div class="col-md-6 wow fadeInUp">--}}
+{{--                    <img class="img-responsive" src="/css/images/new2019/russdoors-3dtour.jpg" alt="">--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
 
     <section class="about-us">
         <div class="container">
@@ -216,20 +216,20 @@
         </div>
     </section>
 
-    <section class="door-interier">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 wow fadeInUp">
-                    <img class="img-responsive" src="/css/images/new2019/dveri.jpg" alt="">
-                </div>
-                <div class="col-md-6 wow fadeInUp">
-                    <h3>{{ trans('home.door_interier_h3') }}</h3>
-                    <p>{{ trans('home.door_interier_p') }}</p>
-                    <a href="/{{ $lang }}/pages/interior_door.php?city={{$city}}" class="btn btn-default">{{ trans('home.door_interier_a') }}</a>
-                </div>
-            </div>
-        </div>
-    </section>
+{{--    <section class="door-interier">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-md-6 wow fadeInUp">--}}
+{{--                    <img class="img-responsive" src="/css/images/new2019/dveri.jpg" alt="">--}}
+{{--                </div>--}}
+{{--                <div class="col-md-6 wow fadeInUp">--}}
+{{--                    <h3>{{ trans('home.door_interier_h3') }}</h3>--}}
+{{--                    <p>{{ trans('home.door_interier_p') }}</p>--}}
+{{--                    <a href="/{{ $lang }}/pages/interior_door.php?city={{$city}}" class="btn btn-default">{{ trans('home.door_interier_a') }}</a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
 
-    @include('layouts2019.parts.reviews')
+{{--    @include('layouts2019.parts.reviews')--}}
 @endsection
