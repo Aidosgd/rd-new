@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
+use App\Models\Banner;
 use App\Models\Certificate;
 use App\Models\Door;
 use App\Models\Page;
@@ -31,7 +32,7 @@ class HomeController extends Controller
         return view('new-home-page');
     }
 
-    public function welcome()
+    public function welcome(Request $request)
     {
         $doors = Door::where('main_page', 1)->where('active', 1)->orderBy('created_at', 'desc')->get();
 
@@ -43,7 +44,11 @@ class HomeController extends Controller
 
         $certificates = Certificate::all();
 
-        return view('layouts2019.home', compact('doors', 'reviews', 'slider', 'form1', 'certificates'));
+        $city = $request->input('city') ? $request->input('city') : 'almaty';
+
+        $banner = Banner::find($city === 'almaty' ? 11 : 12);
+
+        return view('layouts2019.home', compact('doors', 'reviews', 'slider', 'form1', 'certificates', 'banner'));
     }
 
     public function mail(Request $request, Mailer $mailer)

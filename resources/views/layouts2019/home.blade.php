@@ -97,6 +97,16 @@
                         @endif
                     @endforeach
                 </div>
+
+                @if($banner)
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="{{$banner->link}}" target="_blank">
+                                <img style="width: 100%" src="/uploads/banner/{{$banner->name}}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                @endif
             </div>
         </div>
     </section>

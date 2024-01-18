@@ -44,7 +44,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         $paginateCount = $doorCategory->id == 1 ? 8 : 6;
         $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)
             ->where('active', 1)
-            ->orderBy('weight', 'asc')
+            ->orderBy('created_at', 'desc')
             ->paginate($paginateCount);
         $pageInfo = \App\Models\Page::find(49);
 
@@ -68,7 +68,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         $paginateCount = $doorCategory->id == 1 ? 8 : 6;
         $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)
             ->where('active', 1)
-            ->orderBy('weight', 'asc')
+            ->orderBy('created_at', 'desc')
             ->paginate($paginateCount);
         $pageInfo = \App\Models\Page::find(49);
 
@@ -92,7 +92,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         $paginateCount = $doorCategory->id == 1 ? 8 : 6;
         $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)
             ->where('active', 1)
-            ->orderBy('weight', 'asc')
+            ->orderBy('created_at', 'desc')
             ->paginate($paginateCount);
 
         $pageInfo = \App\Models\Page::find(48);
@@ -118,7 +118,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)
             ->with('images')
             ->where('active', 1)
-            ->orderBy('weight', 'asc')
+            ->orderBy('created_at', 'desc')
             ->paginate($paginateCount);
 
         $pageInfo = \App\Models\Page::find(48);
@@ -144,7 +144,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         $paginateCount = 8;
         $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)
             ->where('active', 1)
-            ->orderBy('weight', 'asc')
+            ->orderBy('created_at', 'desc')
             ->paginate($paginateCount);
 
         $pageInfo = \App\Models\Page::find(48);
@@ -242,7 +242,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         $doorCategory = \App\Models\Category::where('slug', '=', 'metalicheskie-dveri')->first();
         $seo_title = 'Металлические Двери в Алматы и Астане';
         $seo_description = 'Большой ассортимент металлических Дверей в Алматы и Астане';
-        $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)->where('active', 1)->get();
+        $doors = \App\Models\Door::where('doors_category_id', $doorCategory->id)->where('active', 1)->orderBy('created_at', 'desc')->get();
         return view('doors.index', compact('doors', 'doorCategory', 'seo_title', 'seo_description'));
     });
     Route::get('riccardi.php', function (){
