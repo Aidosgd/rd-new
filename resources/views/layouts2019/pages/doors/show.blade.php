@@ -69,6 +69,8 @@
                                     <h4>{{ $door->price_nur_sultan }} тенге {{$door->category->id == 1 ? 'цена за полотно' : ''}}</h4>
                                     @if($door->second_price_nur_sultan)<h4>{{ $door->second_price_nur_sultan }} тенге за комплект</h4>@endif
                                 @endif
+
+                                <h4><a target="_blank" href="https://api.whatsapp.com/send?phone=77478423843&text=Здравствуйте,%20хочу%20получить%20консультацию дверь {{$door->title}}">получить консультацию в WhatsApp</a></h4>
                             </div>
                         </div>
                     </div>
