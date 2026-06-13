@@ -125,7 +125,7 @@ xhr.send();
                 <div class="col-md-5">
                     <a href="/contacts/almaty.php">
                         <i class="fa fa-map-marker"></i>
-                        г. Алматы, ул. Райымбека 152 (уг. ул. Наурызбай Батыра);
+                        г. Алматы, пр. Райымбека 152 (уг. ул. Наурызбай Батыра);
                     </a>
                 </div>
                 <div class="col-md-5">

@@ -12,6 +12,8 @@
                         </div>
                     </div>
                 @endif
+
+                @include('layouts2019.parts.search')
             </div>
             <h2 class="text-center" style="text-transform: uppercase">{{ $doorCategory->name }}</h2>
             <div class="container">

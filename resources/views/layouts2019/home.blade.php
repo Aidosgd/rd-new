@@ -24,6 +24,8 @@
         <div class="bg-s">
             <div class="container">
 
+                @include('layouts2019.parts.search')
+
                 <h2>{!! trans('home.interior_doors') !!}</h2>
 
                 <div class="visible-xs scroll-icon-wrap">

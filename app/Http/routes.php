@@ -37,6 +37,9 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
     Route::get('doors/{doorCategory}/m/{manufacturer}', 'DoorsController@manufacturer');
     Route::get('doors/{doorCategory}/n/{doorSlug}', 'DoorsController@show');
 
+    // SEARCH — внутри локализованной группы, итоговый URL /{lang}/search (напр. /ru/search)
+    Route::get('search', 'SearchController@index');
+
     Route::get('leras.php', function (\Illuminate\Http\Request $request){
         $doorCategory = \App\Models\Category::where('slug', '=', 'metalicheskie-dveri')->first();
         $seo_title = 'Входные двери оптом и металлические двери Алматы большой выбор';
