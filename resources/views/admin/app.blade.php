@@ -83,11 +83,6 @@
 <!-- ./wrapper -->
 
 <script src="/admin/js/all.js"></script>
-<script !src="">
-    $('.sidebar-toggle').click(()=>{
-      $('body').toggleClass('sidebar-open')
-    })
-</script>
 @yield('scripts')
 </body>
 </html>

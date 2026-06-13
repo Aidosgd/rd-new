@@ -19,10 +19,10 @@ class AdminMiddleware
         if(Auth::user()){
             $user = Auth::user();
         }else{
-            return redirect('/login');
+            return redirect('/');
         }
         if (!$user->super_user){
-            return redirect('/login');
+            return redirect('/');
         }
         return $next($request);
     }

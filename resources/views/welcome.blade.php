@@ -1,83 +1,22 @@
-@extends('newdesign.app')
+@extends('app')
 
-@section('header-slider')
-    <div class="header-slider hidden-xs">
-        <div class="slider">
-            <div class="slide">
-                <a href="#">
-                    <img src="/newdesign/images/header/banner6.jpg" alt="">
-                </a>
-            </div>
-            <div class="slide">
-                <a href="#">
-                    <img src="/newdesign/images/header/banner3.jpg" alt="">
-                </a>
-            </div>
-            <div class="slide">
-                <a href="#">
-                    <img src="/newdesign/images/header/banner4.jpg" alt="">
-                </a>
-            </div>
-            <div class="slide">
-                <a href="#">
-                    <img src="/newdesign/images/header/banner5.JPG" alt="">
-                </a>
-            </div>
-            <div class="slide">
-                <a href="#">
-                    <img src="/newdesign/images/header/Граф_Арес.jpg" alt="">
-                </a>
-            </div>
-            <div class="slide">
-                <a href="#">
-                    <img src="/newdesign/images/header/Кредо_Луна.jpg" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="banners-block hidden-xs">
-            <a href="/pages/grafik_raboty.php">
-                <img src="/images/b333.png">
-            </a>
-            <a href="/3d/output">
-                <img src="/css/images/ЗD Тур.png">
-            </a>
-            {{--<a href="/choco">--}}
-            {{--<img src="/css/images/Скидка.jpg">--}}
-            {{--</a>--}}
-            <a href="/pages/interior_door.php">
-                <img src="/images/b33.png">
-            </a>
-        </div>
-    </div>
-@endsection
-@section('mobileBanners')
-    <div class="header">
-        <div class="banners-block visible-xs">
-            <a href="/pages/grafik_raboty.php">
-                <img src="/images/b333.png">
-            </a>
-            <a href="/3d/output">
-                <img src="/css/images/ЗD Тур.png">
-            </a>
-            {{--<a href="/pages/interior_door.php">--}}
-                {{--<img src="/images/b33.png">--}}
-            {{--</a>--}}
-        </div>
-    </div>
-@endsection
 @section('content')
+    <a href="http://russdoors.kz/%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B02.php"><h1 style="font-size: 20px;">РАСПРОДАЖА! Двери производство Россия, Украина   от 3000 тенге за полотно!</h1></a>
+    <h1 style="font-size: 20px;">Белорусские межкомнатные двери –ликвидация коллекции! Скидки до 50%!</h1>
+    <!-- main -->
     <h1 style="padding-bottom: 30px;">Хит продаж</h1>
 
     <div class="row doors">
-        @foreach($doors->sortBy('weight') as $item)
-            <div class="{{ $item->category->id == 1 ? 'col-md-3' : 'col-md-4' }} col-sm-6">
+        @foreach($doors as $item)
+            {{--{{ dd($item) }}--}}
+            <div class="col-md-3 col-sm-6">
                 <div class="shop-stuff shk-item three ">
                     <div class="shop-stuff-b">
                         <a href="/doors/{{ $item->category->slug }}/n/{{ $item->slug }}">
-                            <img class="shk-image" src="{{ $item->getSrc('doors') ? $item->getSrc('doors') : $item->images->first()->getSrc('doors') }}" height="200">
+                            <img class="shk-image" src="{{ $item->getSrc('doors') ? $item->getSrc('doors') : $item->images->first()->getSrc('doors') }}" alt="Asel" title="Asel" height="200">
                         </a>
                         <a href="/doors/{{ $item->category->slug }}/n/{{ $item->slug }}">
-                            <h3>{{ $item->title }} <b>{{ $item->price }} ₸</b></h3>
+                            <h3>{{ $item->title }}</h3>
                         </a>
                         <div class="shs-descr">
 
@@ -88,30 +27,20 @@
                 </div>
             </div>
         @endforeach
-        <div class="clearfix"></div>
-        <div class="buttons">
-            <a href="/stroydetali.php">Межкомнатные двери</a>
-            <a href="/leras.php">Металлические двери</a>
-        </div>
     </div>
 
     <div class="bottom-form">
-        @if(session()->has('message'))
-            <div class="alert alert-success">
-                <h1>{{ session()->get('message') }}</h1>
-            </div>
-        @endif
         <h2 style="color: #fff; text-align: center;">Оставить заявку на бесплатную консультацию</h2>
         <p class="error"></p>
-        <form method="post" action="/mail" id="FormOrder" class="form-inline">
-            <input name="_token" type="hidden"  value="{{ csrf_token() }}" />
+        <form method="post" action="index.php" id="FormOrder" class="form-inline">
+            <input name="formid" type="hidden"  value="ContactForm" />
             <div class="form-group">
                 <label for="exampleInputName2">Ваше имя <span class="mark">*</span></label>
-                <input name="name" class="form-control text" id="exampleInputName2" type="text" value="" />
+                <input name="i10" class="form-control text" id="exampleInputName2" type="text" value="" />
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail2">Контактный телефон <span class="mark">*</span></label>
-                <input name="phone" class="form-control" id="exampleInputEmail2" type="text" value="" />
+                <input name="i12" class="form-control" id="exampleInputEmail2" type="text" value="" />
             </div>
             <!--<input type="submit" name="contact" id="cfContact" class="button" style="background: url(/assets/images/send_rus.png)no-repeat; width:150px; height:25px; border:0px;" value="" />-->
             <button type="submit" class="btn btn-default">Отправить</button>

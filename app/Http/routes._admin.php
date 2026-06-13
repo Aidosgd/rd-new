@@ -13,20 +13,11 @@ Route::group(['prefix' => 'cp'], function($router)
     Route::model('page', 'App\Model\Page');
     Route::resource('pages', 'Admin\PagesController');
 
-    Route::model('page', 'App\Model\Page');
-    Route::resource('forms', 'Admin\FormsController');
-
     Route::model('slider', 'App\Model\Slider');
     Route::resource('sliders', 'Admin\SlidersController');
 
     Route::model('banner', 'App\Model\Banner');
     Route::resource('banners', 'Admin\BannersController');
-
-    Route::model('review', 'App\Model\Review');
-    Route::resource('reviews', 'Admin\ReviewsController');
-
-    Route::model('certificate', 'App\Model\Certificate');
-    Route::resource('certificates', 'Admin\CertificatesController');
 
 //
 //    Route::model('product_categories', 'App\Model\ProductCategory');

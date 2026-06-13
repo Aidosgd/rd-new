@@ -51,40 +51,16 @@
                                 {!! Form::text('title', null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Название двери kz</label>
-                                {!! Form::text('title_kk', null, ['class' => 'form-control']) !!}
-                            </div>
-                            <div class="form-group">
                                 <label>Цена</label>
                                 {!! Form::text('price', null, ['class' => 'form-control']) !!}
                             </div>
-                            <div class="form-group">
-                                <label>Цена за комплект</label>
-                                {!! Form::text('second_price', null, ['class' => 'form-control']) !!}
-                            </div>
-                            <div class="form-group">
-                                <label>Цена Астана</label>
-                                {!! Form::text('price_nur_sultan', null, ['class' => 'form-control']) !!}
-                            </div>
-                            <div class="form-group">
-                                <label>Цена за комплект Астана</label>
-                                {!! Form::text('second_price_nur_sultan', null, ['class' => 'form-control']) !!}
-                            </div>
-{{--                            <div class="form-group">--}}
-{{--                                <label>Цвет</label>--}}
-{{--                                {!! Form::select('doors_category_id', [ 1 => 'Межкомнатный', 2 => 'Металические', 3 => 'Фурнитура', 4 => 'Скидки'], null, ['class' => 'form-control']) !!}--}}
-{{--                            </div>--}}
-{{--                            <div class="form-group">--}}
-{{--                                <label>Тип</label>--}}
-{{--                                {!! Form::select('doors_category_id', [ 1 => 'Межкомнатный', 2 => 'Металические', 3 => 'Фурнитура', 4 => 'Скидки'], null, ['class' => 'form-control']) !!}--}}
-{{--                            </div>--}}
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Порядок</label>
                                 {!! Form::text('weight', null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
                                 <label>Категория</label>
-                                {!! Form::select('doors_category_id', [ 1 => 'Межкомнатный', 2 => 'Металические', 3 => 'Фурнитура', 4 => 'Скидки'], null, ['class' => 'form-control']) !!}
+                                {!! Form::select('doors_category_id', [ 1 => 'Межкомнатный', 2 => 'Металические'], null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
                                 <label>Производитель</label>
@@ -100,10 +76,6 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Описание</label>
                                 {{ Form::textarea('description', null, ['class' => 'form-control']) }}
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Описание kz</label>
-                                {{ Form::textarea('description_kk', null, ['class' => 'form-control']) }}
                             </div>
                             <?php
                             $url = Route::getFacadeRoot()->current()->uri();
@@ -137,19 +109,6 @@
                             </div>
 
                             <div class="form-group">
-                                <label> Видео:</label>
-                                {{ Form::file('video', ['id' => 'files']) }}
-                                
-                                @if(isset($door->video))
-                                    <video width="400" src="/uploads/videos/{{ $door->video }}" controls>
-                                        <source src="/uploads/videos/{{ $door->video }}" type="video/mp4">
-                                        Your browser does not support HTML5 video.
-                                    </video>
-                                @endif
-                                
-                            </div>
-
-                            <div class="form-group">
                                 <label>Главная страница:</label>
                                 {{ Form::checkbox('main_page', null) }}
                                 <output id="list"></output>
@@ -168,24 +127,12 @@
                                 {!! Form::text('seo_title', null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">seo title</label>
-                                {!! Form::text('seo_title_kz', null, ['class' => 'form-control']) !!}
-                            </div>
-                            <div class="form-group">
                                 <label for="exampleInputEmail1">seo keywords</label>
                                 {!! Form::text('seo_keywords', null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">seo keywords</label>
-                                {!! Form::text('seo_keywords_kz', null, ['class' => 'form-control']) !!}
-                            </div>
-                            <div class="form-group">
                                 <label for="exampleInputEmail1">seo description</label>
                                 {!! Form::text('seo_description', null, ['class' => 'form-control']) !!}
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">seo description</label>
-                                {!! Form::text('seo_description_kz', null, ['class' => 'form-control']) !!}
                             </div>
                         </div>
                         <div class="box-footer">

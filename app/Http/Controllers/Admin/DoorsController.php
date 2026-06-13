@@ -27,20 +27,6 @@ class DoorsController extends Controller
         return view('admin.doors.index', compact('door', 'breadcrumbs', 'pageTitle'));
     }
 
-    public function show($id)
-    {
-        $breadcrumbs = [
-            'Главная' => '/cp',
-            'Меню' => '',
-        ];
-
-        $pageTitle = 'Все объявления';
-
-        $door = Door::where('doors_category_id', $id)->get();
-
-        return view('admin.doors.index', compact('door', 'breadcrumbs', 'pageTitle'));
-    }
-
     public function create()
     {
         $breadcrumbs = [
@@ -58,7 +44,7 @@ class DoorsController extends Controller
             'door' => null,
             'breadcrumbs' => $breadcrumbs,
             'pageTitle' => $pageTitle,
-            'doors' => $doors
+            'doors' => $doors,
         ]);
     }
 
@@ -70,11 +56,7 @@ class DoorsController extends Controller
 
         $door->fill([
             'title' => $input['title'],
-            'title_kk' => $input['title_kk'],
             'price' => $input['price'],
-            'second_price' => $input['second_price'],
-            'price_nur_sultan' => $input['price_nur_sultan'],
-            'second_price_nur_sultan' => $input['second_price_nur_sultan'],
             'slug' => Str::slug($input['title'], '_'),
             'weight' => $input['weight'],
             'active' => isset($input['active']) ? '1' : '0',
@@ -82,17 +64,12 @@ class DoorsController extends Controller
             'doors_category_id' => $input['doors_category_id'],
             'manufacturer' => $input['manufacturer'],
             'description' => $input['description'],
-            'description_kk' => $input['description_kk'],
 
             'seo_title' => $input['seo_title'],
             'seo_keywords' => $input['seo_keywords'],
             'seo_description' => $input['seo_description'],
-            'seo_title_kz' => $input['seo_title_kz'],
-            'seo_description_kz' => $input['seo_description_kz'],
-            'seo_keywords_kz' => $input['seo_keywords_kz'],
         ]);
 
-        // Main Image
         $main_image  = $request->file('main_image');
 
         if($main_image){
@@ -102,19 +79,6 @@ class DoorsController extends Controller
 
             $door->fill([
                 'main_image' => $filename,
-            ]);
-        }
-
-        //Video
-        $video  = $request->file('video');
-
-        if($video){
-            $filename = $video->getClientOriginalName();
-            $path = public_path().'/uploads/videos/';
-            $video->move($path, $filename);
-
-            $door->fill([
-                'video' => $filename,
             ]);
         }
 
@@ -172,9 +136,7 @@ class DoorsController extends Controller
         $image  = $request->file('main_image');
         if($image){
             $pathOld = public_path('uploads/doors/'.$door->main_image);
-            if($door->main_image){
-//                unlink($pathOld);
-            }
+            unlink($pathOld);
 
             $filename = date('Y-m-d-H-i').'-' . Str::slug($image->getClientOriginalName(), "_"). ".".$image->getClientOriginalExtension();
             $pathOriginal = public_path('uploads/doors/'.$filename);
@@ -182,11 +144,7 @@ class DoorsController extends Controller
 
             $door->fill([
                 'title' => $input['title'],
-                'title_kk' => $input['title_kk'],
                 'price' => $input['price'],
-                'second_price' => $input['second_price'],
-                'price_nur_sultan' => $input['price_nur_sultan'],
-                'second_price_nur_sultan' => $input['second_price_nur_sultan'],
                 'slug' => Str::slug($input['title'], '_'),
                 'weight' => $input['weight'],
                 'active' => isset($input['active']) ? '1' : '0',
@@ -195,23 +153,15 @@ class DoorsController extends Controller
                 'doors_category_id' => $input['doors_category_id'],
                 'manufacturer' => $input['manufacturer'],
                 'description' => $input['description'],
-                'description_kk' => $input['description_kk'],
 
                 'seo_title' => $input['seo_title'],
                 'seo_keywords' => $input['seo_keywords'],
                 'seo_description' => $input['seo_description'],
-                'seo_title_kz' => $input['seo_title_kz'],
-                'seo_description_kz' => $input['seo_description_kz'],
-                'seo_keywords_kz' => $input['seo_keywords_kz'],
             ]);
         }else{
             $door->fill([
                 'title' => $input['title'],
-                'title_kk' => $input['title_kk'],
                 'price' => $input['price'],
-                'second_price' => $input['second_price'],
-                'price_nur_sultan' => $input['price_nur_sultan'],
-                'second_price_nur_sultan' => $input['second_price_nur_sultan'],
                 'slug' => Str::slug($input['title'], '_'),
                 'weight' => $input['weight'],
                 'active' => isset($input['active']) ? '1' : '0',
@@ -219,27 +169,10 @@ class DoorsController extends Controller
                 'doors_category_id' => $input['doors_category_id'],
                 'manufacturer' => $input['manufacturer'],
                 'description' => $input['description'],
-                'description_kk' => $input['description_kk'],
 
                 'seo_title' => $input['seo_title'],
                 'seo_keywords' => $input['seo_keywords'],
                 'seo_description' => $input['seo_description'],
-                'seo_title_kz' => $input['seo_title_kz'],
-                'seo_description_kz' => $input['seo_description_kz'],
-                'seo_keywords_kz' => $input['seo_keywords_kz'],
-            ]);
-        }
-
-        //Video
-        $video  = $request->file('video');
-
-        if($video){
-            $filename = $video->getClientOriginalName();
-            $path = public_path().'/uploads/videos/';
-            $video->move($path, $filename);
-
-            $door->fill([
-                'video' => $filename,
             ]);
         }
 
@@ -252,13 +185,13 @@ class DoorsController extends Controller
                     continue;
                 $item->delete();
                 $pathOriginal = public_path('uploads/doors/'.$item->name);
-//                unlink($pathOriginal);
+                unlink($pathOriginal);
             }
         else
             foreach($door->images as $item){
                 $item->delete();
                 $pathOriginal = public_path('uploads/doors/'.$item->name);
-//                unlink($pathOriginal);
+                unlink($pathOriginal);
             }
         $images = array_filter($request->file('images', []));
 
@@ -279,7 +212,7 @@ class DoorsController extends Controller
         Session::flash('message', 'Меню отредактирован');
         Session::flash('alert-class', 'alert-success');
 
-        return redirect('/cp/doors/'.$input['doors_category_id']);
+        return redirect('/cp/doors');
     }
 
     public function destroy($id)
@@ -290,14 +223,14 @@ class DoorsController extends Controller
             foreach($door->images as $image){
                 $filename = $image->name;
                 $pathSmall = public_path('uploads/doors/'.$filename);
-//                unlink($pathSmall);
+                unlink($pathSmall);
                 $image->delete();
             }
         }
 
         if(!empty($door->main_image)){
             $pathM = public_path('uploads/doors/'.$door->main_image);
-//            unlink($pathM);
+            unlink($pathM);
         }
 
         $door->delete();

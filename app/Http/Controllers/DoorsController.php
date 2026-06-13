@@ -3,35 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
-use App\Models\Banner;
 use App\Models\Door;
-use App\Models\Page;
-use Illuminate\Http\Request;
 
 class DoorsController extends Controller
 {
-    public function index($doorCategory, Request $request)
+    public function index($doorCategory)
     {
-        $paginateCount = $doorCategory->id == 1 ? 8 : 6;
+        $doors = Door::where('doors_category_id', $doorCategory->id)->where('active', 1)->get();
 
-        $doors = Door::where('doors_category_id', $doorCategory->id)
-            ->where('active', 1)
-            ->orderBy('created_at', 'desc')
-            ->paginate($paginateCount);
-
-        $pageInfo = Page::find($doorCategory->id == 1 ? 48 : 49);
-
-        $city = $request->input('city') ? $request->input('city') : 'almaty';
-
-        if($city === 'almaty'){
-            $id = $doorCategory->id == 1 ? 5 : 10;
-        }else{
-            $id = $doorCategory->id == 1 ? 8 : 9;
-        }
-
-        $banners = Banner::find($id);
-
-        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'pageInfo', 'banners'));
+        return view('doors.index', compact('doors', 'doorCategory'));
     }
 
     public function show($doorCategory, $doorSlug)
@@ -45,26 +25,15 @@ class DoorsController extends Controller
         $seo_keywords = $door->seo_keywords;
         $seo_description = $door->seo_description;
 
-        if(app()->getLocale() == 'kk'){
-            $door->title = $door->title_kk;
-            $door->description = $door->description_kk;
-
-            $seo_title = $door->seo_title_kz ? $door->seo_title_kz : $door->seo_title;
-            $seo_description = $door->seo_description_kz ? $door->seo_description_kz : $door->seo_description;
-            $seo_keywords = $door->seo_keywords_kz ? $door->seo_keywords_kz : $door->seo_keywords;
-        }
-
-        return view('layouts2019.pages.doors.show', compact('door', 'doorCategory', 'seo_title', 'seo_keywords', 'seo_description'));
+        return view('doors.show', compact('door', 'doorCategory', 'seo_title', 'seo_keywords', 'seo_description'));
     }
 
     public function manufacturer($doorCategory, $manufacturer)
     {
-        $paginateCount = $doorCategory->id == 1 ? 8 : 6;
-
         $doors = Door::where('doors_category_id', $doorCategory->id)
             ->where('active', 1)
             ->where('manufacturer', $manufacturer)
-            ->paginate($paginateCount);
+            ->get();
 
         $CategoryName = [
             1 => 'Российские',
@@ -74,10 +43,6 @@ class DoorsController extends Controller
 
         $doorCategory->name = $CategoryName[$manufacturer];
 
-        $pageInfo = \App\Models\Page::find($doorCategory->id == 1 ? 48 : 49);
-
-        $banners = Banner::find(5);
-
-        return view('layouts2019.pages.doors.index', compact('doors', 'doorCategory', 'manufacturer', 'pageInfo', 'banners'));
+        return view('doors.index', compact('doors', 'doorCategory', 'manufacturer'));
     }
 }

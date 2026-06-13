@@ -25,15 +25,12 @@
     <link rel="stylesheet" type="text/css" href="css/new-style.css">
     <!--[if IE]><link rel="stylesheet" type="text/css" href="http://russdoors.kz/assets/plugins/qm/css/ie.css" /><![endif]-->
     <!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="http://russdoors.kz/assets/plugins/qm/css/ie7.css" /><![endif]-->
-    123
-   
 </head>
 <body>
-
 <div class="container">
     <ul class="new-topmenu">
         <li>
-            <a rel="nofollow" href="https://www.facebook.com/russdoors/">
+            <a href="https://www.facebook.com/russdoors/">
                 <img src="http://russdoors.kz/images/facebook-flat.png" style="width: 25px;margin-right: 20px;">
             </a>
         </li>
@@ -41,7 +38,7 @@
         <li><a href="news.php"> новости</a></li>
         <li><a href="cooperation.php">сотрудничество</a></li>
         <li><a href="http://russdoors.kz/articles.php"> полезные советы</a></li>
-        <li><a rel="nofollow" href="contact-us.php">контакты</a></li>
+        <li><a href="contact-us.php">контакты</a></li>
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">города</a>
             <ul class="dropdown-menu">
@@ -301,7 +298,31 @@
         ga('create', 'UA-72113909-1', 'auto');
         ga('send', 'pageview');
     </script>
-  
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter26941914 = new Ya.Metrika({id:26941914,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true});
+                } catch(e) { }
+            });
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="//mc.yandex.ru/watch/26941914" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
     <script type="text/javascript" src="http://russdoors.kz/assets/templates/russdoors/jquery-1.11.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://russdoors.kz/assets/templates/russdoors/jMyCarousel.js"></script>
@@ -325,6 +346,38 @@
     <!-- {/literal} -->
     <script type="text/javascript" src="http://russdoors.kz/assets/templates/russdoors/main.js"></script>
     <!-- end footer -->
+    <!-- Yandex.Metrika counter -->11
+    <script type="text/javascript">
+        (function(d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter34783985 = new Ya.Metrika({
+                        id: 34783985,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true
+                    });
+                } catch (e) {}
+            });
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function() {
+                    n.parentNode.insertBefore(s, n);
+                };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/34783985" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 </div>
 </body>
 </html>

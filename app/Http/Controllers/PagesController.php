@@ -10,29 +10,11 @@ class PagesController extends Controller
 {
     public function show($pageName)
     {
-        if(app()->getLocale() == 'kk'){
-            $pageName->title = $pageName->title_kk;
-            $pageName->description = $pageName->description_kk;
-        }
-        
         $seo_title = $pageName->seo_title;
         $seo_keywords = $pageName->seo_keywords;
         $seo_description = $pageName->seo_description;
 
-        return view('layouts2019.pages.show', compact('pageName', 'seo_title', 'seo_keywords', 'seo_description'));
-    }
-
-    public function contacts($pageName)
-    {
-        if(app()->getLocale() == 'kk'){
-            $pageName->title = $pageName->title_kk;
-            $pageName->description = $pageName->description_kk;
-        }
-        $seo_title = $pageName->seo_title;
-        $seo_keywords = $pageName->seo_keywords;
-        $seo_description = $pageName->seo_description;
-
-        return view('layouts2019.pages.contacts', compact('pageName', 'seo_title', 'seo_keywords', 'seo_description'));
+        return view('pages.show', compact('pageName', 'seo_title', 'seo_keywords', 'seo_description'));
     }
 
     public function interior()
@@ -41,7 +23,7 @@ class PagesController extends Controller
             ->where('active', 1)
             ->get();
 
-        return view('layouts2019.pages.interior', compact('doors'));
+        return view('pages.interior', compact('doors'));
     }
 
     public function allNews()

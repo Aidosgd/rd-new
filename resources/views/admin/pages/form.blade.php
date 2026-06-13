@@ -26,20 +26,12 @@
                                 {!! Form::text('title', null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Название страницы каз</label>
-                                {!! Form::text('title_kk', null, ['class' => 'form-control']) !!}
-                            </div>
-                            <div class="form-group">
                                 <label for="exampleInputPassword1">Порядок</label>
                                 {!! Form::text('weight', null, ['class' => 'form-control']) !!}
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Описание</label>
                                 {{ Form::textarea('description', null, ['class' => 'form-control']) }}
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Описание каз</label>
-                                {{ Form::textarea('description_kk', null, ['class' => 'form-control']) }}
                             </div>
                             <hr>
                             <div class="form-group">
@@ -72,8 +64,6 @@
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script src="/vendor/unisharp/laravel-ckeditor/adapters/jquery.js"></script>
     <script>
-        $('textarea').ckeditor({
-            allowedContent: true
-        });
+        $('textarea').ckeditor();
     </script>
 @endsection

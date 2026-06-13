@@ -3,15 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
-use App\Models\Banner;
-use App\Models\Certificate;
 use App\Models\Door;
-use App\Models\Page;
-use App\Models\Review;
-use App\Models\Slider;
 use Illuminate\Http\Request;
-use Illuminate\Mail\Mailer;
-use Mail;
 
 class HomeController extends Controller
 {
@@ -29,62 +22,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('new-home-page');
+        return view('home');
     }
 
-    public function welcome(Request $request)
+    public function welcome()
     {
-        $doors = Door::where('main_page', 1)->where('active', 1)->orderBy('created_at', 'desc')->get();
-
-        $reviews = Review::all();
-
-        $slider = Slider::all();
-
-        $form1 = Page::find(45);
-
-        $certificates = Certificate::all();
-
-        $city = $request->input('city') ? $request->input('city') : 'almaty';
-
-        $banner = Banner::find($city === 'almaty' ? 11 : 12);
-
-        return view('layouts2019.home', compact('doors', 'reviews', 'slider', 'form1', 'certificates', 'banner'));
-    }
-
-    public function mail(Request $request, Mailer $mailer)
-    {
-
-        $emails = ['manager141214@mail.ru'];
-        
-        $mailer->send('emails.mail', ['name' => $request->input('name'), 'phone' => $request->input('phone'), 'email' => $request->input('email')], function ($m) use ($emails) {
-            $m->from('info@russdoors.kz', 'Заявка с сайта Russdoors');
-
-            $m->to($emails, 'Aidos')->subject('Заявка с сайта Russdoors на звонок');
-        });
-
-        return redirect('/')->with('message', 'Письмо отправили!');
-
-    }
-
-    public function download(Request $request, Mailer $mailer)
-    {
-
-        $emails = ['manager141214@mail.ru'];
-
-        $mailer->send('emails.download', ['email' => $request->input('email')], function ($m) use ($emails) {
-            $m->from('info@russdoors.kz', 'Заявка с сайта Russdoors');
-
-            $m->to($emails, 'Aidos')->subject('Заявка с сайта Russdoors для скачивания каталога дверей');
-        });
-
-        return redirect('/')->with('message', 'Письмо отправили!');
-
-    }
-
-    public function choco(){
-
         $doors = Door::where('main_page', 1)->where('active', 1)->get();
 
-        return view('choco', compact('doors'));
+        return view('welcome', compact('doors'));
     }
 }

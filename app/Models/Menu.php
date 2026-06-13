@@ -16,9 +16,4 @@ class Menu extends Authenticatable
     protected $fillable = [
         'title', 'link', 'weight', 'parent_id'
     ];
-
-    public function children()
-    {
-        return $this->hasMany('App\Models\Menu', 'parent_id', 'id');
-    }
 }

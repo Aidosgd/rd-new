@@ -62,11 +62,6 @@ class SlidersController extends Controller
             'name' => $filename,
             'link' => $input['link'],
             'weight' => $input['weight'],
-            'text_ru' => $input['text_ru'],
-            'text_kk' => $input['text_kk'],
-            'description_ru' => $input['description_ru'],
-            'description_kk' => $input['description_kk'],
-            'blank' => $input['blank']
         ]);
 
         $slider->save();
@@ -117,21 +112,11 @@ class SlidersController extends Controller
                 'name' => $filename,
                 'link' => $input['link'],
                 'weight' => $input['weight'],
-                'text_ru' => $input['text_ru'],
-                'text_kk' => $input['text_kk'],
-                'description_ru' => $input['description_ru'],
-                'description_kk' => $input['description_kk'],
-                'blank' => $input['blank']
             ]);
         }else{
             $slider->fill([
                 'link' => $input['link'],
                 'weight' => $input['weight'],
-                'text_ru' => $input['text_ru'],
-                'text_kk' => $input['text_kk'],
-                'description_ru' => $input['description_ru'],
-                'description_kk' => $input['description_kk'],
-                'blank' => $input['blank']
             ]);
         }
 
